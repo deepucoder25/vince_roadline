@@ -8,8 +8,9 @@ class Gallery extends MX_Controller {
 
     function photo_gallery()
     {
-        $data['title'] = "Photo Gallery | " . $this->comp['company3'];
-        $data['description'] = "Explore visual highlights of our cargo handling, warehouse storage, specialized container fleets, and global logistics operations at " . $this->comp['company3'] . ".";
+        $data['title'] = "Photo Gallery | Household & Car Relocation Photos | " . $this->comp['company3'];
+        $data['description'] = "Explore real photos of our packing material, container transport trucks, household goods loading, and warehouse storage operations at " . $this->comp['company3'] . ".";
+        $data['keywords'] = "packers movers gallery, home shifting images, vehicle packing photos, " . $this->comp['company3'];
         
         $this->db->where('status', 1);
         $this->db->order_by('auto_id', 'DESC');
@@ -22,8 +23,9 @@ class Gallery extends MX_Controller {
 
     function video_gallery()
     {
-        $data['title'] = "Video Gallery | " . $this->comp['company3'];
-        $data['description'] = "Watch our step-by-step cargo handling processes, transport safety standards, and global freight forwarding operations in action at " . $this->comp['company3'] . ".";
+        $data['title'] = "Video Gallery | Moving & Packing Live Work | " . $this->comp['company3'];
+        $data['description'] = "Watch live videos of our multi-layer bubble packing, car carrier loading, and safe household relocation procedures at " . $this->comp['company3'] . ".";
+        $data['keywords'] = "packers movers videos, shifting work video, car transport video, " . $this->comp['company3'];
         
         $this->db->where('status', 1);
         $this->db->order_by('auto_id', 'DESC');
