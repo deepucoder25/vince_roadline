@@ -1,27 +1,14 @@
-<?php
-// Ensure variables are defined
-$phone = isset($phone) ? $phone : '+91 9996340820';
-$phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '', (string)$phone);
-?>
 <section class="home-page-slider" itemscope itemtype="https://schema.org/WPHeader">
-  <!-- Top Left Dotted Matrix Pattern -->
   <div class="vrl-dot-pattern"></div>
 
   <div class="home-page-slider-content">
     <div class="container position-relative">
-      
-      <!-- Main Content Row -->
       <div class="row align-items-end pb-4 pb-lg-5">
-        
-        <!-- Left Text & CTA Column -->
         <div class="col-lg-8 col-xl-8 text-start hero-text-col position-relative ps-lg-4" style="z-index: 3;">
           
-          <!-- Red Eyebrow Ribbon Badge -->
           <div class="vrl-hero-eyebrow mb-3" itemprop="headline">
             WE MOVE YOUR WORLD
           </div>
-
-          <!-- 3-Color Main Headline on ONE LINE with Location Pin Route Graphic -->
           <h1 class="vrl-hero-title mb-3" itemprop="name">
             <span class="text-white">SAFE HANDS, </span>
             <span class="vrl-text-yellow">ON TIME, </span>
@@ -34,12 +21,10 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
             </span>
           </h1>
 
-          <!-- Subtitle Tagline on ONE LINE -->
           <p class="vrl-hero-subtitle mb-4" itemprop="description">
             Trusted Packers &amp; Movers for a Hassle-free Relocation
           </p>
 
-          <!-- 3 Feature Badges Grid -->
           <div class="vrl-hero-features d-flex align-items-center flex-wrap mb-4">
             <div class="vrl-feature-item">
               <div class="vrl-feature-ring"><i class="bi bi-shield-check"></i></div>
@@ -57,10 +42,8 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
             </div>
           </div>
 
-          <!-- Call Now Capsule Badge + Floating Testimonial Card (Side-by-Side on Tablet/Desktop) -->
           <div class="d-flex flex-column flex-md-row align-items-md-center gap-3 gap-lg-4 mt-3">
             
-            <!-- Call Now Capsule Badge -->
             <div class="vrl-hero-call-capsule d-inline-flex align-items-center flex-shrink-0">
               <div class="vrl-hero-call-icon-circle flex-shrink-0">
                 <i class="bi bi-telephone-fill"></i>
@@ -69,7 +52,6 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
               <a href="<?= $phonehtml ?>" class="vrl-hero-call-badge ms-2"><?= $phone ?></a>
             </div>
 
-            <!-- Floating Testimonial Card -->
             <div class="vrl-hero-testimonial-card">
               <div class="vrl-stars mb-1">
                 <i class="bi bi-star-fill text-warning"></i>
@@ -92,8 +74,6 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
         </div>
 
       </div>
-
-      <!-- Bottom Horizontal Form Bar -->
       <div class="row mt-3">
         <div class="col-12">
           <?php $this->load->view('contacts/quoteform.php') ?>

@@ -1,7 +1,4 @@
-/* ==========================================================================
-   VRL Hero Slider Styles matching exact screenshot
-   Uses CSS variables defined in navigation.css
-   ========================================================================== */
+/* VRL Hero Slider Styles */
 
 :root {
     --hero-bg: url("../images/slider/slider.jpg");
@@ -17,10 +14,8 @@
     background-position: center right;
     background-repeat: no-repeat;
     color: var(--vrl-white);
-    font-family: 'Outfit', sans-serif;
 }
 
-/* Top Left Dotted Matrix Pattern */
 .vrl-dot-pattern {
     position: absolute;
     top: 0;
@@ -34,7 +29,6 @@
     opacity: 0.85;
 }
 
-/* Left Dark Gradient Overlay - Lighter shade of black (#141414) */
 .home-page-slider::before {
     content: "";
     position: absolute;
@@ -53,12 +47,10 @@
     width: 100%;
 }
 
-/* Red Eyebrow Ribbon Badge */
 .vrl-hero-eyebrow {
     display: inline-block;
     background: linear-gradient(135deg, var(--vrl-primary-red) 0%, var(--vrl-primary-red-dark) 100%);
     color: var(--vrl-white);
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 13px;
     letter-spacing: 0.8px;
@@ -69,10 +61,8 @@
     box-shadow: 0 4px 15px rgba(214, 4, 18, 0.4);
 }
 
-/* 3-Color Main Headline */
 .vrl-hero-title {
-    font-family: 'Outfit', sans-serif;
-    font-size: clamp(35px, 2.6vw, 36px);
+    font-size: clamp(26px, 2.6vw, 36px);
     font-weight: 900;
     line-height: 1.15;
     letter-spacing: -0.5px;
@@ -91,7 +81,6 @@
     color: var(--vrl-primary-red);
 }
 
-/* Location Pin Route Graphic */
 .vrl-location-pin-wrap {
     display: inline-flex;
     align-items: center;
@@ -116,9 +105,7 @@
     50% { transform: translateY(-4px); }
 }
 
-/* Subtitle Tagline */
 .vrl-hero-subtitle {
-    font-family: 'Outfit', sans-serif;
     font-size: clamp(14px, 1.8vw, 18px);
     font-weight: 500;
     line-height: 1.45;
@@ -126,7 +113,6 @@
     white-space: nowrap;
 }
 
-/* 3 Feature Badges Grid */
 .vrl-hero-features {
     gap: 20px;
 }
@@ -173,7 +159,6 @@
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* Call Now Capsule Badge */
 .vrl-hero-call-capsule {
     background: var(--vrl-accent-yellow);
     border-radius: 50px;
@@ -206,7 +191,6 @@
 }
 
 .vrl-hero-call-text {
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 15px;
     color: var(--vrl-dark-text);
@@ -215,7 +199,6 @@
 .vrl-hero-call-badge {
     background: linear-gradient(135deg, var(--vrl-primary-red) 0%, var(--vrl-primary-red-dark) 100%);
     color: var(--vrl-white) !important;
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 14.5px;
     padding: 6px 16px;
@@ -225,7 +208,6 @@
     box-shadow: 0 4px 12px rgba(214, 4, 18, 0.4);
 }
 
-/* Testimonial Card */
 .vrl-hero-testimonial-card {
     background: rgba(14, 14, 14, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -240,6 +222,10 @@
 @media (min-width: 768px) {
     .vrl-hero-testimonial-card {
         margin-top: -140px;
+    }
+
+    .vrl-btn-col {
+        margin-top: 23px;
     }
 }
 
@@ -256,7 +242,6 @@
     border-radius: 50%;
     background: linear-gradient(135deg, var(--vrl-primary-red) 0%, var(--vrl-primary-red-dark) 100%);
     color: var(--vrl-white);
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 16px;
     display: flex;
@@ -273,17 +258,11 @@
     color: var(--vrl-white);
 }
 
-/* Bottom Horizontal Form Bar */
 .vrl-hero-form-bar {
     background: #080808;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-}
-
-.vrl-form-left-box {
-    background: transparent;
-    min-width: auto;
 }
 
 .vrl-form-icon-circle {
@@ -300,7 +279,6 @@
 }
 
 .vrl-form-title {
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 14px;
     color: var(--vrl-accent-yellow);
@@ -312,8 +290,10 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Form Inputs Styling */
 .vrl-input-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0px;
     min-width: 125px;
     width: auto;
@@ -354,7 +334,6 @@
     padding-left: 36px;
     padding-right: 10px;
     color: var(--vrl-white);
-    font-family: 'Outfit', sans-serif;
     font-size: 13px;
     transition: all 0.2s ease;
 }
@@ -385,16 +364,13 @@
     color: var(--vrl-white);
 }
 
-/* Submit Button */
 .vrl-form-submit-btn {
     background: linear-gradient(135deg, var(--vrl-primary-red) 0%, var(--vrl-primary-red-dark) 100%);
     color: var(--vrl-white);
-    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 14px;
     padding: 0 24px;
     height: 44px;
-    margin-top: 0;
     border-radius: 10px;
     border: none;
     display: inline-flex;
@@ -410,19 +386,6 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(214, 4, 18, 0.6);
     background: linear-gradient(135deg, #e60000 0%, #a00000 100%);
-}
-
-/* Form Validation Error Styles & Alert Box */
-.vrl-input-col {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .vrl-btn-col {
-        margin-top: 23px;
-    }
 }
 
 .input-error-highlight {
@@ -475,7 +438,7 @@
     color: #51cf66 !important;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 1199.98px) {
     .vrl-hero-form-bar {
         padding: 6px 12px;
@@ -496,7 +459,6 @@
 
     .vrl-form-submit-btn {
         width: 100%;
-        margin-top: 0;
     }
 }
 
@@ -511,11 +473,6 @@
     .vrl-feature-divider {
         display: none;
     }
-
-    .vrl-form-submit-btn {
-        margin-top: 0;
-        width: 100%;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -525,7 +482,7 @@
     }
 
     .vrl-hero-title {
-        font-size: clamp(25px, 4.8vw, 24px) !important;
+        font-size: clamp(18px, 4.8vw, 24px) !important;
         display: block !important;
         white-space: normal !important;
         word-break: normal;
@@ -684,4 +641,3 @@
         white-space: nowrap;
     }
 }
-
