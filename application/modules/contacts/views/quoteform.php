@@ -1,110 +1,81 @@
-  <div class="hero-quote-card-container" itemscope itemtype="https://schema.org/QuoteAction">
-            <!-- Card Header -->
-            <div class="hero-quote-header">
-              <h3 class="hero-quote-title" itemprop="name">Get Your Best Moving Quote</h3>
-              <p class="hero-quote-subtitle" itemprop="description">Quick, Fast & Free Estimates</p>
-            </div>
-            
-            <div class="hero-quote-white-card">
-              <!-- Card Body / Form -->
-              <div class="card-body-form">
-                <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
-                  
-                  <div class="form-row-custom">
-                    <!-- Name Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-person input-icon-custom"></i>
-                      <input type="text" name="name" class="form-control-custom" placeholder="Your Name" >
-                    </div>
-                    
-                    <!-- Phone Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-telephone input-icon-custom"></i>
-                      <input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" >
-                    </div>
-                    
-                    <!-- Email Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-envelope input-icon-custom"></i>
-                      <input type="email" name="email" class="form-control-custom" placeholder="Email Address" >
-                    </div>
-                    
-                    <!-- Select Service -->
-                    <div class="input-wrap-custom select-wrap-custom">
-                      <span class="select-label-custom">Select Service</span>
-                      <select name="mtype" class="form-select-custom" >
-                        <option value="" disabled selected>Select Service</option>
-                        <option>Household Relocation</option>
-                        <option>Office Relocation</option>
-                        <option>Car/Bike Shifting</option>
-                        <option>Warehousing</option>
-                      </select>
-                    </div>
-                    
-                    <!-- Moving From -->
-                    <div class="input-wrap-custom half-width-mobile">
-                      <i class="bi bi-geo-alt input-icon-custom"></i>
-                      <input type="text" name="mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From" >
-                    </div>
-                    
-                    <!-- Moving To -->
-                    <div class="input-wrap-custom half-width-mobile">
-                      <i class="bi bi-geo-alt input-icon-custom"></i>
-                      <input type="text" name="mto" class="form-control-custom" placeholder="Moving To" >
-                    </div>
-                    
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn-submit-custom">
-                      <i class="bi bi-send submit-btn-icon-desktop"></i>
-                      <i class="bi bi-file-earmark-text submit-btn-icon-mobile"></i>
-                      <span>Get Quote</span>
-                    </button>
-                  </div>
-                  
-                  <div id="quoteformresults"></div>
-                </form>
-              </div>
-              
-              <!-- Card Footer / Trust Badge Bar (Desktop Only) -->
-              <div class="card-footer-trust d-none d-lg-flex justify-content-between align-items-center">
-                <div class="trust-item">
-                  <i class="bi bi-shield-check trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>100% Secure</strong>
-                    <span>Your data is safe with us</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-clock trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>Quick Response</strong>
-                    <span>We respond within 15 mins</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-currency-rupee trust-icon-circle"></i>
-                  <div class="trust-text">
-                    <strong>Best Price Guarantee</strong>
-                    <span>Get the most competitive rates</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-headset trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>24/7 Support</strong>
-                    <span>We are here to help</span>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Mobile Security Tag (Mobile Only, Inside the Card) -->
-              <div class="mobile-security-tag d-flex d-lg-none justify-content-center align-items-center gap-2 py-3">
-                <i class="bi bi-shield-check text-primary"></i>
-                <span>100% Secure. We never share your data.</span>
-              </div>
-            </div>
+<div class="vrl-hero-form-bar" itemscope itemtype="https://schema.org/QuoteAction">
+  <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
+    <div class="d-flex flex-column flex-xl-row align-items-center justify-content-between p-3 gap-3">
+      
+      <!-- Left Info Box -->
+      <div class="vrl-form-left-box d-flex align-items-center gap-3 pe-xl-3 flex-shrink-0">
+        <div class="vrl-form-icon-circle flex-shrink-0">
+          <i class="bi bi-truck text-white"></i>
+        </div>
+        <div>
+          <h6 class="vrl-form-title mb-0">Plan Your Move Now!</h6>
+          <p class="vrl-form-sub mb-0">Book your move in 3 easy steps</p>
+        </div>
+      </div>
 
+      <!-- Right Inputs & Submit Group -->
+      <div class="vrl-form-inputs-wrap d-flex flex-column flex-md-row align-items-start gap-2 gap-lg-3 w-100">
+        
+        <!-- Input 1: Your Name -->
+        <div class="vrl-input-col">
+          <label class="vrl-field-label">Your Name</label>
+          <div class="vrl-input-group">
+            <i class="bi bi-person vrl-input-icon"></i>
+            <input type="text" name="name" class="vrl-form-input" placeholder="Enter your name" required>
           </div>
+        </div>
+
+        <!-- Input 2: Mobile Number -->
+        <div class="vrl-input-col">
+          <label class="vrl-field-label">Mobile Number<span class="text-danger">*</span></label>
+          <div class="vrl-input-group">
+            <i class="bi bi-telephone vrl-input-icon"></i>
+            <input type="tel" name="phone" class="vrl-form-input" placeholder="Enter mobile number" required>
+          </div>
+        </div>
+
+        <!-- Input 3: Pickup Location -->
+        <div class="vrl-input-col">
+          <label class="vrl-field-label">Pickup Location</label>
+          <div class="vrl-input-group">
+            <i class="bi bi-geo-alt-fill vrl-input-icon text-danger"></i>
+            <input type="text" name="mfrom" class="vrl-form-input" value="<?= @$city ?>" placeholder="Moving from" required>
+          </div>
+        </div>
+
+        <!-- Input 4: Drop Location -->
+        <div class="vrl-input-col">
+          <label class="vrl-field-label">Drop Location</label>
+          <div class="vrl-input-group">
+            <i class="bi bi-truck vrl-input-icon text-danger"></i>
+            <input type="text" name="mto" class="vrl-form-input" placeholder="Moving to" required>
+          </div>
+        </div>
+
+        <!-- Input 5: Service -->
+        <div class="vrl-input-col">
+          <label class="vrl-field-label">Service</label>
+          <div class="vrl-input-group">
+            <select name="mtype" class="vrl-form-select" required>
+              <option value="" disabled selected>Choose Service</option>
+              <option value="Household Shifting">Household Shifting</option>
+              <option value="Office Relocation">Office Relocation</option>
+              <option value="Vehicle Transportation">Vehicle Transportation</option>
+              <option value="Storage Solutions">Storage Solutions</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="vrl-btn-col flex-shrink-0">
+          <button type="submit" class="vrl-form-submit-btn">
+            <span>Get a Free Quote</span> <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="quoteformresults" class="px-3 pb-2"></div>
+  </form>
+</div>

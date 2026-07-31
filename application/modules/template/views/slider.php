@@ -1,56 +1,105 @@
+<?php
+// Ensure variables are defined
+$phone = isset($phone) ? $phone : '+91 9996340820';
+$phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '', (string)$phone);
+?>
 <section class="home-page-slider" itemscope itemtype="https://schema.org/WPHeader">
+  <!-- Top Left Dotted Matrix Pattern -->
+  <div class="vrl-dot-pattern"></div>
+
   <div class="home-page-slider-content">
-    <div class="container">
-      <!-- Title & Text Section -->
-      <div class="row">
-        <div class="col-lg-8 col-md-10 text-start hero-text-col">
-          <div class="hero-eyebrow" itemprop="headline">INDIA'S TRUSTED RELOCATION PARTNER</div>
-          <h1 class="hero-title" itemprop="name">
-            Move. Care. Deliver. We Make <span class="accent-text">It Happen.</span>
-          </h1>
-          <p class="hero-lead" itemprop="description">
-            Safe, reliable and hassle-free relocation services across India and around the world.
-          </p>
-        </div>
-      </div>
+    <div class="container position-relative">
       
-      <!-- Quote Form Card -->
-      <div class="row">
+      <!-- Main Content Row -->
+      <div class="row align-items-end pb-4 pb-lg-5">
+        
+        <!-- Left Text & CTA Column -->
+        <div class="col-lg-8 col-xl-8 text-start hero-text-col position-relative ps-lg-4" style="z-index: 3;">
+          
+          <!-- Red Eyebrow Ribbon Badge -->
+          <div class="vrl-hero-eyebrow mb-3" itemprop="headline">
+            WE MOVE YOUR WORLD
+          </div>
+
+          <!-- 3-Color Main Headline on ONE LINE with Location Pin Route Graphic -->
+          <h1 class="vrl-hero-title mb-3" itemprop="name">
+            <span class="text-white">SAFE HANDS, </span>
+            <span class="vrl-text-yellow">ON TIME, </span>
+            <span class="vrl-text-red">EVERY TIME.</span>
+            <span class="vrl-location-pin-wrap ms-2">
+              <svg class="vrl-route-curve" width="70" height="30" viewBox="0 0 70 30" fill="none">
+                <path d="M5 25 C 18 25, 22 6, 38 10 C 50 14, 48 24, 60 16 C 65 12, 67 6, 69 3" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+              </svg>
+              <i class="bi bi-geo-alt-fill vrl-pin-icon"></i>
+            </span>
+          </h1>
+
+          <!-- Subtitle Tagline on ONE LINE -->
+          <p class="vrl-hero-subtitle mb-4" itemprop="description">
+            Trusted Packers &amp; Movers for a Hassle-free Relocation
+          </p>
+
+          <!-- 3 Feature Badges Grid -->
+          <div class="vrl-hero-features d-flex align-items-center flex-wrap mb-4">
+            <div class="vrl-feature-item">
+              <div class="vrl-feature-ring"><i class="bi bi-shield-check"></i></div>
+              <span>Safe &amp;<br>Secure</span>
+            </div>
+            <div class="vrl-feature-divider"></div>
+            <div class="vrl-feature-item">
+              <div class="vrl-feature-ring"><i class="bi bi-people-fill"></i></div>
+              <span>Experienced<br>Team</span>
+            </div>
+            <div class="vrl-feature-divider"></div>
+            <div class="vrl-feature-item">
+              <div class="vrl-feature-ring"><i class="bi bi-truck"></i></div>
+              <span>On-time<br>Delivery</span>
+            </div>
+          </div>
+
+          <!-- Call Now Capsule Badge + Floating Testimonial Card (Side-by-Side on Tablet/Desktop) -->
+          <div class="d-flex flex-column flex-md-row align-items-md-center gap-3 gap-lg-4 mt-3">
+            
+            <!-- Call Now Capsule Badge -->
+            <div class="vrl-hero-call-capsule d-inline-flex align-items-center flex-shrink-0">
+              <div class="vrl-hero-call-icon-circle flex-shrink-0">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <span class="vrl-hero-call-text ms-2">Call Now</span>
+              <a href="<?= $phonehtml ?>" class="vrl-hero-call-badge ms-2"><?= $phone ?></a>
+            </div>
+
+            <!-- Floating Testimonial Card -->
+            <div class="vrl-hero-testimonial-card">
+              <div class="vrl-stars mb-1">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="vrl-testimonial-text mb-2">
+                "The team was professional, on-time and handled everything with care."
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <div class="vrl-avatar-initial">R</div>
+                <span class="vrl-testimonial-name">— Rajesh Verma</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Horizontal Form Bar -->
+      <div class="row mt-3">
         <div class="col-12">
-        <?php $this->load->view('contacts/quoteform.php')?>
+          <?php $this->load->view('contacts/quoteform.php') ?>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
-<!-- Mobile Trust Badge Bar (Mobile Only, Outside the Card) -->
-<div class="mobile-trust-bar d-flex d-lg-none py-3 bg-white border-bottom">
-  <div class="container-fluid px-1">
-    <div class="row g-0 justify-content-center align-items-stretch">
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-shield-check trust-icon mb-2"></i>
-        <strong>100% Secure</strong>
-        <span>Your data is safe with us</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-clock trust-icon mb-2"></i>
-        <strong>Quick Response</strong>
-        <span>We respond within 15 mins</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-currency-rupee trust-icon-circle mb-2"></i>
-        <strong>Best Price Guarantee</strong>
-        <span>Get the most competitive rates</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-headset trust-icon mb-2"></i>
-        <strong>24/7 Support</strong>
-        <span>We are here to help</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-

@@ -5,31 +5,31 @@ document.addEventListener("DOMContentLoaded", function () {
         style.id = "validation-custom-styles";
         style.innerHTML = `
             .input-error-highlight {
-                border: 2px solid #ff3333 !important;
-                box-shadow: 0 0 10px rgba(255, 51, 51, 0.5) !important;
+                border-color: #ff3344 !important;
+                background: rgba(255, 51, 68, 0.08) !important;
+                box-shadow: 0 0 12px rgba(255, 51, 68, 0.35) !important;
                 transition: all 0.3s ease-in-out !important;
             }
             .field-error-msg {
-                color: #ff3333 !important;
-                font-size: 0.75rem !important;
-                font-weight: bold !important;
+                color: #ff6b6b !important;
+                font-size: 11px !important;
+                font-weight: 700 !important;
                 margin-top: 5px !important;
-                margin-bottom: 5px !important;
-                text-align: left !important;
-                padding-left: 10px !important;
-                display: flex !important;
+                margin-bottom: 2px !important;
+                padding: 4px 8px !important;
+                background: rgba(255, 51, 68, 0.15) !important;
+                border: 1px solid rgba(255, 51, 68, 0.35) !important;
+                border-radius: 6px !important;
+                display: inline-flex !important;
                 align-items: center !important;
                 gap: 5px !important;
-                animation: fieldErrorFadeIn 0.3s ease-out !important;
-            }
-            .field-wrap .field-ico {
-                top: 14px !important;
-            }
-            .field-wrap.top-ico .field-ico {
-                top: 14px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                line-height: 1.3 !important;
+                animation: fieldErrorFadeIn 0.25s ease-out !important;
             }
             @keyframes fieldErrorFadeIn {
-                from { opacity: 0; transform: translateY(-5px); }
+                from { opacity: 0; transform: translateY(-4px); }
                 to { opacity: 1; transform: translateY(0); }
             }
         `;
@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 errorDiv.className = "field-error-msg";
                 errorDiv.innerHTML = `<i class="bi bi-exclamation-circle-fill"></i> ${message}`;
                 
-                // Find the wrapper (either .field-wrap, .form-group, or parent)
-                const wrapper = inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.parentElement;
+                // Find the wrapper (either .vrl-input-col, .field-wrap, .form-group, or parent)
+                const wrapper = inputEl.closest(".vrl-input-col") || inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.parentElement;
                 
                 // Force wrap if wrapper is a flex container
                 const computedStyle = window.getComputedStyle(wrapper);
