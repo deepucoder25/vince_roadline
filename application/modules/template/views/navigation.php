@@ -136,7 +136,7 @@
       
       <!-- Brand Logo -->
       <a class="navbar-brand p-0 m-0" href="<?= site_url() ?>">
-        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="vrl-brand-logo">
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="vrl-brand-logo" loading="lazy">
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -243,7 +243,7 @@
   <div class="offcanvas offcanvas-start vrl-offcanvas" tabindex="-1" id="vrlNavbarOffcanvas" aria-labelledby="vrlNavbarOffcanvasLabel">
     <div class="offcanvas-header border-bottom py-3 px-3">
       <a class="navbar-brand m-0" href="<?= site_url() ?>">
-        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?>" class="vrl-brand-logo-mobile">
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?>" class="vrl-brand-logo-mobile" loading="lazy">
       </a>
       <button type="button" class="btn-close text-reset shadow-none vrl-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>

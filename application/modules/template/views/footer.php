@@ -1,156 +1,152 @@
 <!-- FOOTER SECTION -->
-<?php
-$floatingPhoneNumber = preg_replace('/\D+/', '', (string) $phone);
-$floatingWhatsappLink = !empty($whatsapphtml)
-  ? $whatsapphtml
-  : (!empty($floatingPhoneNumber) ? 'https://wa.me/' . $floatingPhoneNumber : '#');
-?>
-<footer class="footer-section">
+<footer class="vrl-footer">
+  <div class="vrl-footer-pattern-left"></div>
+  <div class="vrl-footer-pattern-right"></div>
 
-  <div class="footer-main">
-    <div class="container">
-      <div class="row g-4 g-xl-5">
-
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="<?= site_url() ?>" class="footer-brand-logo">
-              <div class="h3 fw-bold text-white mb-2"><?= $company3 ?> </div>
+  <div class="container pt-5 pb-4">
+    <div class="row g-4">
+      
+      <!-- Col 1: Logo & Company Bio & Social Links -->
+      <div class="col-lg-3 col-md-6">
+        <div class="vrl-footer-col">
+          <div class="vrl-footer-brand-box mb-4">
+            <a href="<?= site_url() ?>" class="d-inline-block flex-shrink-0 mb-3 mb-md-0">
+              <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="vrl-footer-logo" loading="lazy">
             </a>
-
-            <p class="footer-brand-copy">
-              Safe. Secure. Sincere. Your trusted moving partner for a hassle-free relocation experience.
+            <p class="vrl-footer-desc mb-0">
+              <?= $company3 ?> is a trusted name in the relocation industry. We provide safe, reliable and affordable moving services across India.
             </p>
-
-            <div class="footer-feature-strip">
-              <div class="footer-feature-item">
-                <i class="bi bi-shield-check"></i>
-                <span>Safe Handling</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-box-seam"></i>
-                <span>Secure Packing</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-people"></i>
-                <span>Experienced Team</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-award"></i>
-                <span>On-Time Delivery</span>
-              </div>
-            </div>
-
-
+          </div>
+          <div class="vrl-social-links d-flex gap-2">
+            <a href="<?= $facebookhtml ?: '#' ?>" class="vrl-social-icon facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="<?= $instagramhtml ?: '#' ?>" class="vrl-social-icon instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="<?= $twitterhtml ?: '#' ?>" class="vrl-social-icon twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="<?= $linkedinhtml ?: '#' ?>" class="vrl-social-icon linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="<?= $youtubehtml ?: '#' ?>" class="vrl-social-icon youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="footer-widget">
-            <div class="h5 fw-bold text-white mb-3">Quick Links</div>
-
-            <ul>
-              <li><a href="<?= site_url() ?>">Home</a></li>
-              <li><a href="<?= site_url('tracking') ?>">Track Consignment</a></li>
-              <li><a href="<?= site_url('our-services') ?>">Our Services</a></li>
-              <li><a href="<?= site_url('about-us') ?>">About Us</a></li>
-              <li><a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
-              <li><a href="<?= site_url('our-branches') ?>">Our Branches</a></li>
-              <li><a href="<?= site_url('testimonials') ?>">Testimonials</a></li>
-              <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
-              <li><a href="<?= site_url('photo-gallery') ?>">Gallery</a></li>
-              <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="footer-widget">
-            <div class="h5 fw-bold text-white mb-3">Our Services</div>
-
-            <ul>
-              <li><a href="<?= site_url('home-relocation') ?>">Home Relocation</a></li>
-              <li><a href="<?= site_url('office-relocation') ?>">Office Relocation</a></li>
-              <li><a href="<?= site_url('car-transportation') ?>">Car Transportation</a></li>
-              <li><a href="<?= site_url('bike-transportation') ?>">Bike Transportation</a></li>
-              <li><a href="<?= site_url('packing-and-moving') ?>">Packing &amp; Moving Service</a></li>
-              <li><a href="<?= site_url('loading-unloading') ?>">Loading Unloading Service</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="footer-widget footer-contact-widget">
-            <div class="h5 fw-bold text-white mb-3">Contact Us</div>
-
-            <div class="footer-contact-list">
-              <a href="<?= $phonehtml ?>" class="footer-contact-item">
-                <i class="bi bi-telephone-fill"></i>
-                <span><?= $phone ?></span>
-              </a>
-
-              <a href="<?= $phonehtml1 ?>" class="footer-contact-item">
-                <i class="bi bi-telephone-fill"></i>
-                <span><?= $phone1 ?></span>
-              </a>
-
-              <a href="<?= $mailhtml ?>" class="footer-contact-item">
-                <i class="bi bi-envelope-fill"></i>
-                <span><?= $mail ?></span>
-              </a>
-
-
-              <div class="footer-contact-item footer-address-item">
-                <i class="bi bi-geo-alt-fill"></i>
-                <span><?= $address ?></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="footer-bottom">
-        <div class="footer-bottom-wrap">
-          <div class="footer-bottom-col footer-copy">
-            <p>
-              &copy; <?= date('Y') ?> <?= $company3 ?>.<br>
-              All Rights Reserved.
-            </p>
-          </div>
+      <!-- Col 2: QUICK LINKS -->
+      <div class="col-lg-2 col-md-6 col-6 vrl-footer-border-start">
+        <div class="vrl-footer-col">
+          <h5 class="vrl-footer-title">QUICK LINKS</h5>
+          <ul class="vrl-footer-links">
+            <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+            <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-chevron-right me-1"></i> Our Services</a></li>
+            <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Our Process</a></li>
+            <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Why Choose Us</a></li>
+            <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chevron-right me-1"></i> Testimonials</a></li>
+            <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-chevron-right me-1"></i> FAQs</a></li>
+            <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="footer-bottom-col footer-bottom-badge">
-            <i class="bi bi-shield-check"></i>
-            <span>100% Secure Shifting</span>
-          </div>
+      <!-- Col 3: OUR SERVICES -->
+      <div class="col-lg-2 col-md-6 col-6 vrl-footer-border-start">
+        <div class="vrl-footer-col">
+          <h5 class="vrl-footer-title">OUR SERVICES</h5>
+          <ul class="vrl-footer-links">
+            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-house-door me-2"></i> Household Shifting</a></li>
+            <li><a href="<?= site_url('office-relocation') ?>"><i class="bi bi-building me-2"></i> Office Relocation</a></li>
+            <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front me-2"></i> Vehicle Transportation</a></li>
+            <li><a href="<?= site_url('packing-and-moving') ?>"><i class="bi bi-box-seam me-2"></i> Packing &amp; Unpacking</a></li>
+            <li><a href="<?= site_url('loading-unloading') ?>"><i class="bi bi-truck-flatbed me-2"></i> Loading &amp; Unloading</a></li>
+            <li><a href="<?= site_url('bike-transportation') ?>"><i class="bi bi-archive me-2"></i> Storage Solutions</a></li>
+            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-houses me-2"></i> Warehousing</a></li>
+            <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-shield-check me-2"></i> Insurance Coverage</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="footer-bottom-col footer-bottom-badge">
-            <i class="bi bi-people"></i>
-            <span>Reliable | Affordable | Professional</span>
-          </div>
+      <!-- Col 4: USEFUL LINKS -->
+      <div class="col-lg-2 col-md-6 col-6 vrl-footer-border-start">
+        <div class="vrl-footer-col">
+          <h5 class="vrl-footer-title">USEFUL LINKS</h5>
+          <ul class="vrl-footer-links">
+            <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
+            <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
+            <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Refund Policy</a></li>
+            <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Cancellation Policy</a></li>
+            <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right me-1"></i> Blog</a></li>
+            <li><a href="<?= site_url('sitemap.xml') ?>"><i class="bi bi-chevron-right me-1"></i> Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="footer-bottom-col footer-bottom-social">
-            <span class="footer-follow-text">Follow Us</span>
+      <!-- Col 5: CONTACT INFO (Head Office & Branch Office) -->
+      <div class="col-lg-3 col-md-6 vrl-footer-border-start">
+        <div class="vrl-footer-col">
+          <h5 class="vrl-footer-title">CONTACT INFO</h5>
+          <ul class="vrl-contact-info">
+            <li class="d-flex align-items-start gap-3 mb-3">
+              <div class="vrl-contact-icon border-yellow mt-1"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <span class="d-block fw-bold text-white small mb-1">HEAD OFFICE:</span>
+                <span class="vrl-contact-text"><?= $address ?></span>
+              </div>
+            </li>
+            <li class="d-flex align-items-start gap-3 mb-3">
+              <div class="vrl-contact-icon border-red mt-1"><i class="bi bi-building"></i></div>
+              <div>
+                <span class="d-block fw-bold text-white small mb-1">BRANCH OFFICE:</span>
+                <span class="vrl-contact-text"><?= $branchAddress ?></span>
+              </div>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-2">
+              <div class="vrl-contact-icon border-red"><i class="bi bi-telephone-fill"></i></div>
+              <a href="<?= $phonehtml ?>" class="vrl-contact-text text-decoration-none fw-bold"><?= $phone ?></a>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <div class="vrl-contact-icon border-yellow"><i class="bi bi-envelope-fill"></i></div>
+              <a href="<?= $mailhtml ?>" class="vrl-contact-text text-decoration-none"><?= $mail ?></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="footer-social">
-              <a href="<?= $facebookhtml ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="<?= $instagramhtml ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="<?= $linkedinhtml ?>" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="<?= $youtubehtml ?>" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+    </div>
+
+    <!-- Middle CTA Banner Box -->
+    <div class="vrl-cta-banner my-4">
+      <div class="vrl-cta-banner-inner d-flex flex-column flex-md-row align-items-center justify-content-between p-3 p-md-0">
+        
+        <!-- Left Side: Icon Badge + Text Group -->
+        <div class="d-flex align-items-center gap-3 w-100 w-md-auto mb-3 mb-md-0">
+          <div class="vrl-cta-left-badge d-flex align-items-center justify-content-center">
+            <div class="vrl-cta-badge-circle">
+              <i class="bi bi-truck"></i>
             </div>
           </div>
+
+          <div class="vrl-cta-content flex-grow-1">
+            <h5 class="vrl-cta-title mb-1">Planning a Move?</h5>
+            <p class="vrl-cta-subtitle mb-0">Get a free quote now and make your move hassle-free!</p>
+          </div>
         </div>
 
-        <div class="footer-policy-links">
-          <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
-          <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
+        <div class="vrl-cta-btn-wrapper d-flex align-items-center pe-md-4">
+          <button type="button" class="vrl-cta-quote-btn d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+            <i class="bi bi-file-earmark-text"></i> GET A FREE QUOTE
+          </button>
         </div>
+
       </div>
     </div>
   </div>
 
+  <!-- Red Solid Line Divider -->
+  <div class="vrl-footer-red-line"></div>
+
+  <div class="container py-3">
+    <div class="vrl-footer-bottom text-center d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+      <span>&copy; <?= date('Y') ?> <?= $company3 ?>. All Rights Reserved.</span>
+      <span class="vrl-footer-divider d-none d-md-inline">|</span>
+      <span><i class="bi bi-heart-fill text-danger me-1"></i> Moving Memories with Care</span>
+    </div>
+  </div>
 </footer>
 
 <div class="floating-actions">
@@ -163,11 +159,6 @@ $floatingWhatsappLink = !empty($whatsapphtml)
     <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
     <span>WhatsApp Us</span>
   </a>
-  <button type="button" class="float-btn float-callback" data-bs-toggle="modal" data-bs-target="#callMeBackModal"
-    title="Call Me Back" aria-label="Request a Call Back">
-    <div class="icon-wrap"><i class="bi bi-headset"></i></div>
-    <span>Call Me Back</span>
-  </button>
 </div>
 
 <?php $this->load->view('contacts/quotemodal'); ?>
@@ -175,5 +166,4 @@ $floatingWhatsappLink = !empty($whatsapphtml)
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url() ?>assets/js/form.js"></script>
 </body>
-
 </html>
