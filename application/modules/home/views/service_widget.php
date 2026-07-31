@@ -52,7 +52,7 @@ $services = [
 ];
 ?>
 
-<section class="vrl-services-section">
+<section class="vrl-services-section py-4">
   <div class="container position-relative">
     
     <!-- Section Header -->
