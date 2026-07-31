@@ -2,134 +2,171 @@
 
 $services = [
     [
-        'title_part1' => 'Home',
-        'title_part2' => 'Shifting',
-        'image' => 'home-shifting-services.webp',
-        'desc' => 'Professional home shifting services to carefully transport all your household belongings with care and precision.',
-        'link' => 'home-shifting'
+        'title' => 'HOME RELOCATION',
+        'icon' => 'bi bi-house-door-fill',
+        'icon_theme' => 'vrl-icon-bg-red',
+        'desc' => 'Safe and secure shifting of your household items with perfect packing and on-time delivery.',
+        'image' => 'home.jpg',
+        'link' => 'home-relocation'
     ],
     [
-        'title_part1' => 'Office',
-        'title_part2' => 'Relocation',
-        'image' => 'office-relocation-services.webp',
-        'desc' => 'Seamless office relocation services designed to minimize disruption and ensure a smooth business transition.',
+        'title' => 'OFFICE SHIFTING',
+        'icon' => 'bi bi-building',
+        'icon_theme' => 'vrl-icon-bg-yellow',
+        'desc' => 'Hassle-free office relocation with minimal downtime and complete care.',
+        'image' => 'office.jpg',
         'link' => 'office-relocation'
     ],
     [
-        'title_part1' => 'Car',
-        'title_part2' => 'Transportation',
-        'image' => 'car-transportation-services.webp',
-        'desc' => 'Safe and reliable car transportation services to ensure your vehicle reaches its destination without hassle.',
+        'title' => 'CAR TRANSPORTATION',
+        'icon' => 'bi bi-car-front-fill',
+        'icon_theme' => 'vrl-icon-bg-red',
+        'desc' => 'Door-to-door transportation of cars with advanced safety measures.',
+        'image' => 'car.jpg',
         'link' => 'car-transportation'
     ],
     [
-        'title_part1' => 'Bike',
-        'title_part2' => 'Transportation',
-        'image' => 'bike-transportation-services.webp',
-        'desc' => 'Efficient bike transportation services tailored to ensure your bike reaches its destination safely and on time.',
+        'title' => 'BIKE TRANSPORTATION',
+        'icon' => 'bi bi-bicycle',
+        'icon_theme' => 'vrl-icon-bg-yellow',
+        'desc' => 'Safe and scratch-free bike carrier transportation to any city with complete safety.',
+        'image' => 'bike.jpg',
         'link' => 'bike-transportation'
     ],
     [
-        'title_part1' => 'Warehouse',
-        'title_part2' => '& Storage',
-        'image' => 'warehouse-storage-services.webp',
-        'desc' => 'Safe and spacious warehouse and storage solutions to store your goods for short or long-term durations.',
-        'link' => 'warehouse-and-storage'
+        'title' => 'PACKING & MOVING',
+        'icon' => 'bi bi-box-seam-fill',
+        'icon_theme' => 'vrl-icon-bg-red',
+        'desc' => 'High-quality packing materials and expert packing for maximum protection of your goods.',
+        'image' => 'packing_unpacking.jpg',
+        'link' => 'packing-and-moving'
     ],
     [
-        'title_part1' => 'Domestic',
-        'title_part2' => 'Relocation',
-        'image' => 'domestic-relocation-services.webp',
-        'desc' => 'Comprehensive domestic relocation services to make moving within the country seamless and stress-free.',
-        'link' => 'domestic-relocation'
-    ],
-    [
-        'title_part1' => 'International',
-        'title_part2' => 'Shifting',
-        'image' => 'international-shifting-services.webp',
-        'desc' => 'Expert international shifting services for smooth and stress-free cross-border relocations worldwide.',
-        'link' => 'international-shifting'
-    ],
-    [
-        'title_part1' => 'Corporate',
-        'title_part2' => 'Shifting',
-        'image' => 'corporate-shifting-services.webp',
-        'desc' => 'Efficient corporate shifting solutions designed to minimize downtime and ensure smooth business transitions.',
-        'link' => 'corporate-shifting'
-    ],
-    [
-        'title_part1' => 'Intercity',
-        'title_part2' => 'Shifting',
-        'image' => 'intercity-shifting-services.webp',
-        'desc' => 'Reliable intercity shifting services to move your goods securely between different cities with ease.',
-        'link' => 'intercity-shifting'
-    ],
-    [
-        'title_part1' => 'Local',
-        'title_part2' => 'Shifting',
-        'image' => 'local-shifting-services.webp',
-        'desc' => 'Quick and efficient local shifting services to transport your belongings within the city, hassle-free.',
-        'link' => 'local-shifting'
-    ],
-    [
-        'title_part1' => 'Logistic',
-        'title_part2' => 'Services',
-        'image' => 'logistic-services.webp',
-        'desc' => 'Comprehensive logistic services to handle all your transportation and supply chain needs with efficiency.',
-        'link' => 'logistic-services'
-    ],
-    [
-        'title_part1' => 'Pet',
-        'title_part2' => 'Relocation',
-        'image' => 'pet-relocation-services.webp',
-        'desc' => 'Caring and secure pet relocation services to ensure your pets travel comfortably and safely to any destination.',
-        'link' => 'pet-relocation'
+        'title' => 'LOADING & UNLOADING',
+        'icon' => 'bi bi-truck-flatbed',
+        'icon_theme' => 'vrl-icon-bg-yellow',
+        'desc' => 'Trained professionals for safe loading and unloading of your heavy belongings.',
+        'image' => 'loading_unloading.jpg',
+        'link' => 'loading-unloading'
     ],
 ];
 ?>
 
-<section class="services-section py-5">
-    <!-- Background Decor Elements -->
-    <div class="services-decor decor-top-left"></div>
-    <div class="services-decor decor-top-right"></div>
-    <div class="services-decor decor-bottom-right"></div>
-
-    <div class="container position-relative home-service-widget-container">
-        <!-- Section Header -->
-        <div class="section-header text-center mb-5">
-            <div class="header-title-wrap d-flex align-items-center justify-content-center">
-                <span class="header-line left-line"></span>
-                <span class="header-dot left-dot"></span>
-                <h2 class="section-title mx-3">OUR SERVICES</h2>
-                <span class="header-dot right-dot"></span>
-                <span class="header-line right-line"></span>
-            </div>
-            <div class="header-truck-wrap">
-                <div class="truck-icon-container">
-                    <span class="speed-line line-1"></span>
-                    <span class="speed-line line-2"></span>
-                    <span class="speed-line line-3"></span>
-                    <i class="bi bi-truck truck-icon"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- Grid of Services -->
-        <div class="row g-4 mt-2">
-            <?php foreach ($services as $service): ?>
-                <div class="col-lg-3 col-md-6 col-12 d-flex">
-                    <div class="srv-card w-100 d-flex flex-column">
-                        <div class="srv-icon-wrap">
-                            <img src="<?= base_url('assets/images/services_modules/' . $service['image']) ?>" alt="<?= $service['title_part1'] . ' ' . $service['title_part2'] ?>" class="img-fluid" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
-                        </div>
-                        <div class="srv-title"><?= htmlspecialchars($service['title_part1']) ?> <?= htmlspecialchars($service['title_part2']) ?></div>
-                        <div class="srv-desc flex-grow-1"><?= htmlspecialchars($service['desc']) ?></div>
-                        <a href="<?= site_url($service['link']) ?>" class="srv-link">Read more <?= strtolower($service['title_part1']) ?>..</a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
+<section class="vrl-services-section">
+  <div class="container position-relative">
+    
+    <!-- Section Header -->
+    <div class="vrl-sec-header text-center mb-4 mb-lg-5">
+      <div class="vrl-sec-eyebrow mb-2">
+        <span class="vrl-eyebrow-line"></span>
+        <span>OUR SERVICES</span>
+        <span class="vrl-eyebrow-line"></span>
+      </div>
+      
+      <h2 class="vrl-sec-title mb-2">
+        COMPLETE RELOCATION <span class="vrl-text-red">SOLUTIONS</span> FOR YOU
+      </h2>
+      
+      <!-- Dashed Route Line + Truck Graphic -->
+      <div class="vrl-sec-route-wrap mb-3">
+        <span class="vrl-sec-route-line"></span>
+        <i class="bi bi-truck vrl-sec-route-icon"></i>
+        <span class="vrl-sec-route-line"></span>
+      </div>
+      
+      <p class="vrl-sec-subtitle">
+        From careful packing to safe delivery, we offer end-to-end moving services tailored to meet your needs with trust and care.
+      </p>
     </div>
+
+    <!-- 6 Service Cards Grid (3 columns x 2 rows on desktop) -->
+    <div class="row g-4 justify-content-center">
+      <?php foreach ($services as $service): ?>
+        <div class="col-lg-4 col-md-6 col-6 d-flex">
+          <a href="<?= site_url($service['link']) ?>" class="vrl-service-card w-100">
+            
+            <!-- Top Content Area -->
+            <div class="vrl-service-content">
+              <div class="vrl-service-header">
+                <div class="vrl-service-icon-box <?= $service['icon_theme'] ?>">
+                  <i class="<?= $service['icon'] ?>"></i>
+                </div>
+                <h3 class="vrl-service-title"><?= htmlspecialchars($service['title']) ?></h3>
+              </div>
+              
+              <p class="vrl-service-desc"><?= htmlspecialchars($service['desc']) ?></p>
+              <div class="vrl-service-underline"></div>
+            </div>
+
+            <!-- Card Accent Gradient Divider -->
+            <div class="vrl-service-card-divider"></div>
+
+            <!-- Real Service Image Container -->
+            <div class="vrl-service-img-wrap">
+              <img src="<?= base_url('assets/images/services_modules/' . $service['image']) ?>" alt="<?= htmlspecialchars($service['title']) ?>" class="vrl-service-img" loading="lazy">
+            </div>
+
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- Bottom Dark Trust Badge Bar -->
+    <div class="vrl-trust-bar">
+      <div class="row g-3 align-items-center text-start text-md-start">
+        
+        <div class="col-lg col-md-6 col-6">
+          <div class="vrl-trust-item">
+            <div class="vrl-trust-icon-ring"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <h6 class="vrl-trust-title">Safe &amp; Secure</h6>
+              <p class="vrl-trust-sub mb-0">Your belongings are in safe hands.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6 col-6">
+          <div class="vrl-trust-item">
+            <div class="vrl-trust-icon-ring"><i class="bi bi-people-fill"></i></div>
+            <div>
+              <h6 class="vrl-trust-title">Experienced Team</h6>
+              <p class="vrl-trust-sub mb-0">Skilled professionals for smooth move.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6 col-6">
+          <div class="vrl-trust-item">
+            <div class="vrl-trust-icon-ring"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <h6 class="vrl-trust-title">On-Time Delivery</h6>
+              <p class="vrl-trust-sub mb-0">We deliver on promised schedule.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6 col-6">
+          <div class="vrl-trust-item">
+            <div class="vrl-trust-icon-ring"><i class="bi bi-currency-rupee"></i></div>
+            <div>
+              <h6 class="vrl-trust-title">Affordable Pricing</h6>
+              <p class="vrl-trust-sub mb-0">Best services at competitive rates.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6 col-6">
+          <div class="vrl-trust-item">
+            <div class="vrl-trust-icon-ring"><i class="bi bi-headset"></i></div>
+            <div>
+              <h6 class="vrl-trust-title">24/7 Support</h6>
+              <p class="vrl-trust-sub mb-0">We are here to assist you anytime.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
-
-
