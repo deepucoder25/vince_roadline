@@ -1,126 +1,140 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-// Fetch site-wide dynamic company settings (loaded from MX_Controller or system context)
-$companyName = isset($company3) ? $company3 : 'MyCompany';
-$companyPhone = isset($phone) ? $phone : '+91 ';
-$companyPhoneHtml = isset($phonehtml) ? $phonehtml : 'tel:+';
-$companyEmail = isset($mail) ? $mail : '';
-$companyEmailHtml = isset($mailhtml) ? $mailhtml : '';
-$companyExperience = isset($experience) ? $experience : '';
-$companyLocation = isset($addressRegion) ? $addressRegion : '';
-$companyState = isset($companystate) ? $companystate : '';
+$companyName = isset($company3) ? $company3 : 'Vince Road Line Packers & Movers';
 ?>
 
-<section class="about-section py-5">
-    <!-- Background Decor Grid Patterns -->
-    <div class="about-decor decor-top-right"></div>
-    <div class="about-decor decor-bottom-left"></div>
+<section class="vrl-about-section">
+  <!-- Bottom Red Wave Background Shape -->
+  <div class="vrl-about-bottom-wave"></div>
 
-    <div class="container position-relative about-z2">
-        <div class="row align-items-center g-4 g-lg-5">
-            
-            <!-- Left Side: Image Showcase -->
-            <div class="col-lg-6 col-12">
-                <div class="about-image-wrap position-relative">
-                    <div class="about-img-bg-shape"></div>
-                    <img src="<?= base_url('assets/images/about/about-showcase.webp') ?>" 
-                         alt="Reliable Packers and Movers Service - <?= htmlspecialchars($companyName) ?>" 
-                         class="about-img img-fluid rounded-4 shadow-lg position-relative about-z2" 
-                         loading="lazy">
-                    
-                    <!-- Floating Experience Badge -->
-                    <div class="about-experience-badge d-flex align-items-center shadow-lg">
-                        <div class="exp-number"><?= htmlspecialchars($companyExperience) ?></div>
-                        <div class="exp-text">
-                            <span class="d-block text-uppercase font-weight-bold">Years of</span>
-                            <span class="d-block text-uppercase">Trusted service</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-3 g-lg-3">
+      
+      <div class="col-lg-6 col-12">
+        <div class="vrl-about-content">
+          
+          <div class="vrl-about-eyebrow">ABOUT US</div>
+          <div class="vrl-about-eyebrow-line"></div>
 
-            <!-- Right Side: Content Details -->
-            <div class="col-lg-6 col-12">
-                <div class="about-content">
-                    
-                    <!-- Subheading Badge -->
-                    <div class="about-badge-wrap d-flex align-items-center mb-3">
-                        <span class="about-badge-line"></span>
-                        <span class="about-pill-badge text-uppercase">Who We Are</span>
-                    </div>
+          <h2 class="vrl-about-title">
+            WE MAKE MOVING
+            <span class="vrl-text-red">EASY &amp; RELIABLE</span>
+            <span class="vrl-quote-watermark">”</span>
+          </h2>
 
-                    <!-- SEO-Friendly Heading -->
-                    <h2 class="about-title mb-3">
-                        Reliable Shifting &amp; Relocation Services by <span class="text-primary-blue"><?= htmlspecialchars($companyName) ?></span>
-                    </h2>
+          <div class="vrl-about-gradient-bar">
+            <div class="vrl-about-gradient-line"></div>
+            <div class="vrl-about-gradient-dot"></div>
+          </div>
 
-                    <!-- Descriptive Paragraphs -->
-                    <p class="about-desc-lead mb-3">
-                        Moving to a new home, office, or transporting vehicles can feel overwhelming. At <strong><?= htmlspecialchars($companyName) ?></strong>, we are committed to making your relocation journey smooth, secure, and stress-free. Whether shifting locally within <?= htmlspecialchars($companyLocation) ?> or relocating across <?= htmlspecialchars($companyState) ?> and all over India, our team handles every aspect of your move with extreme care and precision.
-                    </p>
-                    
-                    <p class="about-desc mb-4">
-                        With over <strong><?= htmlspecialchars($companyExperience) ?> years</strong> of professional experience, we have established ourselves as one of India's most trusted packing and moving brands. We use industry-standard packaging materials, modern cargo carriers, and structured loading systems to ensure all your precious goods and vehicles reach their destination safely, on time, and damage-free.
-                    </p>
+          <p class="vrl-about-desc mb-2">
+            <strong><?= htmlspecialchars($companyName) ?></strong> is one of the top most trusted names in India in the field of transportation and logistics for delivering a very professionally managed services and defining its logical and technical aspects.
+          </p>
 
-                    <!-- Features List Grid -->
-                    <div class="row g-3 mb-4">
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-shield-check"></i>
-                                </div>
-                                <span class="feature-text">Fully Insured Shifting</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <span class="feature-text">Modern GPS Fleet</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-person-check"></i>
-                                </div>
-                                <span class="feature-text">Trained Packing Crew</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-clock-history"></i>
-                                </div>
-                                <span class="feature-text">On-Time Safe Delivery</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Call To Actions -->
-                    <div class="d-flex flex-wrap align-items-center gap-3">
-                        <a href="<?= site_url('about-us') ?>" class="btn btn-primary-blue shadow-sm d-flex align-items-center">
-                            Read More About Us
-                            <i class="bi bi-arrow-right-short ml-2 font-weight-bold about-cta-icon"></i>
-                        </a>
-                        <div class="about-contact-wrap d-flex align-items-center ml-md-4 mt-2 mt-md-0">
-                            <div class="about-contact-icon d-flex align-items-center justify-content-center">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-                            <div class="about-contact-details ml-2">
-                                <span class="d-block contact-label text-muted">Talk to an Expert</span>
-                                <a href="<?= htmlspecialchars($companyPhoneHtml) ?>" class="contact-number font-weight-bold text-decoration-none">
-                                    <?= htmlspecialchars($companyPhone) ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+          <p class="vrl-about-desc mb-0">
+            While moving businesses and people for so many years we have been able to understand those unique challenges that come with each of these jobs. With our operations, specializations and elegant working profile we have become India's one of the top most trusted Movers &amp; Packers.
+          </p>
 
         </div>
+      </div>
+
+      <!-- Right Column: 3-Image Layered Composition Grid -->
+      <div class="col-lg-6 col-12">
+        <div class="vrl-about-multi-img-wrap">
+          
+          <div class="vrl-about-dots-pattern"></div>
+
+          <div class="vrl-about-img-box vrl-img-box-main">
+            <img src="<?= base_url('assets/images/slider/slider.jpg') ?>" 
+                 alt="Vince Road Line Relocation Truck" 
+                 class="vrl-multi-img" 
+                 loading="lazy">
+            <div class="vrl-img-badge-overlay">
+              <i class="bi bi-shield-check"></i> 100% Safe Move
+            </div>
+          </div>
+          <div class="vrl-about-img-box vrl-img-box-sub">
+            <img src="<?= base_url('assets/images/services_modules/packing_unpacking.jpg') ?>" 
+                 alt="Packing &amp; Moving Service" 
+                 class="vrl-multi-img" 
+                 loading="lazy">
+          </div>
+
+          <div class="vrl-about-img-box vrl-img-box-accent">
+            <img src="<?= base_url('assets/images/services_modules/home.jpg') ?>" 
+                 alt="Home Relocation Service" 
+                 class="vrl-multi-img" 
+                 loading="lazy">
+          </div>
+
+          <!-- Floating Experience Badge Box -->
+          <div class="vrl-about-exp-card">
+            <div class="vrl-exp-num"><?= $yearsExperience ?></div>
+            <div class="vrl-exp-text">
+              <span>Years Of</span>
+              <strong>Excellence</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
+    <!-- Bottom Floating Trust Capsule Card -->
+    <div class="vrl-about-trust-capsule">
+      <div class="row g-3 align-items-center text-start">
+        
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="vrl-about-trust-item">
+            <div class="vrl-about-trust-icon vrl-about-icon-red">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <h6 class="vrl-about-trust-title">Safe &amp; Secure</h6>
+              <p class="vrl-about-trust-sub mb-0">Your belongings are in safe hands.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="vrl-about-trust-item">
+            <div class="vrl-about-trust-icon vrl-about-icon-yellow">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div>
+              <h6 class="vrl-about-trust-title">Experienced Team</h6>
+              <p class="vrl-about-trust-sub mb-0">Skilled professionals you can trust.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="vrl-about-trust-item">
+            <div class="vrl-about-trust-icon vrl-about-icon-red">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div>
+              <h6 class="vrl-about-trust-title">On-Time Delivery</h6>
+              <p class="vrl-about-trust-sub mb-0">We value your time and schedule.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="vrl-about-trust-item">
+            <div class="vrl-about-trust-icon vrl-about-icon-yellow">
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+            </div>
+            <div>
+              <h6 class="vrl-about-trust-title">Customer First</h6>
+              <p class="vrl-about-trust-sub mb-0">Your satisfaction is our top priority.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
