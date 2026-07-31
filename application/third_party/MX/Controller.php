@@ -51,8 +51,8 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 0000000000';
-        $this->comp['phonehtml'] = 'tel:+910000000000';
+        $this->comp['phone'] = '+91 9996340820';
+        $this->comp['phonehtml'] = 'tel:+919996340820';
         $this->comp['phone1'] = '+91 0000000000';
         $this->comp['phonehtml1'] = 'tel:+910000000000';
         $this->comp['supportmail'] = 'support@mycompany.com';
@@ -67,21 +67,30 @@ class MX_Controller
         $this->comp['instagramhtml'] = "";
         $this->comp['twitterhtml'] = "";
         $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "https://wa.me/910000000000";
+        $this->comp['whatsapphtml'] = "https://wa.me/919996340820";
 
-        $this->comp['address'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency, Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['address1'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency";
-        $this->comp['address2'] = "Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['addressRegion'] = "Mumbai";
-        $this->comp['postalCode'] = "421302";
-        $this->comp['companystate'] = "Maharashtra";
-        $this->comp['themeColor'] = "#0a4ebd";
+        $this->comp['address'] = "H.No. 07, Vikaas Colony, near Loha Mandi, Vikas Nagar, Adampur, Haryana 125052";
+        $this->comp['address1'] = "H.No. 07, Vikaas Colony, near Loha Mandi, Vikas Nagar";
+        $this->comp['address2'] = "Adampur, Haryana 125052";
 
-        $this->comp['experience'] = "40+";
-        $this->comp['startYear'] = "1986";
+        $this->comp['branchAddress'] = "No 4 4th Cross Road N 7 Kiadb Export Promotion 4th Cross Industrial Area Whitefield Opp To Opp Showroom Bengaluru Karnataka 560066";
+        $this->comp['branchAddress1'] = "No 4 4th Cross Road N 7 Kiadb Export Promotion 4th Cross Industrial Area Whitefield Opp To Opp Showroom";
+        $this->comp['branchAddress2'] = "Bengaluru, Karnataka 560066";
+        $this->comp['branchAddressRegion'] = "Bengaluru";
+        $this->comp['branchPostalCode'] = "560066";
+        $this->comp['branchState'] = "Karnataka";
+        $this->comp['branchStateUrl'] = "karnataka";
 
-        $this->comp['happyClients'] = "39,850+";
-        $this->comp['yearsExperience'] = "40+";
+        $this->comp['addressRegion'] = "Adampur";
+        $this->comp['postalCode'] = "125052";
+        $this->comp['companystate'] = "Haryana";
+        $this->comp['themeColor'] = "#D60412";
+
+        $this->comp['experience'] = "20+";
+        $this->comp['startYear'] = "2006";
+
+        $this->comp['happyClients'] = "19,850+";
+        $this->comp['yearsExperience'] = "20+";
         $this->comp['secureShifting'] = "100%";
         $this->comp['statesCovered'] = "20+";
 
