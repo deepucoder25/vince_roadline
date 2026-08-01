@@ -11,76 +11,67 @@
 <?php
 $state = [
     [
-        "image" => "maharashtra.jpg",
-        "category" => "Maharashtra",
-        "link" => "maharashtra"
+        "image" => "karnataka.jpg",
+        "category" => "Karnataka",
+        "link" => "karnataka"
     ],
     [
-        "image" => "bangalore.jpg",
-        "category" => "Bangalore",
-        "link" => "bangalore"
-    ],
-
-    [
-        "image" => "west-bengal.jpg",
-        "category" => "West Bengal",
-        "link" => "west-bengal"
-    ],
-    [
-        "image" => "uttar-pradesh.jpg",
-        "category" => "Uttar Pradesh",
-        "link" => "uttar-pradesh"
+        "image" => "haryana.jpg",
+        "category" => "Haryana",
+        "link" => "haryana"
     ],
 ];
 ?>
 
 <!-- Branch Section -->
-<section class="portfolio-area py-5 bg-light">
+<section class="pm-states-section py-5">
     <div class="container">
 
         <!-- Section Heading -->
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">
-                Our Presence Across <span class="pm-states-title-span">India</span>
+        <div class="text-center mb-5 pm-states-header">
+            <h2 class="fw-bold pm-states-title">
+                Our Presence Across <span class="pm-states-title-highlight">India</span>
             </h2>
-            <p class="text-muted">
+            <p class="pm-states-subtitle mx-auto">
                 Reliable packing and moving services available in major states.
             </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row justify-content-center g-4">
 
             <?php foreach ($state as $item): ?>
 
-                <!-- 4 Columns in One Row on Desktop -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <a href="<?= site_url($item['link']) ?>" class="pm-states-card-link text-decoration-none">
+                        <div class="pm-states-card">
 
-                    <div class="pm-states-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
-
-                        <!-- Image -->
-                        <div class="pm-states-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
-                                alt="<?= $item['category'] ?>">
-
-                            <div class="pm-states-overlay">
-                                <a href="<?= site_url($item['link']) ?>" class="btn btn-warning btn-sm rounded-pill px-3">
-                                    View
-                                </a>
+                            <!-- Image Wrapper -->
+                            <div class="pm-states-img-wrapper">
+                                <img class="pm-states-img" src="<?= base_url() ?>assets/images/state/<?= $item['image'] ?>" alt="<?= htmlspecialchars($item['category']) ?>">
+                                <div class="pm-states-overlay"></div>
+                                <div class="pm-states-top-badge">
+                                    <i class="bi bi-geo-alt-fill"></i> State Hub
+                                </div>
                             </div>
+
+                            <!-- Content Body -->
+                            <div class="pm-states-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="pm-states-accent-bar"></span>
+                                        <div>
+                                            <h5 class="pm-states-name mb-0"><?= htmlspecialchars($item['category']) ?></h5>
+                                            <span class="pm-states-subtext">View Services &amp; Routes</span>
+                                        </div>
+                                    </div>
+                                    <div class="pm-states-circle-btn">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-                        <!-- Content -->
-                        <div class="p-3 text-start d-flex align-items-center gap-2">
-                            <span class="pm-states-yellow-dash"></span>
-                            <h6 class="fw-semibold mb-0">
-                                <a href="<?= site_url($item['link']) ?>" class="text-dark text-decoration-none">
-                                    <?= htmlspecialchars($item['category']) ?>
-                                </a>
-                            </h6>
-                        </div>
-
-                    </div>
-
+                    </a>
                 </div>
 
             <?php endforeach; ?>
