@@ -120,6 +120,7 @@
       ["@type" => "SiteNavigationElement", "name" => "About Us", "url" => site_url('about-us')],
       ["@type" => "SiteNavigationElement", "name" => "Services", "url" => site_url('our-services')],
       ["@type" => "SiteNavigationElement", "name" => "Network", "url" => site_url('our-branches')],
+      ["@type" => "SiteNavigationElement", "name" => "Tracking", "url" => site_url('tracking')],
       ["@type" => "SiteNavigationElement", "name" => "Gallery", "url" => site_url('photo-gallery')],
       ["@type" => "SiteNavigationElement", "name" => "Blog", "url" => site_url('blog')],
       ["@type" => "SiteNavigationElement", "name" => "Contact Us", "url" => site_url('contact-us')]
@@ -189,6 +190,14 @@
 
           <li class="nav-item">
             <a class="nav-link vrl-nav-link <?= $active_tab === 'network' ? 'active' : '' ?>" href="<?= site_url('our-branches') ?>">NETWORK</a>
+          </li>
+
+          <li class="nav-item d-flex align-items-center">
+            <span class="vrl-divider"></span>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link vrl-nav-link <?= $active_tab === 'tracking' ? 'active' : '' ?>" href="<?= site_url('tracking') ?>">TRACKING</a>
           </li>
 
           <li class="nav-item d-flex align-items-center">
@@ -304,6 +313,14 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link vrl-mobile-link <?= $active_tab === 'tracking' ? 'active' : '' ?>" href="<?= site_url('tracking') ?>">
+            <span class="d-flex align-items-center gap-2">
+              <i class="bi bi-box-seam text-danger fs-6"></i> TRACKING
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link vrl-mobile-link <?= $active_tab === 'gallery' ? 'active' : '' ?>" href="<?= site_url('photo-gallery') ?>">
             <span class="d-flex align-items-center gap-2">
               <i class="bi bi-images text-danger fs-6"></i> GALLERY
@@ -323,14 +340,6 @@
           <a class="nav-link vrl-mobile-link <?= $active_tab === 'contact' ? 'active' : '' ?>" href="<?= site_url('contact-us') ?>">
             <span class="d-flex align-items-center gap-2">
               <i class="bi bi-telephone-outbound text-danger fs-6"></i> CONTACT US
-            </span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link vrl-mobile-link <?= $active_tab === 'tracking' ? 'active' : '' ?>" href="<?= site_url('tracking') ?>">
-            <span class="d-flex align-items-center gap-2">
-              <i class="bi bi-box-seam text-danger fs-6"></i> TRACK CONSIGNMENT
             </span>
           </a>
         </li>

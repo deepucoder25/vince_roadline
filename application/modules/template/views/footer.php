@@ -33,6 +33,7 @@
           <h5 class="vrl-footer-title">QUICK LINKS</h5>
           <ul class="vrl-footer-links">
             <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+            <li><a href="<?= site_url('tracking') ?>"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Track Shipment</a></li>
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
             <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Why Choose Us</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chevron-right me-1"></i> Testimonials</a></li>
@@ -53,9 +54,7 @@
             <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front me-2"></i> Vehicle Transportation</a></li>
             <li><a href="<?= site_url('packing-and-moving') ?>"><i class="bi bi-box-seam me-2"></i> Packing &amp; Unpacking</a></li>
             <li><a href="<?= site_url('loading-unloading') ?>"><i class="bi bi-truck-flatbed me-2"></i> Loading &amp; Unloading</a></li>
-            <li><a href="<?= site_url('bike-transportation') ?>"><i class="bi bi-archive me-2"></i> Storage Solutions</a></li>
-            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-houses me-2"></i> Warehousing</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-shield-check me-2"></i> Insurance Coverage</a></li>
+            <li><a href="<?= site_url('bike-transportation') ?>"><i class="bi bi-archive me-2"></i> Bike Transportation</a></li>
           </ul>
         </div>
       </div>
@@ -65,6 +64,7 @@
         <div class="vrl-footer-col">
           <h5 class="vrl-footer-title">USEFUL LINKS</h5>
           <ul class="vrl-footer-links">
+            <li><a href="<?= site_url('tracking') ?>"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Live Tracking</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right me-1"></i> Blog</a></li>
@@ -105,61 +105,30 @@
       </div>
 
     </div>
+  </div>
 
-    <!-- Middle CTA Banner Box -->
-    <div class="vrl-cta-banner my-4">
-      <div class="vrl-cta-banner-inner d-flex flex-column flex-md-row align-items-center justify-content-between p-3 p-md-0">
-        
-        <!-- Left Side: Icon Badge + Text Group -->
-        <div class="d-flex align-items-center gap-3 w-100 w-md-auto mb-3 mb-md-0">
-          <div class="vrl-cta-left-badge d-flex align-items-center justify-content-center">
-            <div class="vrl-cta-badge-circle">
-              <i class="bi bi-truck"></i>
-            </div>
-          </div>
-
-          <div class="vrl-cta-content flex-grow-1">
-            <h5 class="vrl-cta-title mb-1">Planning a Move?</h5>
-            <p class="vrl-cta-subtitle mb-0">Get a free quote now and make your move hassle-free!</p>
-          </div>
-        </div>
-
-        <div class="vrl-cta-btn-wrapper d-flex align-items-center pe-md-4">
-          <button type="button" class="vrl-cta-quote-btn d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
-            <i class="bi bi-file-earmark-text"></i> GET A FREE QUOTE
-          </button>
-        </div>
-
-      </div>
+  <!-- Red-bordered Centered Copyright Strip -->
+  <div class="vrl-footer-copyright-bar py-3 mt-4 text-center text-white-50">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+      <span>&copy; <?= date('Y') ?> <strong class="text-white"><?= $company3 ?> Packers &amp; Movers</strong>. All Rights Reserved.</span>
+      <span class="d-none d-md-inline text-white-50">|</span>
+      <span class="text-white-50"><i class="bi bi-heart-fill text-danger me-1"></i> Moving Memories with Care</span>
     </div>
   </div>
 
-  <!-- Red Solid Line Divider -->
-  <div class="vrl-footer-red-line"></div>
-
-  <div class="container py-3">
-    <div class="vrl-footer-bottom text-center d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
-      <span>&copy; <?= date('Y') ?> <?= $company3 ?>. All Rights Reserved.</span>
-      <span class="vrl-footer-divider d-none d-md-inline">|</span>
-      <span><i class="bi bi-heart-fill text-danger me-1"></i> Moving Memories with Care</span>
-    </div>
+  <!-- Floating Action Buttons (Dual Capsule Badge: Call Now + Get Quote Horizontal Row) -->
+  <div class="floating-actions d-flex">
+    <a href="<?= $phonehtml ?>" class="float-btn float-call">
+      <div class="icon-wrap">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+      <span>Call Now</span>
+    </a>
+    <button type="button" class="float-btn float-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+      <div class="icon-wrap">
+        <i class="bi bi-calculator-fill"></i>
+      </div>
+      <span>Get Quote</span>
+    </button>
   </div>
 </footer>
-
-<div class="floating-actions">
-  <a href="<?= $phonehtml ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
-    <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
-    <span>Call Now</span>
-  </a>
-  <button type="button" class="float-btn float-quote" title="Get Quote" data-bs-toggle="modal" data-bs-target="#qteModal" aria-label="Get Free Quote from <?= $company3 ?>">
-    <div class="icon-wrap"><i class="bi bi-calculator-fill"></i></div>
-    <span>Get Quote</span>
-  </button>
-</div>
-
-<?php $this->load->view('contacts/quotemodal'); ?>
-<?php $this->load->view('contacts/review_modal'); ?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="<?= base_url() ?>assets/js/form.js"></script>
-</body>
-</html>

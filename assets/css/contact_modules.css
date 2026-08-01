@@ -1,6 +1,7 @@
 /* ==========================================================================
-   Vince Roadline Contact Page Module & Modal (contact_modules.css)
-   Includes: Office Address Cards, Form Input Groups, and Compact Quote Modal Styles
+   Vince Roadline Contact & Tracking Page Modules (contact_modules.css)
+   Includes: Office Address Cards, Form Input Groups, Compact Quote Modal,
+   and Shipment Tracking Modules
    Uses Brand CSS Variables from navigation.css
    ========================================================================== */
 
@@ -421,9 +422,370 @@ label.error {
     border-color: #ccc;
 }
 
+/* ==========================================================================
+   TRACKING PAGE MODULE STYLES (Redesigned & Ultra Modern)
+   ========================================================================== */
+
+/* Main Premium Tracking Search Card */
+.premium-tracking-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #f1f5f9;
+}
+
+/* Top Red & Yellow Gradient Accent Bar */
+.premium-tracking-accent-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #d9232d 0%, #ffb800 100%);
+}
+
+.premium-tracking-title {
+    color: #111111;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.premium-tracking-desc {
+    color: #64748b;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+}
+
+/* Tracking Input Field */
+.premium-tracking-input-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+.premium-tracking-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #D60412;
+    font-size: 1.1rem;
+}
+
+.premium-tracking-input {
+    padding-left: 55px !important;
+    border-radius: 50px !important;
+    border: 2px solid #e2e8f0 !important;
+    box-shadow: none !important;
+    font-size: 16px !important;
+    height: 54px !important;
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
+    transition: all 0.3s ease !important;
+}
+
+.premium-tracking-input:focus {
+    border-color: #D60412 !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(214, 4, 18, 0.1) !important;
+}
+
+/* Track Now Button */
+.premium-tracking-btn {
+    border-radius: 50px !important;
+    background: linear-gradient(135deg, #D60412 0%, #b8030f 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    height: 54px !important;
+    min-width: 150px !important;
+    box-shadow: 0 4px 15px rgba(214, 4, 18, 0.25) !important;
+}
+
+.premium-tracking-btn:hover {
+    background: linear-gradient(135deg, #b8030f 0%, #90000a 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(214, 4, 18, 0.35) !important;
+    color: #ffffff !important;
+}
+
+/* Clear Reset Button */
+.premium-clear-btn {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 50% !important;
+    border: 2px solid #e2e8f0 !important;
+    color: #64748b !important;
+    transition: all 0.3s ease !important;
+    background: #f8fafc !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+}
+
+.premium-clear-btn:hover {
+    background: #e2e8f0 !important;
+    color: #0f172a !important;
+    transform: rotate(90deg) !important;
+}
+
+/* ==========================================================================
+   Redesigned Tracking Details Results Dashboard
+   ========================================================================== */
+
+.contact-tracking-details-card .card {
+    border-radius: 24px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #edf2f7 !important;
+    background: #ffffff;
+}
+
+.vrl-track-header-gradient {
+    background: linear-gradient(135deg, #D60412 0%, #b8030f 100%) !important;
+    border-bottom: 3px solid #ffb800 !important;
+}
+
+.vrl-track-header-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* Micro Info Cards Grid */
+.vrl-track-info-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 16px 14px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-column: column;
+    justify-content: center;
+}
+
+.vrl-track-info-card:hover {
+    background: #ffffff;
+    border-color: #D60412;
+    box-shadow: 0 8px 20px rgba(214, 4, 18, 0.08);
+    transform: translateY(-3px);
+}
+
+.vrl-track-info-card.accent-red {
+    background: #fff5f5;
+    border-color: rgba(214, 4, 18, 0.2);
+}
+
+.vrl-track-info-card.accent-green {
+    background: #f0fdf4;
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.vrl-track-info-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.vrl-track-info-icon.border-red {
+    background: #fff5f5;
+    color: #D60412;
+    border: 1px solid rgba(214, 4, 18, 0.2);
+}
+
+.vrl-track-info-icon.border-yellow {
+    background: #fffbeb;
+    color: #d97706;
+    border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+.vrl-track-info-icon.border-green {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.vrl-track-info-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.vrl-track-info-val {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+/* Timeline Progress Card */
+.vrl-track-progress-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.contact-tracking-progress {
+    margin: 25px 0 10px;
+    padding: 10px 0;
+}
+
+.contact-progress-bar-container {
+    position: relative;
+}
+
+.contact-progress {
+    height: 10px;
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.contact-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #D60412 0%, #ffb800 100%);
+    border-radius: 10px;
+    transition: width 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 0%;
+}
+
+.contact-progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.contact-step-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid #cbd5e1;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin: 0 auto 10px;
+    transition: all 0.35s ease;
+}
+
+.contact-step.completed .contact-step-icon {
+    background-color: #10b981;
+    border-color: #10b981;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+}
+
+.contact-step.active .contact-step-icon {
+    background: linear-gradient(135deg, #D60412 0%, #b8030f 100%);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 0 6px rgba(214, 4, 18, 0.25);
+    transform: scale(1.18);
+}
+
+.contact-step-label {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #475569;
+    margin-bottom: 3px;
+}
+
+.contact-step.completed .contact-step-label {
+    color: #059669;
+}
+
+.contact-step.active .contact-step-label {
+    color: #D60412;
+}
+
+.contact-step-date {
+    font-size: 0.78rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* History Table Styling */
+.vrl-track-history-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.vrl-track-table-head {
+    background-color: #f1f5f9;
+}
+
+.vrl-track-table-head th {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #334155;
+    padding: 14px 16px;
+    border: none;
+}
+
+.contact-tracking-table td {
+    padding: 14px 16px;
+    color: #1e293b;
+    font-size: 0.92rem;
+}
+
+/* Support Callout Banner */
+.vrl-track-support-banner {
+    background: linear-gradient(135deg, #fcfcfc 0%, #fff5f5 100%);
+    border: 1.5px solid rgba(214, 4, 18, 0.15);
+}
+
+.vrl-track-support-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #D60412 0%, #b8030f 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 12px rgba(214, 4, 18, 0.3);
+    flex-shrink: 0;
+}
+
 /* Responsiveness */
 @media (max-width: 991.98px) {
-    .vrl-contact-form-card, .vrl-contact-light-card, .vrl-contact-office-card {
+    .vrl-contact-form-card, .vrl-contact-light-card, .vrl-contact-office-card, .premium-tracking-card {
         padding: 24px 18px;
     }
 }
