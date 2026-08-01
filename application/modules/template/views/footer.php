@@ -34,11 +34,10 @@
           <ul class="vrl-footer-links">
             <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
-            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-chevron-right me-1"></i> Our Services</a></li>
-            <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Our Process</a></li>
             <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Why Choose Us</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chevron-right me-1"></i> Testimonials</a></li>
             <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-chevron-right me-1"></i> FAQs</a></li>
+            <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-chevron-right me-1"></i> Network</a></li>
             <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
           </ul>
         </div>
@@ -68,10 +67,8 @@
           <ul class="vrl-footer-links">
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
-            <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Refund Policy</a></li>
-            <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Cancellation Policy</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right me-1"></i> Blog</a></li>
-            <li><a href="<?= site_url('sitemap.xml') ?>"><i class="bi bi-chevron-right me-1"></i> Sitemap</a></li>
+            <li><a href="<?= site_url('photo-gallery') ?>"><i class="bi bi-chevron-right me-1"></i> Gallery</a></li>
           </ul>
         </div>
       </div>

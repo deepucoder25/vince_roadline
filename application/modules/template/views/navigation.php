@@ -160,6 +160,8 @@
               <li><a class="dropdown-item <?= $segment1 === 'why-choose-us' ? 'active' : '' ?>" href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
               <li><a class="dropdown-item <?= $segment1 === 'faqs' ? 'active' : '' ?>" href="<?= site_url('faqs') ?>">FAQ</a></li>
               <li><a class="dropdown-item <?= $segment1 === 'testimonials' ? 'active' : '' ?>" href="<?= site_url('testimonials') ?>">Testimonials</a></li>
+              <li><a class="dropdown-item <?= $segment1 === 'privacy-policy' ? 'active' : '' ?>" href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+              <li><a class="dropdown-item <?= $segment1 === 'terms-and-conditions' ? 'active' : '' ?>" href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a></li>
             </ul>
           </li>
 
@@ -271,6 +273,8 @@
             <li><a class="dropdown-item py-2 px-3 rounded-2" href="<?= site_url('why-choose-us') ?>"><i class="bi bi-arrow-right-short me-1 text-danger"></i> Why Choose Us</a></li>
             <li><a class="dropdown-item py-2 px-3 rounded-2" href="<?= site_url('faqs') ?>"><i class="bi bi-arrow-right-short me-1 text-danger"></i> FAQ</a></li>
             <li><a class="dropdown-item py-2 px-3 rounded-2" href="<?= site_url('testimonials') ?>"><i class="bi bi-arrow-right-short me-1 text-danger"></i> Testimonials</a></li>
+            <li><a class="dropdown-item py-2 px-3 rounded-2" href="<?= site_url('privacy-policy') ?>"><i class="bi bi-arrow-right-short me-1 text-danger"></i> Privacy Policy</a></li>
+            <li><a class="dropdown-item py-2 px-3 rounded-2" href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-arrow-right-short me-1 text-danger"></i> Terms &amp; Conditions</a></li>
           </ul>
         </li>
 
