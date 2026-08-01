@@ -14,10 +14,28 @@ app.controller('ctrl_blog',function($scope,$http){
 	
 	$scope.update_call=function(y){
 		$scope.x=y;
+		if (!$scope.x.status && $scope.x.status !== 0 && $scope.x.status !== '0') {
+			$scope.x.status = 1;
+		}
 		$scope.showSeo=true;
 		$scope.step='basic';
 		window.scrollTo(0,0);
 	}
+
+	$scope.toggle_status=function(y){
+		var current = (y.status === 0 || y.status === '0' || y.status === 'hide' || y.status === 'disabled') ? 0 : 1;
+		var newStatus = (current === 1) ? 0 : 1;
+		$http.get("blog/toggle_status?b_id=" + y.b_id + "&status=" + newStatus).success(function(data){
+			data = (data || '').toString().trim();
+			if(data == "1") {
+				y.status = newStatus;
+				messages("success", "Success!", "Blog status changed to " + (newStatus == 1 ? "Show (Visible)" : "Hide (Hidden)"), 3000);
+			} else {
+				messages("danger", "Warning!", "Failed to update blog status", 4000);
+			}
+		});
+	}
+
 	$scope.slugify=function(){
 		if(!$scope.x || !$scope.x.title) return;
 		if(!$scope.x.slug){
@@ -29,7 +47,7 @@ app.controller('ctrl_blog',function($scope,$http){
 	}
 	
 	$scope.filter_new=function(){
-		$scope.x={};
+		$scope.x={ status: 1 };
 		$scope.showSeo=false;
 		$scope.step='basic';
 	}

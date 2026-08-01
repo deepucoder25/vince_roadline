@@ -59,17 +59,22 @@
     margin-top: 10px;
 }
 .admin-form .form-control {
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 12px 15px;
-    box-shadow: none;
-    transition: all 0.3s ease;
-    background: #f8fafc;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 10px !important;
+    padding: 10px 15px !important;
+    height: 48px !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+    background-color: #ffffff !important;
+    color: #1e293b !important;
 }
 .admin-form .form-control:focus {
-    border-color: #4361ee;
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+    border-color: #4361ee !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15) !important;
 }
 
 /* Buttons */
@@ -98,55 +103,52 @@
 }
 .btn-default:hover {
     background: #cbd5e1;
-    color: #1e293b;
+    color: #2d3748;
 }
-.admin-data-toggle { margin-top: 20px; text-align: right; }
-.admin-data-toggle .btn { border-radius: 30px; }
 
-/* Table specific styles */
-.admin-table-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #2b3445;
-    margin-bottom: 15px;
-}
-.custom_addon {
-    background: #fff;
-    border-radius: 30px;
-    border: 1px solid #e2e8f0;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-    margin-bottom: 20px;
-}
-.custom_addon input {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 8px 10px;
-    background: transparent;
-}
-.custom_addon i { color: #a0aec0; }
-.admin-table table {
-    width: 100%;
+/* Table Enhancements */
+.table_horizontal {
     background: #fff;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    margin-bottom: 0;
+    padding: 20px;
+    border: 1px solid #edf2f9;
 }
-.admin-table thead th {
+.admin-table-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2b3445;
+    margin: 15px 0;
+}
+.custom_addon {
+    position: relative;
+}
+.custom_addon input {
+    width: 100%;
+    padding: 10px 15px 10px 35px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
     background: #f8fafc;
-    color: #4a5568;
-    font-weight: 600;
-    border-bottom: 2px solid #edf2f9 !important;
-    padding: 15px;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.5px;
 }
-.admin-table tbody td {
+.custom_addon .fa-search {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    color: #a0aec0;
+}
+
+.admin-table table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+.admin-table th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-bottom: 2px solid #edf2f9;
+}
+.admin-table td {
     padding: 15px;
     vertical-align: middle !important;
     border-bottom: 1px solid #f1f5f9;
@@ -160,6 +162,57 @@
 .admin-table .fa-pencil:hover { color: #3f37c9; transform: scale(1.2); }
 .admin-table .fa-trash:hover { color: #c53030; transform: scale(1.2); }
 
+/* Custom Admin Status Badge Buttons */
+.vrl-status-btn,
+.vrl-status-btn *,
+.vrl-status-btn span,
+.vrl-status-btn i {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    font-weight: 800 !important;
+    font-size: 11px !important;
+}
+
+.vrl-status-btn {
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 6px 14px !important;
+    letter-spacing: 0.5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    outline: none !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    cursor: pointer !important;
+}
+
+.vrl-status-btn-show {
+    background-color: #059669 !important;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4) !important;
+}
+
+.vrl-status-btn-show:hover {
+    background-color: #047857 !important;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5) !important;
+    transform: translateY(-2px) scale(1.05) !important;
+}
+
+.vrl-status-btn-hide {
+    background-color: #dc2626 !important;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4) !important;
+}
+
+.vrl-status-btn-hide:hover {
+    background-color: #b91c1c !important;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.5) !important;
+    transform: translateY(-2px) scale(1.05) !important;
+}
+
 /* Form layout spacing */
 .form-group { margin-bottom: 20px; }
 .admin-form label { display: block; margin-bottom: 8px; font-weight: 600; color: #4a5568; }
@@ -168,7 +221,7 @@
 <div class="heading">
 	<ol class="breadcrumb">
 		<li><a href="#/">Dashboard</a></li>
-		<li><a href="javascript:void(0)">blog</a></li>
+		<li><a href="javascript:void(0)">Blog Management</a></li>
 	</ol>
 </div>
 
@@ -214,7 +267,7 @@
 					</div>
 					<div class="col-sm-12 form-group">
 						<label>Meta Description</label>
-						<textarea name="meta_desc" class="form-control" ng-model="x.meta_desc" rows="3" placeholder="SEO description"></textarea>
+						<textarea name="meta_desc" class="form-control" ng-model="x.meta_desc" rows="3" placeholder="SEO description" style="height: auto !important;"></textarea>
 					</div>
 				</div>
 			</div>
@@ -242,6 +295,13 @@
 					<label>Time</label>
 					<input name="time" class="form-control" ng-model="x.time" required>
 				</div>
+				<div class="col-sm-12 form-group">
+					<label>Status (Visibility on Website)</label>
+					<select name="status" class="form-control" ng-model="x.status" style="height: 48px !important; padding: 10px 15px !important; line-height: 1.5 !important; font-size: 14px !important; font-weight: 600 !important; color: #1e293b !important; background-color: #ffffff !important; border: 1.5px solid #cbd5e1 !important; border-radius: 10px !important;">
+						<option value="1">Show (Visible on Website)</option>
+						<option value="0">Hide (Hidden from Website)</option>
+					</select>
+				</div>
 			</div>
 
 			<div ng-show="step==='media'">
@@ -258,7 +318,7 @@
 				</div>
 				<div class="col-sm-12 form-group" ng-if="x.url_type!='1'">
 					<label>Select Image</label>
-					<input type="file" name="image" class="form-control" style="padding: 9px 15px;">
+					<input type="file" name="image" class="form-control" style="padding: 9px 15px; height: 48px !important;">
 					<input ng-model="x.image" name="old_image" hidden>
 					<p class="help-block" style="font-size: 12px; margin-top: 5px;">Select any picture to view on your page.</p>
 				</div>
@@ -324,4 +384,3 @@
 	</div>
    
 </div>
-

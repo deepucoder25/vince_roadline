@@ -4,6 +4,7 @@ class Blog extends MX_Controller {
 
     function __construct(){
         parent::__construct();
+        $this->load->database();
     }
 
     private function slugify($text) {
@@ -14,9 +15,40 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
+        // Fetch blogs dynamically from the database table 'blog'
+        if ($this->db->table_exists('blog')) {
+            $this->db->order_by('b_id', 'DESC');
+
+            // Filter to only display blogs marked as 'show' / active (Exclude status = 0, 'hide', 'inactive')
+            if ($this->db->field_exists('status', 'blog')) {
+                $this->db->group_start();
+                $this->db->where('status IS NULL', null, false);
+                $this->db->or_where('status', 1);
+                $this->db->or_where('status', '1');
+                $this->db->or_where('status', 'show');
+                $this->db->or_where('status', 'active');
+                $this->db->or_where('status', '');
+                $this->db->group_end();
+            }
+
+            $query = $this->db->get('blog');
+            $db_blogs = $query ? $query->result_array() : [];
+            if (!empty($db_blogs)) {
+                return $db_blogs;
+            }
+        }
+
+        // Fallback to JSON file if database is empty
         $path = FCPATH . 'admin_data/blogs.json';
-        if (!file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?: [];
+        if (file_exists($path)) {
+            $json_blogs = json_decode(file_get_contents($path), true) ?: [];
+            return array_values(array_filter($json_blogs, function($b) {
+                $st = strtolower((string)($b['status'] ?? '1'));
+                return !in_array($st, ['0', 'hide', 'hidden', 'inactive', 'disabled']);
+            }));
+        }
+
+        return [];
     }
 
     function index() {
@@ -27,7 +59,7 @@ class Blog extends MX_Controller {
         $this->load->library('pagination');
         $this->load->helper('text'); 
 
-        $all_blogs = array_reverse($this->loadBlogs());
+        $all_blogs = $this->loadBlogs();
         $total_rows = count($all_blogs);
         $per_page = 6;
         $offset = (int) $this->uri->segment(3);
@@ -72,7 +104,6 @@ class Blog extends MX_Controller {
     }
 
     function read($slug = '') {
-        // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
 
         $all_blogs = $this->loadBlogs();
@@ -80,15 +111,15 @@ class Blog extends MX_Controller {
         
         foreach ($all_blogs as $b) {
             $custom_slug = $b['slug'] ?? '';
-            $auto_slug = $this->slugify($b['title']);
+            $auto_slug = $this->slugify($b['title'] ?? '');
             
             // Handle CI's translate_uri_dashes by replacing _ back to - in incoming slug
             $search_slug = str_replace('_', '-', $slug);
 
             if (
                 (!empty($custom_slug) && strtolower($custom_slug) == strtolower($search_slug)) || 
-                (strtolower($auto_slug) == strtolower($search_slug)) ||
-                ($b['id'] == $search_slug)
+                (!empty($auto_slug) && strtolower($auto_slug) == strtolower($search_slug)) ||
+                (($b['b_id'] ?? $b['id'] ?? '') == $search_slug)
             ) {
                 $selected_blog = (object) $b;
                 break;
@@ -97,15 +128,27 @@ class Blog extends MX_Controller {
 
         if ($selected_blog) {
             $data['query'] = [$selected_blog];
-            $data['recent_posts'] = array_slice(array_reverse($all_blogs), 0, 5);
+            $data['recent_posts'] = array_slice($all_blogs, 0, 5);
             
-            $data['title'] = ucfirst($selected_blog->title) . " | " . $this->comp['company3'];
-            $blog_desc = !empty($selected_blog->description) ? word_limiter(strip_tags($selected_blog->description), 25) : "Read our article on " . $selected_blog->title . " at " . $this->comp['company3'] . ".";
+            $data['title'] = ucfirst($selected_blog->title ?? 'Blog Article') . " | " . $this->comp['company3'];
+            $blog_desc = !empty($selected_blog->meta_desc) ? $selected_blog->meta_desc : (!empty($selected_blog->description) ? word_limiter(strip_tags($selected_blog->description), 25) : "Read our article at " . $this->comp['company3'] . ".");
             $data['description'] = $blog_desc;
-            $data['keywords'] = strtolower(implode(', ', array_filter(explode(' ', preg_replace('/[^a-zA-Z0-9\s]/', '', $selected_blog->title))))) . ", " . $this->comp['company3'];
+            $data['keywords'] = strtolower(implode(', ', array_filter(explode(' ', preg_replace('/[^a-zA-Z0-9\s]/', '', $selected_blog->title ?? ''))))) . ", " . $this->comp['company3'];
             
-            $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $image_file = $selected_blog->image ?? '';
+            $img_src = base_url('assets/images/about/packers_movers.jpg');
+            if (!empty($image_file)) {
+                if (filter_var($image_file, FILTER_VALIDATE_URL)) {
+                    $img_src = $image_file;
+                } elseif (file_exists(FCPATH . 'assets/uploads/blog/' . $image_file)) {
+                    $img_src = base_url('assets/uploads/blog/' . $image_file);
+                } elseif (file_exists(FCPATH . 'assets/uploads/blogs/' . $image_file)) {
+                    $img_src = base_url('assets/uploads/blogs/' . $image_file);
+                } elseif (file_exists(FCPATH . 'uploads/blogs/' . $image_file)) {
+                    $img_src = base_url('uploads/blogs/' . $image_file);
+                }
+            }
+            $data['img'] = $img_src;
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 
