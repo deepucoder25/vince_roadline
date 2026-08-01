@@ -1,166 +1,133 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- ======================================================
-     CITY PAGE SIDEBAR
-     Available vars: $city, $state, $company3, $experience,
-                     $startYear, $phone, $phone1, $phonehtml,
-                     $phonehtml1, $whatsapphtml, $cities, $st
-  ====================================================== -->
+<aside class="pm-city-sidebar d-flex flex-column gap-4">
 
-<aside class="pm-city-sidebar">
-
-  <!-- CTA Contact Card -->
-  <div class="pm-city-sidebar-widget pm-city-cta-card">
-    <!-- Decorative BG icon -->
-    <i class="bi bi-headset pm-city-cta-bg-icon"></i>
-
-    <div class="pm-city-cta-inner">
-      <div class="pm-city-cta-icon-wrap">
-        <i class="bi bi-headset"></i>
+  <!-- Widget 1: Premium Logo-Themed Shifting Rate Card -->
+  <div class="pm-rate-guide-card">
+    
+    <!-- Dark & Crimson Gradient Header -->
+    <div class="pm-rate-guide-header d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-tag-fill text-warning fs-5"></i>
+        <div>
+          <h5 class="fw-bold mb-0 text-white fs-6"><?= htmlspecialchars($city) ?> Rate Guide</h5>
+          <span class="text-white-50 fs-7">Standard Relocation Charges</span>
+        </div>
       </div>
-      <h4 class="pm-city-cta-title">Need Help Moving in <span><?= $city ?></span>?</h4>
-      <p class="pm-city-cta-desc">Get a free consultation from our shifting experts. Available 24/7.</p>
+      <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill fs-7">Verified</span>
+    </div>
 
-      <div class="pm-city-cta-buttons">
-        <!-- Primary Phone -->
-        <a href="<?= $phonehtml ?>" class="pm-city-cta-btn pm-city-cta-call" id="sidebarCallBtn">
-          <i class="bi bi-telephone-fill"></i>
-          <div>
-            <small>Call Support &nbsp;<span class="pm-city-badge-live">LIVE</span></small>
-            <strong><?= $phone ?></strong>
+    <div class="p-4 d-flex flex-column gap-3">
+      <!-- Item 1 -->
+      <div class="pm-rate-item-box d-flex align-items-center justify-content-between gap-2">
+        <div class="d-flex align-items-center gap-3">
+          <div class="pm-rate-item-icon">
+            <i class="bi bi-house-door-fill"></i>
           </div>
-        </a>
-
-        <!-- Alternate Phone -->
-        <a href="<?= $phonehtml1 ?>" class="pm-city-cta-btn pm-city-cta-alt-call" id="sidebarAltCallBtn">
-          <i class="bi bi-telephone"></i>
           <div>
-            <small>Alternate Line</small>
-            <strong><?= $phone1 ?></strong>
+            <strong class="d-block text-dark small">1 BHK Household</strong>
+            <span class="text-muted fs-7">Local shifting in <?= htmlspecialchars($city) ?></span>
           </div>
-        </a>
+        </div>
+        <div class="pm-rate-price-tag">
+          ₹3,500 - ₹6,500
+        </div>
+      </div>
 
-        <!-- Action Row -->
-        <div class="pm-city-cta-action-row">
-          <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="pm-city-action-btn pm-city-whatsapp-btn" id="sidebarWhatsAppBtn">
-            <i class="bi bi-whatsapp"></i>
-            WhatsApp
-          </a>
-          <button type="button" class="pm-city-action-btn pm-city-quote-btn" data-bs-toggle="modal" data-bs-target="#qteModal" id="sidebarQuoteBtn">
-            <i class="bi bi-clipboard-check"></i>
-            Get Quote
-          </button>
+      <!-- Item 2 -->
+      <div class="pm-rate-item-box d-flex align-items-center justify-content-between gap-2">
+        <div class="d-flex align-items-center gap-3">
+          <div class="pm-rate-item-icon">
+            <i class="bi bi-houses-fill"></i>
+          </div>
+          <div>
+            <strong class="d-block text-dark small">2 - 3 BHK Home</strong>
+            <span class="text-muted fs-7">Full family relocation</span>
+          </div>
+        </div>
+        <div class="pm-rate-price-tag">
+          ₹7,500 - ₹14,000
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="pm-rate-item-box d-flex align-items-center justify-content-between gap-2">
+        <div class="d-flex align-items-center gap-3">
+          <div class="pm-rate-item-icon">
+            <i class="bi bi-truck-front-fill"></i>
+          </div>
+          <div>
+            <strong class="d-block text-dark small">Car / Bike Transport</strong>
+            <span class="text-muted fs-7">Enclosed vehicle carriers</span>
+          </div>
+        </div>
+        <div class="pm-rate-price-tag">
+          ₹2,500 - ₹9,000
+        </div>
+      </div>
+
+      <button type="button" class="btn pm-rate-cta-btn w-100 border-0 d-flex align-items-center justify-content-center gap-2 mt-1" data-bs-toggle="modal" data-bs-target="#qteModal">
+        <i class="bi bi-calculator-fill text-warning"></i> Get Exact Price Quote
+      </button>
+    </div>
+  </div>
+
+  <!-- Widget 2: Vince Roadline Brand Guarantee Card -->
+  <div class="pm-sidebar-widget p-4 rounded-4 bg-white border shadow-sm">
+    <div class="d-flex align-items-center gap-2 mb-3 pb-2 border-bottom">
+      <i class="bi bi-shield-check text-danger fs-4"></i>
+      <h5 class="fw-bold text-dark mb-0 fs-6">Vince Roadline Guarantee</h5>
+    </div>
+
+    <div class="d-flex flex-column gap-3">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-patch-check-fill text-danger fs-5 flex-shrink-0 mt-1"></i>
+        <div>
+          <strong class="d-block text-dark small">Government Licensed &amp; Insured</strong>
+          <span class="text-muted fs-7">100% safe move with zero risk of loss or damage.</span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-box-seam-fill text-danger fs-5 flex-shrink-0 mt-1"></i>
+        <div>
+          <strong class="d-block text-dark small">3-Layer Bubble Cushion Packing</strong>
+          <span class="text-muted fs-7">Specialized packing for glass, electronics &amp; furniture.</span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-truck text-danger fs-5 flex-shrink-0 mt-1"></i>
+        <div>
+          <strong class="d-block text-dark small">Dedicated Container Trucks</strong>
+          <span class="text-muted fs-7">Waterproof enclosed vehicles with live GPS tracking.</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Services Widget -->
-  <div class="pm-city-sidebar-widget mt-4" id="sidebarServicesWidget">
-    <h4 class="pm-city-sidebar-widget-title">
-      <i class="bi bi-grid-3x3-gap-fill me-2"></i>Our Services
-    </h4>
-    <p class="pm-city-sidebar-widget-desc">Expert relocation solutions in <?= $city ?>.</p>
-    <ul class="pm-city-services-list" id="citySidebarServiceList">
-      <?php
-      $sidebar_services = [
-        ['slug' => 'home-shifting',         'name' => 'Home Shifting',         'icon' => 'bi-house-heart-fill'],
-        ['slug' => 'office-relocation',     'name' => 'Office Relocation',     'icon' => 'bi-building-gear'],
-        ['slug' => 'car-transportation',    'name' => 'Car Transportation',    'icon' => 'bi-car-front-fill'],
-        ['slug' => 'bike-transportation',   'name' => 'Bike Transportation',   'icon' => 'bi-bicycle'],
-        ['slug' => 'warehouse-and-storage', 'name' => 'Warehouse & Storage',   'icon' => 'bi-box-seam-fill'],
-        ['slug' => 'domestic-relocation',   'name' => 'Domestic Relocation',   'icon' => 'bi-truck'],
-        ['slug' => 'local-shifting',        'name' => 'Local Shifting',        'icon' => 'bi-geo-alt-fill'],
-        ['slug' => 'intercity-shifting',    'name' => 'Intercity Shifting',    'icon' => 'bi-signpost-split-fill'],
-      ];
-      foreach ($sidebar_services as $srv):
-      ?>
-      <li>
-        <a href="<?= site_url($srv['slug']) ?>" class="pm-city-service-link" id="sidebarService-<?= $srv['slug'] ?>">
-          <span class="pm-city-svc-icon"><i class="bi <?= $srv['icon'] ?>"></i></span>
-          <span class="pm-city-svc-name"><?= $srv['name'] ?></span>
-          <i class="bi bi-chevron-right pm-city-svc-arrow"></i>
-        </a>
-      </li>
-      <?php endforeach; ?>
-    </ul>
-    <a href="<?= site_url('our-services') ?>" class="pm-city-view-all-btn" id="sidebarViewAllServices">
-      <i class="bi bi-grid me-1"></i> View All Services
-      <i class="bi bi-arrow-right ms-1"></i>
-    </a>
-  </div>
+  <!-- Widget 3: High-Impact Black & Crimson Animated Live Support Card -->
+  <div class="pm-sidebar-live-card p-4 p-md-4.5 rounded-4 text-center position-relative overflow-hidden shadow-lg">
+    <!-- Radial Gold Glow Overlay -->
+    <div class="pm-live-card-glow"></div>
+    
+    <!-- Top Live Status Pill -->
+    <div class="d-inline-flex align-items-center gap-2 bg-black bg-opacity-60 border border-warning border-opacity-25 text-white rounded-pill px-3.5 py-1.5 fs-7 mb-3 shadow-sm">
+      <span class="pm-live-dot"></span>
+      <span class="fw-bold text-warning pm-helpline-tag-text">24x7 Live Helpline</span>
+    </div>
 
-  <!-- Trust Badges Widget -->
-  <div class="pm-city-sidebar-widget mt-4" id="sidebarTrustWidget">
-    <h4 class="pm-city-sidebar-widget-title">
-      <i class="bi bi-patch-check-fill me-2 text-success"></i>Why Choose <?= $company3 ?>?
-    </h4>
-    <ul class="pm-city-trust-list">
-      <li>
-        <div class="pm-city-trust-icon-wrap"><i class="bi bi-clock-history"></i></div>
-        <div>
-          <strong><?= $yearsExperience ?> Years Experience</strong>
-          <small>Trusted since <?= $startYear ?></small>
-        </div>
-      </li>
-      <li>
-        <div class="pm-city-trust-icon-wrap pm-city-trust-green"><i class="bi bi-people-fill"></i></div>
-        <div>
-          <strong><?= $happyClients ?> Happy Clients</strong>
-          <small>Families and businesses trust us</small>
-        </div>
-      </li>
-      <li>
-        <div class="pm-city-trust-icon-wrap pm-city-trust-orange"><i class="bi bi-patch-check-fill"></i></div>
-        <div>
-          <strong>Verified & Licensed</strong>
-          <small>ISO certified packers and movers</small>
-        </div>
-      </li>
-      <li>
-        <div class="pm-city-trust-icon-wrap pm-city-trust-red"><i class="bi bi-shield-fill-check"></i></div>
-        <div>
-          <strong><?= $secureShifting ?> Secure Shifting</strong>
-          <small>Complete transit insurance options</small>
-        </div>
-      </li>
-      <li>
-        <div class="pm-city-trust-icon-wrap pm-city-trust-yellow"><i class="bi bi-geo-alt-fill"></i></div>
-        <div>
-          <strong>Pan-India Coverage</strong>
-          <small>100+ branches across <?= $statesCovered ?> states</small>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <h5 class="fw-bold text-white mb-2 fs-6">Need Immediate Shifting Help?</h5>
+    <p class="text-white small mb-4 pm-live-card-desc">Speak directly with our senior move manager for instant bookings or custom discounts in <strong><?= htmlspecialchars($city) ?></strong>.</p>
 
-  <!-- Related Locations -->
-  <div class="pm-city-sidebar-widget mt-4" id="sidebarRelatedLocations">
-    <h4 class="pm-city-sidebar-widget-title">
-      <i class="bi bi-pin-map-fill me-2"></i>Nearby Cities
-    </h4>
-    <p class="pm-city-sidebar-widget-desc">Packers and Movers near <?= $city ?>.</p>
-    <div class="pm-city-related-tags" id="relatedCityTags">
-      <?php
-      $count = 0;
-      foreach ($cities as $ct):
-        if ($ct['nm'] == $city) continue;
-        if ($count >= 10) break;
-        $link      = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
-        $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
-      ?>
-      <a href="<?= site_url("$link-packers-movers-$statename") ?>"
-         class="pm-city-tag"
-         id="relatedCity-<?= $count ?>">
-        <i class="bi bi-arrow-right-short"></i><?= $ct['nm'] ?>
+    <div class="d-grid gap-3 position-relative z-2">
+      <a href="<?= $phonehtml ?>" class="btn pm-live-call-btn rounded-pill py-3 fw-bold text-decoration-none d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-telephone-fill pm-phone-ring-icon text-danger"></i> Call <?= htmlspecialchars($phone) ?>
       </a>
-      <?php
-        $count++;
-      endforeach;
-      ?>
+      <a href="https://api.whatsapp.com/send?phone=919992771352&text=Hi,%20I%20need%20packers%20and%20movers%20in%20<?= urlencode($city) ?>" target="_blank" class="btn pm-live-wa-btn rounded-pill py-3 fw-bold text-decoration-none d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-whatsapp pm-wa-icon fs-5"></i> Chat on WhatsApp
+      </a>
     </div>
   </div>
 
-</aside><!-- /city-sidebar -->
-
-
+</aside>

@@ -1,15 +1,10 @@
 <?php
-$state_slug = strtolower(str_replace(' ', '-', $state));
-$state_img_file = FCPATH . 'assets/images/state/' . $state_slug . '.jpg';
-$state_img_url = file_exists($state_img_file)
-  ? base_url('assets/images/state/' . $state_slug . '.jpg')
-  : base_url('assets/images/slider/slider.jpg');
-
 $phone = isset($phone) ? $phone : '+91 9996340820';
 $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '', (string)$phone);
+$slider_bg_url = base_url('assets/images/slider/slider.jpg');
 ?>
 
-<section class="pm-city-slider home-page-slider" style="background-image: url('<?= $state_img_url ?>');" itemscope itemtype="https://schema.org/WPHeader">
+<section class="pm-city-slider home-page-slider" style="background-image: url('<?= $slider_bg_url ?>');" itemscope itemtype="https://schema.org/WPHeader">
   <div class="vrl-dot-pattern"></div>
 
   <div class="home-page-slider-content">
@@ -32,7 +27,7 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
 
       <!-- Hero Header & Info Row -->
       <div class="row align-items-end pb-4 pb-lg-5">
-        <div class="col-lg-8 col-xl-8 text-start hero-text-col position-relative ps-lg-4" style="z-index: 3;">
+        <div class="col-lg-8 col-xl-8 text-start hero-text-col position-relative ps-lg-4">
           
           <div class="vrl-hero-eyebrow mb-3" itemprop="headline">
             INDIA'S TRUSTED RELOCATION PARTNER

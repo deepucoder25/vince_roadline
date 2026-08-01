@@ -1,54 +1,66 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
+<!-- Section Header -->
+<div class="text-center mb-4">
+    <span class="pm-list-tag mb-2 d-inline-block">Services Matrix</span>
+    <h3 class="fw-bold text-dark fs-2">Specialized Relocation Services in <span class="text-danger"><?= htmlspecialchars($city) ?></span></h3>
+    <p class="text-muted mx-auto pm-service-section-desc">Tailored packing and moving solutions for every type of relocation requirement.</p>
+</div>
 
-<div class="container">
-<div class="row g-4 mt-5 mb-4">
+<div class="row g-4">
     <!-- Home Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
-        <div class="pm-city-srv-card w-100 d-flex flex-column">
-            <div class="pm-city-srv-icon-wrap">
-                <img src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" alt="Home Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="pm-city-srv-card w-100 p-4 rounded-4 bg-white border shadow-sm d-flex flex-column">
+            <div class="pm-city-srv-icon-wrap mb-3 overflow-hidden rounded-3">
+                <img src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" alt="Home Shifting in <?= htmlspecialchars($city) ?>" class="img-fluid w-100 object-fit-cover" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
             </div>
-            <div class="pm-city-srv-title">Home Shifting<br>in <?= $city ?></div>
-            <div class="pm-city-srv-desc flex-grow-1">A hassle-free solution for relocating your home in <?= $city ?>, ensuring safe packing, loading, and transport of your belongings to your new location from <?= $city ?>, while minimizing stress and effort.</div>
-            <a href="<?= site_url('home-shifting-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more home shifting..</a>
+            <h5 class="fw-bold text-dark mb-2">Home Shifting<br><small class="text-muted fs-7">in <?= htmlspecialchars($city) ?></small></h5>
+            <p class="pm-city-srv-desc text-muted small flex-grow-1 mb-3">Safe packing, loading, and door-to-door transport of household goods with full insurance protection.</p>
+            <a href="<?= site_url('home-shifting-in-'.$ctlink) ?>" class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+            </a>
         </div>
     </div>
     
     <!-- Office Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
-        <div class="pm-city-srv-card w-100 d-flex flex-column">
-            <div class="pm-city-srv-icon-wrap">
-                <img src="<?= base_url('assets/images/services_modules/office-relocation-services.webp') ?>" alt="Office Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="pm-city-srv-card w-100 p-4 rounded-4 bg-white border shadow-sm d-flex flex-column">
+            <div class="pm-city-srv-icon-wrap mb-3 overflow-hidden rounded-3">
+                <img src="<?= base_url('assets/images/services_modules/office-relocation-services.webp') ?>" alt="Office Shifting in <?= htmlspecialchars($city) ?>" class="img-fluid w-100 object-fit-cover" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
             </div>
-            <div class="pm-city-srv-title">Office Shifting<br>in <?= $city ?></div>
-            <div class="pm-city-srv-desc flex-grow-1">A comprehensive service for relocating offices, ensuring the safe and efficient transport of office equipment, furniture, and documents.</div>
-            <a href="<?= site_url('office-shifting-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more office shifting..</a>
+            <h5 class="fw-bold text-dark mb-2">Office Relocation<br><small class="text-muted fs-7">in <?= htmlspecialchars($city) ?></small></h5>
+            <p class="pm-city-srv-desc text-muted small flex-grow-1 mb-3">Systematic office moving with minimal downtime, handling workstations, servers, and official records.</p>
+            <a href="<?= site_url('office-shifting-in-'.$ctlink) ?>" class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+            </a>
         </div>
     </div>
     
-    <!-- Car Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
-        <div class="pm-city-srv-card w-100 d-flex flex-column">
-            <div class="pm-city-srv-icon-wrap">
-                <img src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" alt="Car Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
+    <!-- Car Transport -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="pm-city-srv-card w-100 p-4 rounded-4 bg-white border shadow-sm d-flex flex-column">
+            <div class="pm-city-srv-icon-wrap mb-3 overflow-hidden rounded-3">
+                <img src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" alt="Car Shifting in <?= htmlspecialchars($city) ?>" class="img-fluid w-100 object-fit-cover" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
             </div>
-            <div class="pm-city-srv-title">Car Shifting<br>in <?= $city ?></div>
-            <div class="pm-city-srv-desc flex-grow-1"><?= $city ?> <?= isset($company3) ? $company3 : 'MyCompany' ?> Professional car relocation service offering secure transport of vehicles, either through dedicated car carriers or enclosed trailers, ensuring your car is safely delivered from <?= $city ?> to the new location.</div>
-            <a href="<?= site_url('car-transport-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more car transport..</a>
+            <h5 class="fw-bold text-dark mb-2">Car Carrier Service<br><small class="text-muted fs-7">in <?= htmlspecialchars($city) ?></small></h5>
+            <p class="pm-city-srv-desc text-muted small flex-grow-1 mb-3">Door-to-door car transport using enclosed auto carriers with hydraulic ramps and insurance.</p>
+            <a href="<?= site_url('car-transport-in-'.$ctlink) ?>" class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+            </a>
         </div>
     </div>
     
-    <!-- Bike Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
-        <div class="pm-city-srv-card w-100 d-flex flex-column">
-            <div class="pm-city-srv-icon-wrap">
-                <img src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" alt="Bike Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
+    <!-- Bike Transport -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="pm-city-srv-card w-100 p-4 rounded-4 bg-white border shadow-sm d-flex flex-column">
+            <div class="pm-city-srv-icon-wrap mb-3 overflow-hidden rounded-3">
+                <img src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" alt="Bike Shifting in <?= htmlspecialchars($city) ?>" class="img-fluid w-100 object-fit-cover" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'">
             </div>
-            <div class="pm-city-srv-title">Bike Shifting<br>in <?= $city ?></div>
-            <div class="pm-city-srv-desc flex-grow-1">Specialized service designed for safe and secure transport of bikes, using protective packaging and experienced handling to ensure your two-wheeler reaches its destination without damage from <?= $city ?>.</div>
-            <a href="<?= site_url('bike-transport-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more bike transport..</a>
+            <h5 class="fw-bold text-dark mb-2">Two-Wheeler Transport<br><small class="text-muted fs-7">in <?= htmlspecialchars($city) ?></small></h5>
+            <p class="pm-city-srv-desc text-muted small flex-grow-1 mb-3">Scratch-free bike packaging and safe transport to any location from <?= htmlspecialchars($city) ?>.</p>
+            <a href="<?= site_url('bike-transport-in-'.$ctlink) ?>" class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold">
+                Learn More <i class="bi bi-arrow-right ms-1"></i>
+            </a>
         </div>
     </div>
-</div>
 </div>
