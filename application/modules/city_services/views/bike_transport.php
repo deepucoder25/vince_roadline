@@ -3,10 +3,13 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
-    'bc_title_white' => 'Bike Transportation in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_eyebrow' => 'SECURE • FAST • TWO WHEELER RELOCATION',
+    'bc_h1' => 'Bike Transportation in ' . $city,
+    'bc_desc' => 'Door-to-door bike shipping and two-wheeler transport services in ' . $city . ' with multi-layer protective packaging.',
+    'breadcrumbs' => [
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Bike Transportation in ' . $city]
+    ]
 ]); 
 ?>
 

@@ -1,12 +1,13 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_h1' => 'Office Relocation',
-    'bc_desc' => 'Office Relocation Services',
+    'bc_eyebrow' => 'EFFICIENT • ZERO DOWNTIME • COMMERCIAL',
+    'bc_h1' => 'Office Shifting',
+    'bc_desc' => 'Seamless corporate office relocation, IT equipment moving, and commercial desk shifting with minimal downtime.',
     'breadcrumbs' => [
-        ['name' => 'Office Relocation']
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Office Shifting']
     ]
 ]);
 ?>
@@ -19,11 +20,8 @@
             <div class="col-lg-12">
                 <div class="service-main-content">
 
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

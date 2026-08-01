@@ -1,12 +1,13 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_h1' => 'Home Relocation',
-    'bc_desc' => 'Home Relocation Services',
+    'bc_eyebrow' => 'SAFE • RELIABLE • STRESS-FREE',
+    'bc_h1' => 'Home Shifting',
+    'bc_desc' => 'We make your home shifting experience smooth, safe and hassle-free with our professional moving solutions.',
     'breadcrumbs' => [
-        ['name' => 'Home Relocation']
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Home Shifting']
     ]
 ]);
 ?>
@@ -19,11 +20,8 @@
             <div class="col-lg-12">
                 <div class="service-main-content">
 
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

@@ -3,10 +3,13 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
-    'bc_title_white' => 'Home Shifting in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_eyebrow' => 'SAFE • RELIABLE • STRESS-FREE',
+    'bc_h1' => 'Home Shifting in ' . $city,
+    'bc_desc' => 'We make your home shifting experience smooth, safe and hassle-free with our professional moving solutions in ' . $city . '.',
+    'breadcrumbs' => [
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Home Shifting in ' . $city]
+    ]
 ]); 
 ?>
 

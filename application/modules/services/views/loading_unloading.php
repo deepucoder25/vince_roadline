@@ -1,12 +1,13 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_h1' => 'Loading and Unloading Services',
-    'bc_desc' => 'Loading and Unloading Services',
+    'bc_eyebrow' => 'TRAINED LABOUR • CAREFUL HANDLING',
+    'bc_h1' => 'Loading & Unloading',
+    'bc_desc' => 'Trained moving professionals and modern lifting gear for heavy goods loading, unloading, and placement.',
     'breadcrumbs' => [
-        ['name' => 'Loading and Unloading']
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Loading & Unloading']
     ]
 ]);
 ?>
@@ -19,11 +20,8 @@
             <div class="col-lg-12">
                 <div class="service-main-content">
 
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

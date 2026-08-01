@@ -1,12 +1,13 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_h1' => 'Packing and Moving Services',
-    'bc_desc' => 'Packing and Moving Services',
+    'bc_eyebrow' => 'PREMIUM PACKAGING • SAFE TRANSIT',
+    'bc_h1' => 'Packing & Moving',
+    'bc_desc' => 'High-grade bubble wrap, corrugated boxes, and expert packing & moving solutions for complete peace of mind.',
     'breadcrumbs' => [
-        ['name' => 'Packing and Moving']
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Packing & Moving']
     ]
 ]);
 ?>
@@ -19,11 +20,8 @@
             <div class="col-lg-12">
                 <div class="service-main-content">
 
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

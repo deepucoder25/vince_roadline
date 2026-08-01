@@ -3,10 +3,13 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
-    'bc_title_white' => 'Office Relocation in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_eyebrow' => 'EFFICIENT • ZERO DOWNTIME • COMMERCIAL',
+    'bc_h1' => 'Office Shifting in ' . $city,
+    'bc_desc' => 'Seamless corporate office relocation, IT equipment moving, and commercial desk shifting in ' . $city . '.',
+    'breadcrumbs' => [
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Office Shifting in ' . $city]
+    ]
 ]); 
 ?>
 

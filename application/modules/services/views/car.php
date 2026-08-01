@@ -1,11 +1,12 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
+    'bc_eyebrow' => 'SAFE • RELIABLE • VEHICLE CARRIER',
     'bc_h1' => 'Car Transportation',
-    'bc_desc' => 'Car Transportation Services',
+    'bc_desc' => 'Professional car carrier & enclosed vehicle transport services across India with zero damage guarantee.',
     'breadcrumbs' => [
+        ['name' => 'Services', 'url' => site_url('our-services')],
         ['name' => 'Car Transportation']
     ]
 ]);
@@ -19,11 +20,8 @@
             <div class="col-lg-12">
                 <div class="service-main-content">
 
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

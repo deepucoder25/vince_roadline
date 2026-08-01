@@ -3,10 +3,13 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
-    'bc_title_white' => 'Car Transportation in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_eyebrow' => 'SAFE • RELIABLE • VEHICLE CARRIER',
+    'bc_h1' => 'Car Transportation in ' . $city,
+    'bc_desc' => 'Professional car carrier & enclosed vehicle transport services in ' . $city . ' with zero damage guarantee.',
+    'breadcrumbs' => [
+        ['name' => 'Services', 'url' => site_url('our-services')],
+        ['name' => 'Car Transportation in ' . $city]
+    ]
 ]); 
 ?>
 
