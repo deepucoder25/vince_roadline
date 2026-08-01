@@ -1,69 +1,117 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
+<!-- Dynamic Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => 'Video Gallery',
-    'bc_title_white' => 'Video',
-    'bc_title_orange' => 'Gallery',
-    'bc_desc' => 'Watch our step-by-step cargo handling processes, transport safety standards, and global freight forwarding in action.'
+    'bc_eyebrow' => 'LIVE WORK VIDEOS • PACKING DEMOS • CARRIER LOADING IN ACTION',
+    'bc_h1' => 'Video Gallery',
+    'bc_desc' => 'Watch live field videos of our multi-layer bubble packing, hydraulic car carrier loading, and safe household relocation procedures at Vince Roadline.',
+    'breadcrumbs' => [
+        ['name' => 'Video Gallery']
+    ]
 ]); 
 ?>
 
-<!-- Main Page Content Section -->
-<section class="service-details-section mb-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <!-- Left Side Content -->
-            <div class="col-lg-8">
-                <div class="service-main-content">
-                    
-                    <h2 class="service-section-title">Logistics Process Videos</h2>
-                    <div class="about-service-text mb-4">
-                        <p>
-                            At <strong><?= $company3 ?></strong>, we maintain complete transparency in our logistics operations. Watch our field videos to see how our trained professionals handle heavy-duty cargo loading, customs clearance, and safe global transportation to ensure a worry-free shipping experience.
-                        </p>
-                    </div>
+<!-- Main Video Gallery Section -->
+<section class="vrl-gallery-section py-5">
+  <div class="container">
 
-                    <!-- Videos Grid -->
-                    <div class="row">
-                        <?php if(!empty($videos)): ?>
-                            <?php foreach($videos as $video): ?>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden gallery-video-card">
-                                    <div class="ratio ratio-16x9">
-                                        <iframe src="<?= $video->video_url ?>" title="<?= $video->title ?>" allowfullscreen class="border-0"></iframe>
-                                    </div>
-                                    <div class="card-body p-3">
-                                        <h5 class="fw-bold mb-1 gallery-title-sm"><?= $video->title ?></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php endforeach; ?>
-                        <?php else: ?>
-                            <div class="col-12 text-center text-muted">
-                                <p>No videos available in the gallery.</p>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-
-                    <!-- Quality commitment banner -->
-                    <div class="p-4 bg-light border-start border-5 border-success rounded-3 mt-4">
-                        <h5 class="fw-bold text-success mb-2">Our Video Guidelines</h5>
-                        <p class="mb-0 text-muted small">
-                            All video clips shown are recorded on-site during actual shifting operations. We do not use simulated or stock footage, ensuring that what you see represents the true quality of service you will receive.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Right Side Sticky Sidebar -->
-            <div class="col-lg-4">
-                <?php $this->load->view('about/company_sidebar', ['active_link' => 'video-gallery']); ?>
-            </div>
-        </div>
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="vrl-about-tag mb-2">
+        <i class="bi bi-play-btn-fill me-1"></i> Live Operational Footage
+      </span>
+      <h2 class="vrl-about-title mb-2">
+        Relocation &amp; Packing <span class="vrl-about-highlight">In Action</span>
+      </h2>
+      <p class="text-muted fs-6 mx-auto vrl-contact-subtitle-max">
+        At Vince Roadline, we maintain 100% transparency. Watch our authentic video clips recorded live during real shifting operations across India.
+      </p>
     </div>
+
+    <!-- Video Grid Container -->
+    <div class="row g-4 mb-5">
+
+      <!-- ================= DYNAMIC DATABASE VIDEOS FROM ADMIN PANEL ================= -->
+      <?php if (!empty($videos)): ?>
+        <?php foreach ($videos as $video): ?>
+          <?php
+            $title = !empty($video->title) ? htmlspecialchars($video->title) : 'Vince Roadline Relocation Video';
+            $video_url = $video->video_url ?? '';
+          ?>
+          <div class="col-lg-6 col-12">
+            <div class="vrl-gallery-card">
+              <div class="ratio ratio-16x9">
+                <iframe src="<?= $video_url ?>" title="<?= $title ?>" allowfullscreen class="border-0"></iframe>
+              </div>
+              <div class="vrl-gallery-info">
+                <div>
+                  <h5 class="vrl-gallery-title"><?= $title ?></h5>
+                  <span class="vrl-gallery-sub">
+                    <i class="bi bi-shield-check text-danger me-1"></i> Authentic On-Site Footage
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+
+      <!-- ================= SHOWCASE RELOCATION OPERATIONAL VIDEOS ================= -->
+      
+      <!-- Video 1: Household Packing -->
+      <div class="col-lg-6 col-12">
+        <div class="vrl-gallery-card">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Household Furniture 5-Layer Packing Demo" allowfullscreen class="border-0"></iframe>
+          </div>
+          <div class="vrl-gallery-info">
+            <div>
+              <h5 class="vrl-gallery-title">Household Furniture 5-Layer Packing Demo</h5>
+              <span class="vrl-gallery-sub"><i class="bi bi-shield-check text-danger me-1"></i> Live Bubble Wrap &amp; Cushion Guarding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2: Car Carrier Loading -->
+      <div class="col-lg-6 col-12">
+        <div class="vrl-gallery-card">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Hydraulic Ramp Car Loading &amp; Wheel Securing" allowfullscreen class="border-0"></iframe>
+          </div>
+          <div class="vrl-gallery-info">
+            <div>
+              <h5 class="vrl-gallery-title">Hydraulic Ramp Car Loading &amp; Wheel Securing</h5>
+              <span class="vrl-gallery-sub"><i class="bi bi-shield-check text-danger me-1"></i> Enclosed Car Carrier Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quality Commitment Banner -->
+    <div class="vrl-about-cta-card p-4 p-md-5 text-center text-md-start">
+      <div class="row align-items-center g-4 position-relative z-2">
+        <div class="col-lg-8">
+          <span class="badge bg-warning text-dark fw-bold px-3 py-1.5 rounded-pill mb-2 fs-7">100% Real Field Footage</span>
+          <h3 class="fw-bold text-white mb-2 fs-3">Want your goods shifted with zero hassle?</h3>
+          <p class="text-white-50 mb-0 fs-6">All video clips shown are recorded on-site during actual shifting operations across India.</p>
+        </div>
+
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
+            <a href="<?= $phonehtml ?>" class="btn vrl-about-cta-btn-call rounded-pill text-decoration-none d-inline-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-telephone-fill text-danger"></i> Call <?= htmlspecialchars($phone) ?>
+            </a>
+            <button type="button" class="btn vrl-about-cta-btn-quote rounded-pill d-inline-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+              <i class="bi bi-calculator-fill"></i> Get Free Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
-
-
