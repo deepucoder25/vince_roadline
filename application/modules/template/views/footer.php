@@ -151,11 +151,10 @@
     <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
     <span>Call Now</span>
   </a>
-  <a href="<?= $floatingWhatsappLink ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank"
-    rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
-    <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
-    <span>WhatsApp Us</span>
-  </a>
+  <button type="button" class="float-btn float-quote" title="Get Quote" data-bs-toggle="modal" data-bs-target="#qteModal" aria-label="Get Free Quote from <?= $company3 ?>">
+    <div class="icon-wrap"><i class="bi bi-calculator-fill"></i></div>
+    <span>Get Quote</span>
+  </button>
 </div>
 
 <?php $this->load->view('contacts/quotemodal'); ?>
