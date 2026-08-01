@@ -90,9 +90,9 @@ $faqs_list = [
       <div class="vrl-faq-capsule">
         <div class="row g-3 align-items-center">
 
-          <!-- Item 1: Still Have Questions / Call -->
-          <div class="col-lg col-md-6 col-12 vrl-faq-capsule-divider">
-            <div class="vrl-faq-capsule-item">
+          <!-- Item 1: Still Have Questions / Call (Full width on mobile, auto on desktop) -->
+          <div class="col-12 col-lg vrl-faq-capsule-divider">
+            <div class="vrl-faq-capsule-item justify-content-center justify-content-lg-start">
               <a href="<?= $phonehtml ?>" class="vrl-faq-call-btn" aria-label="Call Us">
                 <i class="bi bi-telephone-fill"></i>
               </a>
@@ -103,8 +103,8 @@ $faqs_list = [
             </div>
           </div>
 
-          <!-- Item 2: Safe & Secure -->
-          <div class="col-lg col-md-6 col-12 vrl-faq-capsule-divider">
+          <!-- Feature 1: Safe & Secure (2-2 grid on mobile) -->
+          <div class="col-6 col-md-6 col-lg vrl-faq-capsule-divider">
             <div class="vrl-faq-capsule-item">
               <div class="vrl-faq-feature-icon">
                 <i class="bi bi-shield-check"></i>
@@ -116,8 +116,8 @@ $faqs_list = [
             </div>
           </div>
 
-          <!-- Item 3: On Time Delivery -->
-          <div class="col-lg col-md-6 col-12 vrl-faq-capsule-divider">
+          <!-- Feature 2: On Time Delivery (2-2 grid on mobile) -->
+          <div class="col-6 col-md-6 col-lg vrl-faq-capsule-divider">
             <div class="vrl-faq-capsule-item">
               <div class="vrl-faq-feature-icon">
                 <i class="bi bi-clock"></i>
@@ -129,8 +129,8 @@ $faqs_list = [
             </div>
           </div>
 
-          <!-- Item 4: Experienced Team -->
-          <div class="col-lg col-md-6 col-12 vrl-faq-capsule-divider">
+          <!-- Feature 3: Experienced Team (2-2 grid on mobile) -->
+          <div class="col-6 col-md-6 col-lg vrl-faq-capsule-divider">
             <div class="vrl-faq-capsule-item">
               <div class="vrl-faq-feature-icon">
                 <i class="bi bi-people"></i>
@@ -142,8 +142,8 @@ $faqs_list = [
             </div>
           </div>
 
-          <!-- Item 5: Customer Satisfaction -->
-          <div class="col-lg col-md-6 col-12">
+          <!-- Feature 4: Customer Satisfaction (2-2 grid on mobile) -->
+          <div class="col-6 col-md-6 col-lg">
             <div class="vrl-faq-capsule-item">
               <div class="vrl-faq-feature-icon">
                 <i class="bi bi-award"></i>
