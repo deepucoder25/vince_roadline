@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Vince Roadline Contact Page Module (contact_modules.css)
-   Includes: Office Address Cards Enhancements & Form Input Styling
+   Vince Roadline Contact Page Module & Modal (contact_modules.css)
+   Includes: Office Address Cards, Form Input Groups, and Compact Quote Modal Styles
    Uses Brand CSS Variables from navigation.css
    ========================================================================== */
 
@@ -227,11 +227,12 @@
     padding-left: 16px;
 }
 
-/* Stylish Form Input Groups */
+/* Stylish Form Input Groups & Error Handling */
 .vrl-input-group-stylish {
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
-    border-radius: 16px;
+    border-radius: 14px;
     border: 1.5px solid var(--vrl-border-light, #eef0f3);
     background-color: var(--vrl-white, #ffffff);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
@@ -245,15 +246,32 @@
     transform: translateY(-2px);
 }
 
+/* Error State Highlights */
+.vrl-input-group-stylish:has(input.error),
+.vrl-input-group-stylish:has(select.error),
+.vrl-input-group-stylish:has(textarea.error),
+.vrl-input-group-stylish.has-error {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15) !important;
+}
+
+.vrl-input-group-stylish:has(input.error) .vrl-input-addon,
+.vrl-input-group-stylish:has(select.error) .vrl-input-addon,
+.vrl-input-group-stylish:has(textarea.error) .vrl-input-addon {
+    background-color: #f8d7da !important;
+    color: #dc3545 !important;
+    border-right-color: rgba(220, 53, 69, 0.2) !important;
+}
+
 .vrl-input-addon {
-    width: 52px;
+    width: 48px;
     background-color: var(--vrl-hover-red-bg, #fff5f5);
     border-right: 1px solid var(--vrl-border-light, #eef0f3);
     color: var(--vrl-primary-red, #D60412);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     flex-shrink: 0;
     transition: all 0.3s ease;
 }
@@ -269,11 +287,13 @@
     outline: none !important;
     box-shadow: none !important;
     background: transparent !important;
-    padding: 14px 18px;
-    font-size: 0.95rem;
+    padding: 11px 15px;
+    font-size: 0.92rem;
     font-weight: 500;
     color: var(--vrl-dark-text, #111111);
-    width: 100%;
+    flex: 1 1 auto;
+    width: 1% !important;
+    min-width: 0;
 }
 
 .vrl-input-field::placeholder {
@@ -281,14 +301,30 @@
     font-weight: 400;
 }
 
+/* jQuery Validation Error Label Styling */
+.vrl-input-group-stylish label.error,
+.vrl-input-group-stylish span.error,
+label.error {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0;
+    padding: 6px 14px;
+    background-color: #fff0f1;
+    border-top: 1px solid rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+}
+
 .vrl-contact-submit-btn {
     background: linear-gradient(135deg, var(--vrl-primary-red, #D60412) 0%, var(--vrl-primary-red-dark, #b8030f) 100%);
     color: var(--vrl-white, #ffffff);
     border: none;
     border-radius: 50px;
-    padding: 16px 32px;
+    padding: 13px 28px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     box-shadow: 0 8px 24px rgba(214, 4, 18, 0.25);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -296,13 +332,98 @@
 
 .vrl-contact-submit-btn:hover {
     background: linear-gradient(135deg, var(--vrl-primary-red-dark, #b8030f) 0%, #90000a 100%);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(214, 4, 18, 0.35);
+}
+
+/* Custom Compact Quote Modal Styling */
+.vrl-modal-dialog-custom {
+    max-width: 540px;
+    margin: 1.25rem auto;
+}
+
+.vrl-modal-content-custom {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+}
+
+.vrl-modal-header-custom {
+    background: linear-gradient(135deg, var(--vrl-primary-red, #D60412) 0%, var(--vrl-primary-red-dark, #b8030f) 100%);
+    padding: 18px 24px;
+    position: relative;
+}
+
+.vrl-modal-header-badge {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--vrl-accent-yellow, #FFB800);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.72rem;
+    display: inline-block;
+}
+
+.vrl-modal-close-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.vrl-modal-close-btn:hover {
+    background: #ffffff;
+    color: var(--vrl-primary-red, #D60412);
+    transform: rotate(90deg);
+}
+
+.vrl-modal-body-custom {
+    padding: 18px 22px;
+}
+
+.vrl-modal-body-custom .vrl-input-addon {
+    width: 42px;
+    font-size: 0.95rem;
+}
+
+.vrl-modal-body-custom .vrl-input-field {
+    padding: 8px 12px;
+    font-size: 0.88rem;
+}
+
+.vrl-modal-clear-btn {
+    background: transparent;
+    border: 1.5px solid var(--vrl-border-light, #eef0f3);
+    color: var(--vrl-body-text, #666666);
+    border-radius: 50px;
+    padding: 11px 22px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.vrl-modal-clear-btn:hover {
+    background-color: var(--vrl-light-bg, #fcfcfc);
+    color: var(--vrl-dark-text, #111111);
+    border-color: #ccc;
 }
 
 /* Responsiveness */
 @media (max-width: 991.98px) {
     .vrl-contact-form-card, .vrl-contact-light-card, .vrl-contact-office-card {
-        padding: 26px 20px;
+        padding: 24px 18px;
     }
 }

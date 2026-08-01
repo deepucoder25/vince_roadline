@@ -1,68 +1,109 @@
-<div class="modal fade contact-custom-modal" id="qteModal" tabindex="-1" role="dialog" aria-labelledby="qteModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="contact-form-header">
-                <span>Get a free quote</span>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="setClose()">
-                    <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+<div class="modal fade" id="qteModal" tabindex="-1" role="dialog" aria-labelledby="qteModalLabel" aria-hidden="true">
+    <div class="modal-dialog vrl-modal-dialog-custom modal-dialog-centered" role="document">
+        <div class="modal-content vrl-modal-content-custom">
+            
+            <!-- Modal Header -->
+            <div class="vrl-modal-header-custom d-flex align-items-center justify-content-between">
+                <div>
+                    <span class="vrl-modal-header-badge mb-1">
+                        <i class="bi bi-calculator-fill me-1"></i> FAST SHIFTING ESTIMATE
+                    </span>
+                    <h4 class="modal-title fw-bold text-white mb-0 fs-5" id="qteModalLabel">Get A Free Moving Quote</h4>
+                </div>
+                <button type="button" class="vrl-modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
                 </button>
             </div>
-            <form id="quotemodal" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="resultquotemodal" onsubmit="return false;">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-person-badge"></i>
-                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+
+            <!-- Modal Body -->
+            <div class="vrl-modal-body-custom">
+                <p class="text-muted small mb-3 fs-8">Fill in your move details below for an instant price quote from Vince Roadline.</p>
+
+                <form id="quotemodal" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="resultquotemodal" onsubmit="return false;">
+                    <div class="row g-2.5">
+                        
+                        <!-- Full Name -->
+                        <div class="col-md-6 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Your Name <span class="text-danger">*</span></label>
+                            <div class="vrl-input-group-stylish">
+                                <div class="vrl-input-addon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <input type="text" class="vrl-input-field" name="name" placeholder="e.g. Rahul Sharma" required>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-phone-vibrate"></i>
-                                <input type="tel" class="form-control" name="phone" placeholder="Mobile Number">
+
+                        <!-- Mobile Number -->
+                        <div class="col-md-6 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Mobile Number <span class="text-danger">*</span></label>
+                            <div class="vrl-input-group-stylish">
+                                <div class="vrl-input-addon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <input type="tel" class="vrl-input-field" name="phone" placeholder="e.g. 9876543210" required>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-envelope-at"></i>
-                                <input type="text" class="form-control" name="email" placeholder="Your Email">
+
+                        <!-- Email Address -->
+                        <div class="col-12 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Email Address</label>
+                            <div class="vrl-input-group-stylish">
+                                <div class="vrl-input-addon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <input type="email" class="vrl-input-field" name="email" placeholder="e.g. rahul@example.com">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <input type="text" class="form-control" name="mfrom" placeholder="From City">
+
+                        <!-- From City -->
+                        <div class="col-6 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Pickup City <span class="text-danger">*</span></label>
+                            <div class="vrl-input-group-stylish">
+                                <div class="vrl-input-addon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <input type="text" class="vrl-input-field" name="mfrom" placeholder="e.g. Delhi / Bengaluru" required>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-map-fill"></i>
-                                <input type="text" class="form-control" name="mto" placeholder="To City">
+
+                        <!-- To City -->
+                        <div class="col-6 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Destination City <span class="text-danger">*</span></label>
+                            <div class="vrl-input-group-stylish">
+                                <div class="vrl-input-addon">
+                                    <i class="bi bi-pin-map-fill"></i>
+                                </div>
+                                <input type="text" class="vrl-input-field" name="mto" placeholder="e.g. Mumbai / Hisar" required>
                             </div>
                         </div>
+
+                        <!-- Requirements Message -->
+                        <div class="col-12 mb-2">
+                            <label class="form-label fw-bold text-dark fs-8 mb-1">Relocation Details</label>
+                            <div class="vrl-input-group-stylish align-items-start">
+                                <div class="vrl-input-addon pt-2">
+                                    <i class="bi bi-chat-left-text-fill"></i>
+                                </div>
+                                <textarea name="message" rows="2" class="vrl-input-field" placeholder="Describe items to move, preferred moving date..."></textarea>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-           <div class="form-group">
-    <div class="form-icon">
-        <i class="bi bi-chat-left-text"></i>
-        <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Describe your relocation needs..."></textarea>
-    </div>
-</div>
-                <div class="d-flex justify-content-center mt-2 contact-quote-gap">
-                    <button id="submitbquotemodal" type="submit" class="theme-btn">Get My Free Quote <i class="bi bi-send-fill"></i></button>
-                    <button onclick="document.getElementById('resultquotemodal').innerHTML = '';" type="reset" class="theme-btn">Clear Form</button>
-                </div>
- 
-                <div id="resultquotemodal"></div>
-            </form>
+
+                    <!-- Modal Actions -->
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-end gap-2 mt-3">
+                        <button type="reset" class="vrl-modal-clear-btn w-100 w-sm-auto order-2 order-sm-1" onclick="document.getElementById('resultquotemodal').innerHTML = '';">
+                            Clear Form
+                        </button>
+                        <button id="submitbquotemodal" type="submit" class="vrl-contact-submit-btn w-100 w-sm-auto order-1 order-sm-2 d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-send-fill"></i> Get My Free Quote
+                        </button>
+                    </div>
+
+                    <div id="resultquotemodal" class="mt-2"></div>
+                </form>
+            </div>
+
         </div>
     </div>
-</div>
+</div>
