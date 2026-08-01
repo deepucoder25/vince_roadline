@@ -1299,22 +1299,24 @@
     object-fit: cover;
 }
 
-.vrl-testimonial-text {
+.vrl-testimonial-card-inner .vrl-testimonial-text {
     font-style: italic;
-    color: #333333;
+    color: #222222 !important;
     font-size: 14.5px;
     line-height: 1.55;
     font-weight: 500;
     margin-bottom: 22px;
     flex-grow: 1;
+    text-shadow: none !important;
 }
 
 .vrl-testimonial-author {
-    color: var(--vrl-primary-red);
+    color: var(--vrl-primary-red) !important;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 6px;
+    text-shadow: none !important;
 }
 
 .vrl-testimonial-stars {

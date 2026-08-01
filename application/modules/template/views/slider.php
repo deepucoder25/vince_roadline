@@ -60,12 +60,12 @@
                 <i class="bi bi-star-fill text-warning"></i>
                 <i class="bi bi-star-fill text-warning"></i>
               </div>
-              <p class="vrl-testimonial-text mb-2">
+              <p class="vrl-testimonial-text mb-2 text-white fw-medium">
                 "The team was professional, on-time and handled everything with care."
               </p>
               <div class="d-flex align-items-center gap-2">
                 <div class="vrl-avatar-initial">R</div>
-                <span class="vrl-testimonial-name">— Rajesh Verma</span>
+                <span class="vrl-testimonial-name text-white fw-bold">— Rajesh Verma</span>
               </div>
             </div>
 
