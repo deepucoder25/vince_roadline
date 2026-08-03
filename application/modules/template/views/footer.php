@@ -115,13 +115,13 @@
     </div>
   </div>
 
-  <!-- Floating Action Buttons (Dual Capsule Badge: Call Now + Get Quote Horizontal Row) -->
+  <!-- Floating Action Buttons (Dual Capsule Badge: WhatsApp + Get Quote Horizontal Row) -->
   <div class="floating-actions d-flex">
-    <a href="<?= $phonehtml ?>" class="float-btn float-call">
+    <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="float-btn float-whatsapp">
       <div class="icon-wrap">
-        <i class="bi bi-telephone-fill"></i>
+        <i class="bi bi-whatsapp"></i>
       </div>
-      <span>Call Now</span>
+      <span>WhatsApp</span>
     </a>
     <button type="button" class="float-btn float-quote" data-bs-toggle="modal" data-bs-target="#qteModal" data-toggle="modal" data-target="#qteModal">
       <div class="icon-wrap">

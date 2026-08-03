@@ -217,16 +217,19 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+.float-btn.float-whatsapp,
 .float-btn.float-call {
-    background: linear-gradient(135deg, #D60412 0%, #b8030f 100%) !important;
-    box-shadow: 0 4px 14px rgba(214, 4, 18, 0.4) !important;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
 }
 
+.float-btn.float-whatsapp:hover,
 .float-btn.float-call:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 22px rgba(214, 4, 18, 0.6) !important;
+    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.6) !important;
 }
 
+.float-btn.float-whatsapp .icon-wrap,
 .float-btn.float-call .icon-wrap {
     animation: vrlPulseCall 2s infinite;
 }
