@@ -27,7 +27,7 @@
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of logistics excellence and <?= number_format($clients_num) ?>+ successful moves, our background-verified moving crews use heavy-duty lifting straps, hydraulic ramps, corner wall protectors, and wheel dollies to ensure zero scratches or structural damage.
+        With over <?= $yearsExperience ?> years of logistics excellence and <?= $happyClients ?> successful moves, our background-verified moving crews use heavy-duty lifting straps, hydraulic ramps, corner wall protectors, and wheel dollies to ensure zero scratches or structural damage.
       </p>
 
       <!-- 3 Feature Check Pills -->

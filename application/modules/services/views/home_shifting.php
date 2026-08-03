@@ -27,7 +27,7 @@
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of expertise and <?= number_format($clients_num) ?>+ happy families relocated, our trained move specialists handle every aspect of your shift — from 3-layer bubble packaging of fragile crockery and electronic appliances to disassembly, container transport, unpacking, and room placement.
+        With over <?= $yearsExperience ?> years of expertise and <?= $happyClients ?> happy families relocated, our trained move specialists handle every aspect of your shift — from 3-layer bubble packaging of fragile crockery and electronic appliances to disassembly, container transport, unpacking, and room placement.
       </p>
 
       <!-- 3 Feature Check Pills -->

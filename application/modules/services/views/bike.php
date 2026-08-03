@@ -27,7 +27,7 @@
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of experience and <?= number_format($happyClients) ?> vehicles delivered, our move specialists utilize multi-layer bubble wrapping, customized wooden crate packaging, enclosed container trucks, and 24x7 live GPS tracking to ensure zero-scratch delivery.
+        With over <?= $yearsExperience ?> years of experience and <?= $happyClients ?> vehicles delivered, our move specialists utilize multi-layer bubble wrapping, customized wooden crate packaging, enclosed container trucks, and 24x7 live GPS tracking to ensure zero-scratch delivery.
       </p>
 
       <!-- 3 Feature Check Pills -->

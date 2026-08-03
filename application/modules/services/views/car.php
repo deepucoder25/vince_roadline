@@ -27,7 +27,7 @@
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of logistics excellence and <?= number_format($clients_num) ?>+ vehicles safely delivered, our specialized multi-car hydraulic car carriers are equipped with safety ramps, rubber bumper guards, wheel locks, and 24x7 live GPS tracking to guarantee zero damage.
+        With over <?= $yearsExperience ?> years of logistics excellence and <?= $happyClients ?> vehicles safely delivered, our specialized multi-car hydraulic car carriers are equipped with safety ramps, rubber bumper guards, wheel locks, and 24x7 live GPS tracking to guarantee zero damage.
       </p>
 
       <!-- 3 Feature Check Pills -->

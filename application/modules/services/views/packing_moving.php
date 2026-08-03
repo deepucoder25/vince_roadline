@@ -27,7 +27,7 @@
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of packing mastery and <?= number_format($clients_num) ?>+ successful moves, our trained packing crew uses heavy-duty 3-layer bubble wrap, corrugated cardboard sheets, edge foam protectors, stretch film, and custom wooden crating to guarantee 100% safety.
+        With over <?= $yearsExperience ?> years of packing mastery and <?= $happyClients ?> successful moves, our trained packing crew uses heavy-duty 3-layer bubble wrap, corrugated cardboard sheets, edge foam protectors, stretch film, and custom wooden crating to guarantee 100% safety.
       </p>
 
       <!-- 3 Feature Check Pills -->
