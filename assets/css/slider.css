@@ -467,11 +467,15 @@
 }
 
 @media (max-width: 991.98px) {
+    .home-page-slider {
+        background-position: center center;
+    }
+
     .home-page-slider::before {
         background: linear-gradient(180deg,
-                #141414 0%,
-                rgba(20, 20, 20, 0.85) 60%,
-                #141414 100%);
+                rgba(0, 0, 0, 0.45) 0%,
+                rgba(0, 0, 0, 0.25) 50%,
+                rgba(0, 0, 0, 0.55) 100%);
     }
 
     .vrl-feature-divider {

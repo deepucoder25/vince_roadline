@@ -1084,7 +1084,7 @@
 /* VRL TESTIMONIALS SECTION */
 
 .vrl-testimonial-section {
-    background-color: var(--vrl-top-bg, #0e0e0e);
+    background-color: #16181e;
     position: relative;
     overflow: hidden;
     color: var(--vrl-white);
@@ -1095,23 +1095,22 @@
 }
 
 .vrl-testimonial-section .vrl-sec-subtitle {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .vrl-testimonial-truck-bg {
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
-    max-width: 550px;
+    width: 60%;
+    max-width: 650px;
     height: 100%;
     background-image: url('../images/services_modules/packing_unpacking.jpg');
     background-size: cover;
     background-position: center right;
-    opacity: 0.18;
-    mix-blend-mode: luminosity;
-    mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0.55;
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
     pointer-events: none;
     z-index: 1;
 }

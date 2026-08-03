@@ -3,8 +3,12 @@
    ========================================================================== */
 
 .vrl-footer {
-    background-color: #0f1012;
-    color: #a0aec0;
+    background-color: #16181e;
+    background-image: linear-gradient(180deg, rgba(22, 24, 30, 0.78) 0%, rgba(22, 24, 30, 0.88) 100%), url('../images/home_modules/footer_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #cbd5e1;
     position: relative;
     overflow: hidden;
     font-family: 'Outfit', sans-serif;
@@ -17,7 +21,7 @@
     left: 0;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(214, 4, 18, 0.08) 0%, rgba(15, 16, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(214, 4, 18, 0.12) 0%, rgba(22, 24, 30, 0) 70%);
     pointer-events: none;
 }
 
@@ -27,7 +31,7 @@
     right: 0;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(255, 184, 0, 0.06) 0%, rgba(15, 16, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 184, 0, 0.1) 0%, rgba(22, 24, 30, 0) 70%);
     pointer-events: none;
 }
 
@@ -40,7 +44,7 @@
 .vrl-footer-desc {
     font-size: 0.92rem;
     line-height: 1.6;
-    color: #94a3b8;
+    color: #e2e8f0;
 }
 
 .vrl-footer-title {
@@ -151,7 +155,7 @@
 /* Copyright Strip (Red Top Line Border) */
 .vrl-footer-copyright-bar {
     border-top: 1.5px solid #D60412 !important;
-    background-color: #0b0c0e !important;
+    background-color: #111317 !important;
     font-size: 0.88rem !important;
     letter-spacing: 0.3px !important;
 }
