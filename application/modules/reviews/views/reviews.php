@@ -17,7 +17,7 @@
                     <h3 class="m-0" class="reviews-header-title">
                         <i class="bi bi-chat-left-quote me-2"></i>Customer Experiences
                     </h3>
-                    <button class="btn btn-primary rounded-pill px-4 shadow-sm" class="reviews-write-btn" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                    <button class="btn btn-primary rounded-pill px-4 shadow-sm" class="reviews-write-btn" data-bs-toggle="modal" data-bs-target="#rvwmdl">
                         <i class="bi bi-pencil-square me-1"></i> Write a Review
                     </button>
                     <div class="reviews-header-line"></div>
@@ -142,5 +142,7 @@ function openImageModal(src) {
     myModal.show();
 }
 </script>
+
+<?php $this->load->view('reviews/reviewmodal'); ?>
 
 </main>

@@ -2,16 +2,24 @@
 app.controller('ctrl_reviews',function($scope,$http){
 	$http.get('login/check_valid_session').success (function(data) {if(data!=1){window.location.assign('<?=site_url("login")?>');}});
 	
-	$http.get("reviews/view_data").success(function(data){
-		$scope.datadb=data;
-	})
+	function loadReviews() {
+		$http.get("reviews/view_data").success(function(data){
+			$scope.datadb=data;
+		});
+	}
+
+	loadReviews();
+
 	$scope.editForm={};
+
 	$scope.update=function(rid,st){
 		$http.get("reviews/save?id="+rid+"&status="+st).success(function(data){
 			console.log(data);
-			messages("success", "Success!","Review Updated Successfully", 3000);
-		})
-	}
+			loadReviews();
+			messages("success", "Success!","Review Status Updated Successfully", 3000);
+		});
+	};
+
 	$scope.openEdit=function(r){
 		$scope.editForm={
 			r_id: r.r_id,
@@ -25,7 +33,8 @@ app.controller('ctrl_reviews',function($scope,$http){
 			status: r.st
 		};
 		$("#reviewEditModal").modal("show");
-	}
+	};
+
 	$scope.saveEdit=function(){
 		var fd = new FormData();
 		angular.forEach($scope.editForm, function(val, key){
@@ -36,21 +45,17 @@ app.controller('ctrl_reviews',function($scope,$http){
 			headers: {'Content-Type': undefined}
 		}).success(function(data){
 			$("#reviewEditModal").modal("hide");
-			$http.get("reviews/view_data").success(function(data){
-				$scope.datadb=data;
-			})
+			loadReviews();
 			messages("success", "Success!","Review Updated Successfully", 3000);
-		})
-	}
+		});
+	};
+
 	$scope.deleteReview=function(rid){
 		if(confirm("Delete this review? This cannot be undone.")){
 			$http.get("reviews/delete_data?id="+rid).success(function(data){
-				$http.get("reviews/view_data").success(function(data){
-					$scope.datadb=data;
-				})
+				loadReviews();
 				messages("success", "Success!","Review Deleted Successfully", 3000);
-			})
+			});
 		}
-	}
-	
+	};
 });

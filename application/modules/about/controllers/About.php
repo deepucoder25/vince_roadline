@@ -33,6 +33,12 @@ class About extends MX_Controller
 
     function testimonials()
     {
+        $this->load->database();
+        $this->db->order_by('r_id', 'desc');
+        $this->db->where('status', 1);
+        $query = $this->db->get('reviews');
+        $data['db_reviews'] = $query->result_array();
+
         $data['title'] = "Customer Reviews & Testimonials | " . $this->comp['company3'];
         $data['description'] = "Read genuine client testimonials and feedback about " . $this->comp['company3'] . " home shifting, vehicle transportation, and office relocation services.";
         $data['keywords'] = "packers movers reviews, customer feedback, client testimonials, " . $this->comp['company3'] . " ratings";
@@ -65,4 +71,3 @@ class About extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 }
-

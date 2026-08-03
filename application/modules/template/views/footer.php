@@ -33,7 +33,6 @@
           <h5 class="vrl-footer-title">QUICK LINKS</h5>
           <ul class="vrl-footer-links">
             <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
-            <li><a href="<?= site_url('tracking') ?>"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Track Shipment</a></li>
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
             <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right me-1"></i> Why Choose Us</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chevron-right me-1"></i> Testimonials</a></li>
@@ -51,7 +50,7 @@
           <ul class="vrl-footer-links">
             <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-house-door me-2"></i> Household Shifting</a></li>
             <li><a href="<?= site_url('office-relocation') ?>"><i class="bi bi-building me-2"></i> Office Relocation</a></li>
-            <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front me-2"></i> Vehicle Transportation</a></li>
+            <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front me-2"></i> Car Transportation</a></li>
             <li><a href="<?= site_url('packing-and-moving') ?>"><i class="bi bi-box-seam me-2"></i> Packing &amp; Unpacking</a></li>
             <li><a href="<?= site_url('loading-unloading') ?>"><i class="bi bi-truck-flatbed me-2"></i> Loading &amp; Unloading</a></li>
             <li><a href="<?= site_url('bike-transportation') ?>"><i class="bi bi-archive me-2"></i> Bike Transportation</a></li>
@@ -64,7 +63,7 @@
         <div class="vrl-footer-col">
           <h5 class="vrl-footer-title">USEFUL LINKS</h5>
           <ul class="vrl-footer-links">
-            <li><a href="<?= site_url('tracking') ?>"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Live Tracking</a></li>
+            <li><a href="<?= site_url('tracking') ?>"><i class="bi bi-chevron-right me-1"></i> Track Shipment</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right me-1"></i> Blog</a></li>
@@ -124,7 +123,7 @@
       </div>
       <span>Call Now</span>
     </a>
-    <button type="button" class="float-btn float-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+    <button type="button" class="float-btn float-quote" data-bs-toggle="modal" data-bs-target="#qteModal" data-toggle="modal" data-target="#qteModal">
       <div class="icon-wrap">
         <i class="bi bi-calculator-fill"></i>
       </div>
@@ -132,3 +131,9 @@
     </button>
   </div>
 </footer>
+
+<!-- Global Quote Modal -->
+<?php $this->load->view('contacts/quotemodal'); ?>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

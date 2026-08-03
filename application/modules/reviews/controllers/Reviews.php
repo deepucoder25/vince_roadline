@@ -77,6 +77,7 @@ class Reviews extends MX_Controller
             $this->load->database();
             
             $email = $this->input->post('email');
+            $redirect_url = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : site_url('testimonials');
             
             // Check if email already exists
             $this->db->where('email', $email);
@@ -84,7 +85,7 @@ class Reviews extends MX_Controller
             
             if ($existing->num_rows() > 0) {
                 $this->session->set_flashdata('error', 'You have already submitted a review with this email address.');
-                redirect('reviews');
+                redirect($redirect_url);
                 return;
             }
             
@@ -109,12 +110,10 @@ class Reviews extends MX_Controller
                         
                         $allowed_mimes = ['image/jpeg', 'image/png', 'image/webp', 'image/jpg'];
                         if (in_array($mime, $allowed_mimes)) {
-                            // Convert everything to jpg for simplicity and compression
                             $new_name = uniqid('rev_') . '.jpg';
                             $dest = $upload_path . $new_name;
                             
                             if ($size > 150000) {
-                                // Compress and resize if over 150KB
                                 $info = getimagesize($tmp_name);
                                 if ($info) {
                                     $image = null;
@@ -123,7 +122,6 @@ class Reviews extends MX_Controller
                                     elseif ($mime == 'image/webp') $image = @imagecreatefromwebp($tmp_name);
                                     
                                     if ($image) {
-                                        // Handle PNG transparency to white background
                                         if ($mime == 'image/png' || $mime == 'image/webp') {
                                             $bg = imagecreatetruecolor(imagesx($image), imagesy($image));
                                             imagefill($bg, 0, 0, imagecolorallocate($bg, 255, 255, 255));
@@ -148,8 +146,6 @@ class Reviews extends MX_Controller
                                     }
                                 }
                             } else {
-                                // If it's small enough but not a jpeg, we still rename it to jpg but we should convert it
-                                // Or we just keep the original extension if it's small. Let's keep original extension.
                                 $ext = pathinfo($name, PATHINFO_EXTENSION);
                                 $new_name = uniqid('rev_') . '.' . $ext;
                                 $dest = $upload_path . $new_name;
@@ -162,14 +158,16 @@ class Reviews extends MX_Controller
             }
             
             $r_img_val = implode(',', $uploaded_images);
+            $service_type = $this->input->post('r_type') ? $this->input->post('r_type') : 'Household Shifting';
             
             $data = array(
                 'name' => $this->input->post('name'),
                 'email' => $this->input->post('email'),
-                'r_title' => $this->input->post('city'), // We use r_title to store city
+                'r_title' => $this->input->post('city'),
+                'r_type' => $service_type,
                 'r_desc' => $this->input->post('review'),
                 'stars' => (int) $this->input->post('rating'),
-                'status' => 1, // Auto approve (direct show)
+                'status' => 1, // Visible on website by default
                 'b_id' => 0,
                 'r_img' => $r_img_val,
                 'views' => 0,
@@ -179,7 +177,7 @@ class Reviews extends MX_Controller
             $this->db->insert('reviews', $data);
             
             $this->session->set_flashdata('success', 'Thank you! Your review has been submitted successfully.');
-            redirect('reviews');
+            redirect($redirect_url);
         }
     }
 }

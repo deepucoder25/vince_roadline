@@ -17,9 +17,36 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
 ]);
 ?>
 
-<!-- Main Testimonials Section (Full Width Layout) -->
+<!-- Main Testimonials Section -->
 <section class="vrl-about-section py-5">
   <div class="container">
+
+    <!-- Flash Alert Notifications -->
+    <?php if ($this->session->flashdata('success')): ?>
+      <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm rounded-4 p-4 mb-4" role="alert">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-check-circle-fill fs-2 text-success"></i>
+          <div>
+            <h5 class="fw-bold mb-1">Review Submitted Successfully!</h5>
+            <p class="mb-0 small"><?= $this->session->flashdata('success') ?></p>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($this->session->flashdata('error')): ?>
+      <div class="alert alert-warning alert-dismissible fade show border-0 shadow-sm rounded-4 p-4 mb-4" role="alert">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-exclamation-triangle-fill fs-2 text-warning"></i>
+          <div>
+            <h5 class="fw-bold mb-1">Notice</h5>
+            <p class="mb-0 small"><?= $this->session->flashdata('error') ?></p>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <?php endif; ?>
 
     <!-- ============ HERO OVERVIEW CARD ============ -->
     <div class="vrl-choose-spotlight-card p-4 p-md-5 mb-5 text-center">
@@ -49,16 +76,76 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
       </div>
     </div>
 
-    <!-- ============ REVIEWS GRID (6 HIGH-IMPACT TESTIMONIAL CARDS) ============ -->
-    <div class="row g-4 mb-5">
+    <!-- ============ REVIEWS GRID (DYNAMIC DB REVIEWS + FEATURED CARDS) ============ -->
+    <div class="row g-4 mb-5" id="reviewsContainer">
 
-      <!-- Review 1 -->
+      <!-- Dynamic Customer Reviews from Database -->
+      <?php if (!empty($db_reviews)): ?>
+        <?php foreach ($db_reviews as $rev): 
+          $stars = (int) (isset($rev['stars']) ? $rev['stars'] : 5);
+          $name = isset($rev['name']) ? htmlspecialchars($rev['name']) : 'Verified Customer';
+          $city = !empty($rev['r_title']) ? htmlspecialchars($rev['r_title']) : (!empty($rev['city']) ? htmlspecialchars($rev['city']) : 'India');
+          $type = !empty($rev['r_type']) ? htmlspecialchars($rev['r_type']) : 'Relocation Service';
+          $desc = isset($rev['r_desc']) ? nl2br(htmlspecialchars($rev['r_desc'])) : '';
+          $initials = strtoupper(substr($name, 0, 2));
+          $img_str = isset($rev['r_img']) ? trim($rev['r_img']) : '';
+        ?>
+          <div class="col-md-6 col-lg-4">
+            <div class="vrl-tst-card d-flex flex-column justify-content-between h-100 border rounded-4 p-4 bg-white shadow-sm hover-lift">
+              <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="vrl-tst-stars text-warning fs-6">
+                    <?php for ($s = 1; $s <= 5; $s++): ?>
+                      <i class="bi bi-star-<?= ($s <= $stars) ? 'fill' : 'blank' ?>"></i>
+                    <?php endfor; ?>
+                  </div>
+                  <span class="vrl-tst-route-pill badge bg-light text-danger border px-3 py-1.5 rounded-pill fw-bold fs-8"><?= $city ?></span>
+                </div>
+
+                <p class="vrl-about-prose text-dark mb-3" style="font-size: 0.95rem; line-height: 1.6;">
+                  "<?= $desc ?>"
+                </p>
+
+                <!-- Attached Photos if available -->
+                <?php if (!empty($img_str)): 
+                  $imgs = explode(',', $img_str);
+                ?>
+                  <div class="d-flex gap-2 mb-3 overflow-auto">
+                    <?php foreach ($imgs as $img_path): 
+                      $img_trimmed = trim($img_path);
+                      if (empty($img_trimmed)) continue;
+                      $final_src = (strpos($img_trimmed, '/') !== false) ? base_url($img_trimmed) : base_url('assets/uploads/reviewimg/' . $img_trimmed);
+                    ?>
+                      <a href="<?= $final_src ?>" target="_blank">
+                        <img src="<?= $final_src ?>" alt="Customer Upload" class="rounded-3 border" style="width: 55px; height: 55px; object-fit: cover;">
+                      </a>
+                    <?php endforeach; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 pt-3 border-top mt-2">
+                <div class="vrl-tst-avatar bg-danger text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px; font-size: 1rem;">
+                  <?= $initials ?>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-dark mb-0 fs-7"><?= $name ?></h6>
+                  <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> <?= $type ?></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+
+      <!-- Featured Testimonial Card 1 -->
       <div class="col-md-6 col-lg-4">
         <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
           <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
           <div>
             <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
+              <div class="vrl-tst-stars text-warning">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -83,13 +170,13 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
         </div>
       </div>
 
-      <!-- Review 2 -->
+      <!-- Featured Testimonial Card 2 -->
       <div class="col-md-6 col-lg-4">
         <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
           <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
           <div>
             <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
+              <div class="vrl-tst-stars text-warning">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -105,7 +192,7 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
           </div>
 
           <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar bg-dark">PS</div>
+            <div class="vrl-tst-avatar bg-dark text-white">PS</div>
             <div>
               <h6 class="fw-bold text-dark mb-0 fs-7">Priya Sharma</h6>
               <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Corporate Office Shifting</span>
@@ -114,13 +201,13 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
         </div>
       </div>
 
-      <!-- Review 3 -->
+      <!-- Featured Testimonial Card 3 -->
       <div class="col-md-6 col-lg-4">
         <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
           <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
           <div>
             <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
+              <div class="vrl-tst-stars text-warning">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -145,99 +232,25 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
         </div>
       </div>
 
-      <!-- Review 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
-          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
-          <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <span class="vrl-tst-route-pill">Chennai ➔ Kolkata</span>
-            </div>
+    </div>
 
-            <p class="vrl-about-prose text-dark mb-4">
-              "Transparent written quotation with zero hidden charges. The crew arrived on time in Chennai, loaded everything into a waterproof container truck, and unloaded smoothly in Kolkata."
-            </p>
-          </div>
+    <!-- ============ WRITE A REVIEW CTA CARD (OPEN REVIEW MODAL FROM REVIEWS MODULE) ============ -->
+    <div class="vrl-review-form-card mb-5 p-4 p-md-5 rounded-4 shadow-sm position-relative overflow-hidden bg-white border" id="write-review-box">
+      <!-- Top Red & Yellow Gradient Line -->
+      <div style="position: absolute; top:0; left:0; width:100%; height:5px; background: linear-gradient(90deg, #D60412 0%, #FFB800 100%);"></div>
 
-          <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar">SN</div>
-            <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Siddharth Nair</h6>
-              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Interstate Shifting</span>
-            </div>
-          </div>
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <span class="badge bg-danger text-white rounded-pill px-3 py-1.5 mb-2 fw-bold fs-8">SHARE YOUR FEEDBACK</span>
+          <h3 class="fw-bold text-dark mb-1">Have You Used Our Relocation Services?</h3>
+          <p class="text-muted mb-0">Help future families by sharing your moving experience with Vince Roadline Packers and Movers.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <button type="button" class="btn btn-danger btn-lg rounded-pill px-4 py-3 fw-bold text-white shadow-sm d-inline-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#rvwmdl" data-toggle="modal" data-target="#rvwmdl">
+            <i class="bi bi-pencil-square fs-5"></i> Write a Review
+          </button>
         </div>
       </div>
-
-      <!-- Review 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
-          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
-          <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <span class="vrl-tst-route-pill">Ahmedabad ➔ Surat</span>
-            </div>
-
-            <p class="vrl-about-prose text-dark mb-4">
-              "Exceptional local home shifting in Gujarat. The packing team was polite, background-verified, and took extra care of our wooden furniture and glass cabinets."
-            </p>
-          </div>
-
-          <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar bg-dark">VP</div>
-            <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Vikram Patel</h6>
-              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Local Home Relocation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
-          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
-          <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <span class="vrl-tst-route-pill">Chandigarh ➔ Jaipur</span>
-            </div>
-
-            <p class="vrl-about-prose text-dark mb-4">
-              "Best bike transportation service! They packed my Royal Enfield bike with thick foam sheets and wooden crate framing. Received in Jaipur in mint condition."
-            </p>
-          </div>
-
-          <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar">GS</div>
-            <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Gurpreet Singh</h6>
-              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Bike Transport</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <!-- ============ CALL-TO-ACTION BANNER ============ -->
@@ -264,3 +277,6 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
 
   </div>
 </section>
+
+<!-- Load Review Modal View from Reviews Module -->
+<?php $this->load->view('reviews/reviewmodal'); ?>
