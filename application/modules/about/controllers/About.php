@@ -33,11 +33,28 @@ class About extends MX_Controller
 
     function testimonials()
     {
-        $this->load->database();
-        $this->db->order_by('r_id', 'desc');
-        $this->db->where('status', 1);
-        $query = $this->db->get('reviews');
-        $data['db_reviews'] = $query->result_array();
+        $data['db_reviews'] = array();
+        $old_err = error_reporting();
+        try {
+            @error_reporting(0);
+            $this->load->database();
+            $db_debug = isset($this->db->db_debug) ? $this->db->db_debug : FALSE;
+            $this->db->db_debug = FALSE;
+            $this->db->order_by('r_id', 'desc');
+            $this->db->where('status', 1);
+            $query = @$this->db->get('reviews');
+            if ($query && is_object($query)) {
+                $data['db_reviews'] = $query->result_array();
+            }
+            $this->db->db_debug = $db_debug;
+            @error_reporting($old_err);
+        } catch (Throwable $e) {
+            $data['db_reviews'] = array();
+            @error_reporting($old_err);
+        } catch (Exception $e) {
+            $data['db_reviews'] = array();
+            @error_reporting($old_err);
+        }
 
         $data['title'] = "Customer Reviews & Testimonials | " . $this->comp['company3'];
         $data['description'] = "Read genuine client testimonials and feedback about " . $this->comp['company3'] . " home shifting, vehicle transportation, and office relocation services.";

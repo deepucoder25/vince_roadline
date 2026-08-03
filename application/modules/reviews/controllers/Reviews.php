@@ -10,60 +10,79 @@ class Reviews extends MX_Controller
 
     function index()
     {
-        $this->load->database();
-        $this->load->library('pagination');
+        $data['reviews'] = FALSE;
+        $data['pagination'] = '';
+        $old_err = error_reporting();
         
-        $star_filter = $this->input->get('star');
-        
-        // Count total active reviews for pagination
-        $this->db->where('status', 1);
-        if ($star_filter) {
-            $this->db->where('stars', $star_filter);
-        }
-        $total_rows = $this->db->count_all_results('reviews');
-        
-        // Pagination Config
-        $config['base_url'] = site_url('reviews');
-        $config['total_rows'] = $total_rows;
-        $config['per_page'] = 9;
-        $config['page_query_string'] = TRUE;
-        $config['reuse_query_string'] = TRUE;
-        
-        $config['full_tag_open'] = '<ul class="pagination justify-content-center" style="margin-top: 30px;">';
-        $config['full_tag_close'] = '</ul>';
-        $config['prev_link'] = '&laquo;';
-        $config['prev_tag_open'] = '<li class="page-item">';
-        $config['prev_tag_close'] = '</li>';
-        $config['next_link'] = '&raquo;';
-        $config['next_tag_open'] = '<li class="page-item">';
-        $config['next_tag_close'] = '</li>';
-        $config['cur_tag_open'] = '<li class="page-item active"><a href="javascript:void(0)" class="page-link" style="background:#002446; border-color:#002446; color:#fff;">';
-        $config['cur_tag_close'] = '</a></li>';
-        $config['num_tag_open'] = '<li class="page-item">';
-        $config['num_tag_close'] = '</li>';
-        $config['first_link'] = 'First';
-        $config['first_tag_open'] = '<li class="page-item">';
-        $config['first_tag_close'] = '</li>';
-        $config['last_link'] = 'Last';
-        $config['last_tag_open'] = '<li class="page-item">';
-        $config['last_tag_close'] = '</li>';
-        $config['attributes'] = array('class' => 'page-link');
-        
-        $this->pagination->initialize($config);
-        
-        $offset = $this->input->get('per_page') ? (int) $this->input->get('per_page') : 0;
+        try {
+            @error_reporting(0);
+            $this->load->database();
+            $db_debug = isset($this->db->db_debug) ? $this->db->db_debug : FALSE;
+            $this->db->db_debug = FALSE;
+            $this->load->library('pagination');
+            
+            $star_filter = $this->input->get('star');
+            
+            // Count total active reviews for pagination
+            $this->db->where('status', 1);
+            if ($star_filter) {
+                $this->db->where('stars', $star_filter);
+            }
+            $total_rows = (int) @$this->db->count_all_results('reviews');
+            
+            // Pagination Config
+            $config['base_url'] = site_url('reviews');
+            $config['total_rows'] = $total_rows;
+            $config['per_page'] = 9;
+            $config['page_query_string'] = TRUE;
+            $config['reuse_query_string'] = TRUE;
+            
+            $config['full_tag_open'] = '<ul class="pagination justify-content-center" style="margin-top: 30px;">';
+            $config['full_tag_close'] = '</ul>';
+            $config['prev_link'] = '&laquo;';
+            $config['prev_tag_open'] = '<li class="page-item">';
+            $config['prev_tag_close'] = '</li>';
+            $config['next_link'] = '&raquo;';
+            $config['next_tag_open'] = '<li class="page-item">';
+            $config['next_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="page-item active"><a href="javascript:void(0)" class="page-link" style="background:#002446; border-color:#002446; color:#fff;">';
+            $config['cur_tag_close'] = '</a></li>';
+            $config['num_tag_open'] = '<li class="page-item">';
+            $config['num_tag_close'] = '</li>';
+            $config['first_link'] = 'First';
+            $config['first_tag_open'] = '<li class="page-item">';
+            $config['first_tag_close'] = '</li>';
+            $config['last_link'] = 'Last';
+            $config['last_tag_open'] = '<li class="page-item">';
+            $config['last_tag_close'] = '</li>';
+            $config['attributes'] = array('class' => 'page-link');
+            
+            $this->pagination->initialize($config);
+            
+            $offset = $this->input->get('per_page') ? (int) $this->input->get('per_page') : 0;
 
-        // Fetch data
-        $this->db->order_by('r_id', 'desc');
-        $this->db->where('status', 1);
-        if ($star_filter) {
-            $this->db->where('stars', $star_filter);
+            // Fetch data
+            $this->db->order_by('r_id', 'desc');
+            $this->db->where('status', 1);
+            if ($star_filter) {
+                $this->db->where('stars', $star_filter);
+            }
+            
+            $query = @$this->db->get('reviews', $config['per_page'], $offset);
+            $data['reviews'] = ($query && is_object($query)) ? $query : FALSE;
+            $data['pagination'] = $this->pagination->create_links();
+            $this->db->db_debug = $db_debug;
+            @error_reporting($old_err);
+        } catch (Throwable $e) {
+            $data['reviews'] = FALSE;
+            $data['pagination'] = '';
+            @error_reporting($old_err);
+        } catch (Exception $e) {
+            $data['reviews'] = FALSE;
+            $data['pagination'] = '';
+            @error_reporting($old_err);
         }
         
-        $query = $this->db->get('reviews', $config['per_page'], $offset);
-        
-        $data['reviews'] = $query;
-        $data['pagination'] = $this->pagination->create_links();
         $data['title'] = "Customer Reviews & Ratings | Verified Moving Feedback | " . $this->comp['company3'];
         $data['description'] = "Read authentic client reviews and ratings for home shifting, vehicle transportation, and office relocation services provided by " . $this->comp['company3'] . ".";
         $data['keywords'] = "packers movers reviews, customer ratings, verified feedback, relocation experience, " . $this->comp['company3'];

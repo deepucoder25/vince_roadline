@@ -15,30 +15,44 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
-        // Fetch blogs dynamically from the database table 'blog'
-        if ($this->db->table_exists('blog')) {
-            $this->db->order_by('b_id', 'DESC');
+        $old_err = error_reporting();
+        try {
+            @error_reporting(0);
+            $db_debug = isset($this->db->db_debug) ? $this->db->db_debug : FALSE;
+            $this->db->db_debug = FALSE;
+            
+            // Fetch blogs dynamically from the database table 'blog'
+            if (@$this->db->table_exists('blog')) {
+                $this->db->order_by('b_id', 'DESC');
 
-            // Filter to only display blogs marked as 'show' / active (Exclude status = 0, 'hide', 'inactive')
-            if ($this->db->field_exists('status', 'blog')) {
-                $this->db->group_start();
-                $this->db->where('status IS NULL', null, false);
-                $this->db->or_where('status', 1);
-                $this->db->or_where('status', '1');
-                $this->db->or_where('status', 'show');
-                $this->db->or_where('status', 'active');
-                $this->db->or_where('status', '');
-                $this->db->group_end();
-            }
+                // Filter to only display blogs marked as 'show' / active (Exclude status = 0, 'hide', 'inactive')
+                if (@$this->db->field_exists('status', 'blog')) {
+                    $this->db->group_start();
+                    $this->db->where('status IS NULL', null, false);
+                    $this->db->or_where('status', 1);
+                    $this->db->or_where('status', '1');
+                    $this->db->or_where('status', 'show');
+                    $this->db->or_where('status', 'active');
+                    $this->db->or_where('status', '');
+                    $this->db->group_end();
+                }
 
-            $query = $this->db->get('blog');
-            $db_blogs = $query ? $query->result_array() : [];
-            if (!empty($db_blogs)) {
-                return $db_blogs;
+                $query = @$this->db->get('blog');
+                $db_blogs = ($query && is_object($query)) ? $query->result_array() : [];
+                $this->db->db_debug = $db_debug;
+                @error_reporting($old_err);
+                if (!empty($db_blogs)) {
+                    return $db_blogs;
+                }
             }
+            @error_reporting($old_err);
+        } catch (Throwable $e) {
+            @error_reporting($old_err);
+        } catch (Exception $e) {
+            @error_reporting($old_err);
         }
 
-        // Fallback to JSON file if database is empty
+        // Fallback to JSON file if database is empty or unavailable
         $path = FCPATH . 'admin_data/blogs.json';
         if (file_exists($path)) {
             $json_blogs = json_decode(file_get_contents($path), true) ?: [];
