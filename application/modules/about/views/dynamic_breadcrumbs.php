@@ -85,8 +85,8 @@ $logo_url = base_url('assets/images/logo/logo.png');
             </svg>
         </div>
 
-        <!-- Circular Logo Badge Overlay -->
-        <div class="vrl-bc-logo-badge">
+        <!-- Circular Logo Badge Overlay (Desktop Only) -->
+        <div class="vrl-bc-logo-badge d-none d-md-block">
             <img src="<?= $logo_url ?>" alt="<?= $company3 ?> Logo" loading="lazy">
         </div>
 
