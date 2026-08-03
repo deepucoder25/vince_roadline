@@ -1,13 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-
-// Dynamic variables passed directly from Controller.php ($this->comp array)
-$exp_raw = isset($experience) ? $experience : (isset($yearsExperience) ? $yearsExperience : '20+');
-$exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
-
-$clients_raw = isset($happyClients) ? $happyClients : '19,850+';
-$clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
-
-$rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
 ?>
 
 <!-- Breadcrumbs Section -->
@@ -16,7 +7,6 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
     'bc_h1' => 'Household Shifting Services',
     'bc_desc' => 'Complete home relocation and household shifting services with 3-layer protective packaging, background-verified movers, and zero-damage delivery across India.',
     'breadcrumbs' => [
-        ['name' => 'Services', 'url' => site_url('our-services')],
         ['name' => 'Home Relocation']
     ]
 ]);
@@ -37,7 +27,7 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $exp_num ?>+ years of expertise and <?= number_format($clients_num) ?>+ happy families relocated, our trained move specialists handle every aspect of your shift — from 3-layer bubble packaging of fragile crockery and electronic appliances to disassembly, container transport, unpacking, and room placement.
+        With over <?= $yearsExperience ?> years of expertise and <?= number_format($clients_num) ?>+ happy families relocated, our trained move specialists handle every aspect of your shift — from 3-layer bubble packaging of fragile crockery and electronic appliances to disassembly, container transport, unpacking, and room placement.
       </p>
 
       <!-- 3 Feature Check Pills -->

@@ -1,13 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-
-// Dynamic variables passed directly from Controller.php ($this->comp array)
-$exp_raw = isset($experience) ? $experience : (isset($yearsExperience) ? $yearsExperience : '20+');
-$exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
-
-$clients_raw = isset($happyClients) ? $happyClients : '19,850+';
-$clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
-
-$rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
 ?>
 
 <!-- Breadcrumbs Section -->
@@ -16,7 +7,6 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
     'bc_h1' => 'Loading & Unloading Services',
     'bc_desc' => 'Professional loading and unloading services across India using trained background-verified movers, heavy-duty lifting belts, hydraulic ramps, and corner door-frame protection.',
     'breadcrumbs' => [
-        ['name' => 'Services', 'url' => site_url('our-services')],
         ['name' => 'Loading & Unloading']
     ]
 ]);
@@ -37,7 +27,7 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $exp_num ?>+ years of logistics excellence and <?= number_format($clients_num) ?>+ successful moves, our background-verified moving crews use heavy-duty lifting straps, hydraulic ramps, corner wall protectors, and wheel dollies to ensure zero scratches or structural damage.
+        With over <?= $yearsExperience ?> years of logistics excellence and <?= number_format($clients_num) ?>+ successful moves, our background-verified moving crews use heavy-duty lifting straps, hydraulic ramps, corner wall protectors, and wheel dollies to ensure zero scratches or structural damage.
       </p>
 
       <!-- 3 Feature Check Pills -->

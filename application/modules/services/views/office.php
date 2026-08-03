@@ -1,14 +1,4 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-
-// Dynamic variables passed directly from Controller.php ($this->comp array)
-$exp_raw = isset($experience) ? $experience : (isset($yearsExperience) ? $yearsExperience : '20+');
-$exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
-
-$clients_raw = isset($happyClients) ? $happyClients : '19,850+';
-$clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
-
-$rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
-?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
@@ -16,7 +6,6 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
     'bc_h1' => 'Office Relocation Services',
     'bc_desc' => 'Corporate office shifting, commercial logistics, IT server relocation, and workstation moving with weekend zero-downtime execution across India.',
     'breadcrumbs' => [
-        ['name' => 'Services', 'url' => site_url('our-services')],
         ['name' => 'Office Relocation']
     ]
 ]);
@@ -37,7 +26,7 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $exp_num ?>+ years of commercial logistics expertise, our certified project managers execute weekend and overnight relocations to guarantee <strong>Zero Business Downtime</strong>. We handle modular desk dismantling, color-coded workstation tagging, IT server rack packing, and sealed container transportation.
+        With over <?= $yearsExperience ?> years of commercial logistics expertise, our certified project managers execute weekend and overnight relocations to guarantee <strong>Zero Business Downtime</strong>. We handle modular desk dismantling, color-coded workstation tagging, IT server rack packing, and sealed container transportation.
       </p>
 
       <!-- 3 Feature Check Pills -->

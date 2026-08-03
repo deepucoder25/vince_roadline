@@ -1,13 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-
-// Dynamic variables passed directly from Controller.php ($this->comp array)
-$exp_raw = isset($experience) ? $experience : (isset($yearsExperience) ? $yearsExperience : '20+');
-$exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
-
-$clients_raw = isset($happyClients) ? $happyClients : '19,850+';
-$clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
-
-$rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
 ?>
 
 <!-- Breadcrumbs Section -->
@@ -16,7 +7,6 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
     'bc_h1' => 'Bike Transportation Services',
     'bc_desc' => 'Door-to-door motorcycle, scooter, and superbike relocation with 4-layer cushion wrapping, wooden crate framing, and 100% scratch-free delivery.',
     'breadcrumbs' => [
-        ['name' => 'Services', 'url' => site_url('our-services')],
         ['name' => 'Bike Transportation']
     ]
 ]);
@@ -37,7 +27,7 @@ $rating_num = (float) (isset($ratingValue) ? $ratingValue : '4.9');
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $exp_num ?>+ years of experience and <?= number_format($clients_num) ?>+ vehicles delivered, our move specialists utilize multi-layer bubble wrapping, customized wooden crate packaging, enclosed container trucks, and 24x7 live GPS tracking to ensure zero-scratch delivery.
+        With over <?= $yearsExperience ?> years of experience and <?= number_format($happyClients) ?> vehicles delivered, our move specialists utilize multi-layer bubble wrapping, customized wooden crate packaging, enclosed container trucks, and 24x7 live GPS tracking to ensure zero-scratch delivery.
       </p>
 
       <!-- 3 Feature Check Pills -->
