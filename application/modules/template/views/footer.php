@@ -18,11 +18,11 @@
             </p>
           </div>
           <div class="vrl-social-links d-flex gap-2">
-            <a href="<?= $facebookhtml ?: '#' ?>" class="vrl-social-icon facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="<?= $instagramhtml ?: '#' ?>" class="vrl-social-icon instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="<?= $twitterhtml ?: '#' ?>" class="vrl-social-icon twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-            <a href="<?= $linkedinhtml ?: '#' ?>" class="vrl-social-icon linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="<?= $youtubehtml ?: '#' ?>" class="vrl-social-icon youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="<?= $facebookhtml ?>" class="vrl-social-icon facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="<?= $instagramhtml ?>" class="vrl-social-icon instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="<?= $twitterhtml ?>" class="vrl-social-icon twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="<?= $linkedinhtml ?>" class="vrl-social-icon linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="<?= $youtubehtml ?>" class="vrl-social-icon youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
