@@ -45,46 +45,10 @@ $start_year_val = isset($startYear) ? $startYear : '2006';
           </div>
 
           <p class="vrl-about-prose text-muted mb-4">
-            Relocating your household goods or business assets requires more than just transport — it requires a trustworthy partner who respects your time, belongings, and budget. Here is how Vince Roadline sets the industry standard:
+            Deciding whether to choose Packers and Movers is not just about comparing the price. You choose who will come to your house, pack your items, handle valuable furniture and appliances and take all responsibilities for transporting them.
           </p>
-
-          <!-- Executive Guarantee List -->
-          <div class="d-flex flex-column gap-3 mb-4">
-            <div class="vrl-choose-check-item d-flex align-items-center gap-3">
-              <i class="bi bi-check-circle-fill text-danger fs-5 flex-shrink-0"></i>
-              <div>
-                <strong class="d-block text-dark fs-6">100% Written Fixed Estimate</strong>
-                <span class="small text-muted fs-8">Zero hidden costs, toll surprises, or loading fee hikes after job completion.</span>
-              </div>
-            </div>
-
-            <div class="vrl-choose-check-item d-flex align-items-center gap-3">
-              <i class="bi bi-check-circle-fill text-danger fs-5 flex-shrink-0"></i>
-              <div>
-                <strong class="d-block text-dark fs-6">Multi-Layer Bubble Cushioning</strong>
-                <span class="small text-muted fs-8">Heavy-duty 3-layer wrapping, corrugated sheets, and customized wooden crates.</span>
-              </div>
-            </div>
-
-            <div class="vrl-choose-check-item d-flex align-items-center gap-3">
-              <i class="bi bi-check-circle-fill text-danger fs-5 flex-shrink-0"></i>
-              <div>
-                <strong class="d-block text-dark fs-6">Weatherproof Enclosed GPS Containers</strong>
-                <span class="small text-muted fs-8">Real-time GPS location updates sent directly to your phone 24/7.</span>
-              </div>
-            </div>
-
-            <div class="vrl-choose-check-item d-flex align-items-center gap-3">
-              <i class="bi bi-check-circle-fill text-danger fs-5 flex-shrink-0"></i>
-              <div>
-                <strong class="d-block text-dark fs-6">100% Verified In-House Move Crew</strong>
-                <span class="small text-muted fs-8">No daily casual day laborers. Background-verified &amp; uniformed specialists.</span>
-              </div>
-            </div>
-          </div>
-
-
-
+          <p class="fw-bold">Such a decision should not be made with the aim of saving money only.</p>
+          <p>Founded in 2006, <strong><?= $company3 ?></strong> has <?= $yearsExperience ?> years of relocation experience in moving household, corporate properties and vehicles throughout India. During these years we managed to realize something important about relocation services: a good relocation cannot be based on a single great promise. It should include dozens of correctly performed small things.</p>
         </div>
 
         <!-- Right Column: Visual Feature Showcase -->
@@ -109,56 +73,175 @@ $start_year_val = isset($startYear) ? $startYear : '2006';
       </div>
     </div>
 
-    <!-- ============ SECTION 2: 4 INTERACTIVE FEATURE PILLARS ============ -->
+    <!-- ============ SECTION 2: 7 WHY CHOOSE US COMMITMENT BOXES ============ -->
     <div class="mb-5">
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Our Commitments</span>
-        <h3 class="vrl-about-title mb-2">Core Pillars of <span class="vrl-about-highlight">Excellence</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Built on uncompromised safety, fixed transparent pricing, and 24x7 customer support.</p>
+        <h3 class="vrl-about-title mb-2">Why Customers Choose <span class="vrl-about-highlight"><?= $company3 ?></span></h3>
+        <p class="text-muted fs-6 mx-auto">Built on uncompromised safety, fixed transparent pricing, and 24x7 customer support.</p>
       </div>
 
       <div class="row g-4">
-        <!-- Feature 1 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="vrl-choose-feature-box d-flex flex-column align-items-start h-100">
-            <div class="vrl-choose-icon-box mb-3">
-              <i class="bi bi-shield-lock-fill"></i>
+        <!-- Box 1 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-about-content-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-about-box-badge">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <h3 class="vrl-about-box-title vrl-about-box-subtitle mb-0">20+ Years of Experience For Every Move</h3>
+              </div>
+              <div class="vrl-about-box-text">
+                <p>Experience changes the perception of relocation.</p>
+                <p>Inexperienced people can see a cupboard, television and dining table as three items to be loaded. An experienced moving specialist sees three items, each of them requires different handling. This is the practical experience we've gathered since 2006.</p>
+                <p>All these years our team has been working in a variety of moving situations such as relocation of households, offices, furniture, interstate transportation and vehicle moving. This experience helps to foresee the issues related to handling and plan the work in advance. There is no other way of learning it.</p>
+                <p class="mb-0">For clients, who are looking for the <b>Top Packers and Movers</b>, experience of the company should not be just the number presented on the website. It should affect the way of relocation.</p>
+              </div>
             </div>
-            <h5 class="fw-bold text-dark mb-2 fs-6">Safety First Protocol</h5>
-            <p class="small text-muted mb-0">Multi-layer cushion wrapping, shockproof ramps, and customized wooden crates for fragile assets.</p>
           </div>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="vrl-choose-feature-box d-flex flex-column align-items-start h-100">
-            <div class="vrl-choose-icon-box mb-3">
-              <i class="bi bi-receipt-cutoff"></i>
+        <!-- Box 2 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-why-choose-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-why-choose-badge">
+                  <i class="bi bi-box-seam-fill"></i>
+                </div>
+                <h3 class="vrl-why-choose-title vrl-about-box-subtitle mb-0">We Do Not Treat Every Belonging in the Same Way</h3>
+              </div>
+              <div class="vrl-why-choose-text">
+                <p>Many moving services perform packing in the same way. We do not treat belongings in such a way.</p>
+                <p>While clothing and books can be packed in suitable cartons, glassware requires additional cushioning. Electronics should be protected from impacts and movements. Special attention should be paid to furniture corners, while appliances require careful handling. There are also unusual belongings.</p>
+                <p>For example, a huge mirror. An old cabinet. Temple unit. Glass dining table which is of particular concern for the client.</p>
+                <p class="mb-0">These are the moments when the experience of movers becomes critical. The Packers and Movers team considers the nature, weight, size and fragile characteristics of belongings while performing their preparation for relocation.</p>
+              </div>
             </div>
-            <h5 class="fw-bold text-dark mb-2 fs-6">Transparent Costing</h5>
-            <p class="small text-muted mb-0">Fixed itemized written quotes with zero post-move hidden fees, toll surprises, or loading hikes.</p>
           </div>
         </div>
 
-        <!-- Feature 3 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="vrl-choose-feature-box d-flex flex-column align-items-start h-100">
-            <div class="vrl-choose-icon-box mb-3">
-              <i class="bi bi-truck-front-fill"></i>
+        <!-- Box 3 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-why-choose-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-why-choose-badge">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h3 class="vrl-why-choose-title vrl-about-box-subtitle mb-0">Staff Who Respects Your Home and Belongings</h3>
+              </div>
+              <div class="vrl-why-choose-text">
+                <p>Professionalism of packing is essential, but the behavior also counts.</p>
+                <p>Clients let the moving staff enter their houses, sometimes for hours. It seems necessary for the team to work responsibly, communicate properly and respect the property of the customer.</p>
+                <p>Our moving staff includes packing personnel, supervisors, drivers and other people who are involved in the process of relocation. And we expect this professionalism from all of them.</p>
+                <p>It means that we listen when a customer tells us about his or her delicate item. It means that we ask for permission to move an unusual item. And also that we try to keep the workplace as organized as possible, instead of creating unnecessary confusion in the house.</p>
+                <p class="mb-0">Good people make moving easier.</p>
+              </div>
             </div>
-            <h5 class="fw-bold text-dark mb-2 fs-6">Live GPS Fleet</h5>
-            <p class="small text-muted mb-0">All-weather enclosed container trucks equipped with 24x7 live GPS location tracking.</p>
           </div>
         </div>
 
-        <!-- Feature 4 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="vrl-choose-feature-box d-flex flex-column align-items-start h-100">
-            <div class="vrl-choose-icon-box mb-3">
-              <i class="bi bi-headset"></i>
+        <!-- Box 4 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-about-content-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-about-box-badge">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3 class="vrl-about-box-title vrl-about-box-subtitle mb-0">Hygiene Is an Important Component of Our Working Practices</h3>
+              </div>
+              <div class="vrl-about-box-text">
+                <p>You wouldn't want to touch your kitchenware, clothing or personal belongings with improperly handled packing material.</p>
+                <p>Neither would we.</p>
+                <p>Hygiene and clean working practices are important for us when moving Shifting Services. Our employees are supposed to keep proper personal hygiene, work in an organized way and manage the packing material correctly.</p>
+                <p class="mb-0">It seems to be quite elementary, but it should be. Such small things say a lot about the philosophy of a moving company.</p>
+              </div>
             </div>
-            <h5 class="fw-bold text-dark mb-2 fs-6">Dedicated Support</h5>
-            <p class="small text-muted mb-0">Single point of contact move manager guiding your shift from packing day to final delivery.</p>
+          </div>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-about-content-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-about-box-badge">
+                  <i class="bi bi-journal-check"></i>
+                </div>
+                <h3 class="vrl-about-box-title vrl-about-box-subtitle mb-0">Planning Before Lifting</h3>
+              </div>
+              <div class="vrl-about-box-text">
+                <p>Physical work begins on the day of moving. But the thinking should start earlier.</p>
+                <p>Before moving, a range of important issues should be considered: the approximate volume of goods, the possibility of access to the property, the floor level, the presence or absence of the lift, the restrictions of parking and the travel distance.</p>
+                <p>Imagine how disappointing it can be, when you realize only after the arrival of the vehicle that it cannot get inside of the society lane.</p>
+                <p>Avoidable situations. Our approach is to learn all moving conditions in advance and plan the manpower, packing and transportation accordingly.</p>
+                <p class="mb-0">For those who search for Packers and Movers Near Me, this planning is much more useful than making a decision to book the moving contractor only because he is quick with prices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="vrl-why-choose-box w-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-why-choose-badge">
+                  <i class="bi bi-chat-left-dots-fill"></i>
+                </div>
+                <h3 class="vrl-why-choose-title vrl-about-box-subtitle mb-0">Proper Communication Without Creating Unnecessary Confusion</h3>
+              </div>
+              <div class="vrl-why-choose-text">
+                <p>Relocation gives you many things to think about.</p>
+                <p>You should not think additionally about the necessity of chasing your moving company for getting some information.</p>
+                <p>We believe that a client should be aware about the scope of booked moving services, about expected arrangements and important requirements before the work begins. If an item needs special handling, let us know. If the access to the property can be difficult, we would better know it earlier.</p>
+                <p class="mb-0">Clear conversation prevents moving day surprises. Such a straightforward approach is still important for <?= $company3 ?>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 7 (Full Width) -->
+        <div class="col-12">
+          <div class="vrl-about-content-box w-100">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="vrl-about-box-badge">
+                  <i class="bi bi-truck-front-fill"></i>
+                </div>
+                <h3 class="vrl-about-box-title vrl-about-box-subtitle mb-0">Experience in Households, Offices and Vehicles</h3>
+              </div>
+              <div class="vrl-about-box-text">
+                <p>A good relocator understands that different moves require different approaches.</p>
+                <p>Household shifting includes personal belongings and furniture. Corporate moving can include workstations, files, equipment and strict schedules. Vehicle transportation requires another issue to be considered: careful handling with the goal of avoiding any scratches and other types of avoidable damage.</p>
+                <p>Our experience includes all mentioned types of relocation requirements.</p>
+                <p class="mb-0">Thus, it provides clients with one professional moving company instead of coordination with several service providers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ WHY CLIENTS PREFER EXPERIENCE TO PROMISES (FULL WIDTH CARD BOX) ============ -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="vrl-why-choose-box">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="vrl-why-choose-badge">
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h3 class="vrl-why-choose-title vrl-about-box-subtitle mb-0">Why Clients Prefer Experience to Promises</h3>
+          </div>
+          
+          <div class="vrl-why-choose-text">
+            <p>There are many moving companies which can call themselves the <b>Best Packers and Movers</b>. We prefer to explain what makes us so.</p>
+            <p>20+ years in the relocation industry. Experienced staff. Item-specific packing. Responsible handling. Hygiene-conscious working practices. Practical planning. Clear communication.</p>
+            <p class="mb-0">This is what we bring to the job. Your belongings have a story. Your move has a reason. Let experienced hands take care of the journey.</p>
           </div>
         </div>
       </div>
@@ -169,7 +252,7 @@ $start_year_val = isset($startYear) ? $startYear : '2006';
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Clear Difference</span>
         <h3 class="vrl-about-title mb-2"><span class="vrl-about-highlight">Vince Roadline</span> vs Unorganized Movers</h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">See how our professional standards compare against unorganized local operators.</p>
+        <p class="text-muted fs-6 mx-auto">See how our professional standards compare against unorganized local operators.</p>
       </div>
 
       <div class="vrl-choose-table-card table-responsive">

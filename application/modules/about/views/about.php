@@ -34,15 +34,15 @@
           <!-- Highlight Quote Banner -->
           <div class="vrl-about-hero-quote mb-4">
             <i class="bi bi-quote fs-4 text-danger me-1"></i>
-            Over <?= $yearsExperience ?> years of defining gold standards in household shifting, corporate logistics, and scratch-free vehicle transport.
+            Trust means a lot of responsibility. For more than <?= $yearsExperience ?> years, <?= $company3 ?> has been taking this principle to its core.
           </div>
 
           <p class="vrl-about-prose mb-3">
-            Welcome to <strong><?= htmlspecialchars($company3) ?></strong>, India's leading household shifting, corporate relocation, and vehicle transportation logistics company. Founded with a single mission — to make moving simple, safe, and stress-free — we operate across a nationwide network of <?= $statesCovered ?>+ major states and cities.
+            Our company has evolved as a professional Packers and Movers providing household shifting, office relocation, vehicle transportation and any other type of moving needs in India. Moving requires careful handling. No matter whether your task is to shift an entire household to another city, relocate a company office, move a vehicle or perform some other type of relocation, our team will be ready to help you out.
           </p>
           
           <p class="vrl-about-prose text-muted mb-4">
-            Whether you are relocating your home locally or moving your entire corporate headquarters interstate, our background-verified move specialists use multi-layer bubble wrapping, dedicated weatherproof container trucks, real-time GPS tracking, and transparent written quotes.
+            Today, our company continues delivering benchmark services for safe and reliable relocation across India, thanks to the experienced staff and disciplined approach to the job combined with the extensive industry practice accumulated over more than <?= $yearsExperience ?> years.
           </p>
 
           <!-- Action Buttons Pair -->
@@ -64,7 +64,7 @@
             
             <!-- Top Left Dark Experience Badge -->
             <div class="vrl-about-exp-float text-center">
-              <div class="vrl-exp-num"><?= $yearsExperience ?>+</div>
+              <div class="vrl-exp-num"><?= $yearsExperience ?></div>
               <small class="text-white-50 fw-semibold text-uppercase fs-8 d-block">Years Legacy</small>
             </div>
 
@@ -76,6 +76,128 @@
           </div>
         </div>
 
+    <!-- ============ OUR HISTORY, MISSION & VISION (LAYOUT: LEFT HISTORY / RIGHT STACKED MISSION & VISION) ============ -->
+    <div class="row g-4 mb-5">
+      
+      <!-- Left Column (Full Height): Our History -->
+      <div class="col-lg-6 col-12 d-flex">
+        <div class="vrl-about-content-box w-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="vrl-about-box-badge">
+                <i class="bi bi-hourglass-split"></i>
+              </div>
+              <h3 class="vrl-about-box-title mb-0">Our History: Shifting India Since <?= $startYear ?></h3>
+            </div>
+            <div class="vrl-about-prose">
+              <p>Our history starts in 2006. Back then, we were sure that relocation can and should be better organized, more responsible and less stressful for the customer.</p>
+              <p>Things have changed in the moving services market during the last decades. Customer expectations became higher, packing practices more advanced, and the overall awareness regarding the choice of a reliable Packers and Movers increased.</p>
+              <p>Our company was growing along with those changes.</p>
+              <p>Our experience in the moving industry spans more than 20 years and covers such types of moving needs as household shifting, office relocation, local relocation, interstate moving, packing, loading, unloading and vehicle transportation.</p>
+              <p>Experience teaches us a lot of things which cannot be found in any manual.</p>
+              <p>You know how easily a piece of polished furniture can be scratched if corners of boxes are not properly protected. You learn that glassware requires different packing than the rest of items. You realize that the large appliance should be carefully carried down the narrow staircase. And you also understand that good communication plays as important a role as any packing material.</p>
+              <p class="mb-0">All those daily lessons form the basis of our history and our work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Stacked): Our Mission (Upper) & Our Vision (Second) -->
+      <div class="col-lg-6 col-12 d-flex flex-column gap-4">
+        
+        <!-- Upper Box: Our Mission -->
+        <div class="vrl-about-content-box flex-fill d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="vrl-about-box-badge">
+                <i class="bi bi-compass-fill"></i>
+              </div>
+              <h3 class="vrl-about-box-title mb-0">Our Mission: Make Every Relocation Safer and More Reliable</h3>
+            </div>
+            <div class="vrl-about-box-text">
+              <p>Our mission is to provide customers with the reliable services for their household, office, vehicle and other items' relocation.</p>
+              <p>We want the process of professional moving to be organized from the very beginning, starting with the understanding of customer requirements, proper planning, application of suitable packing methods and responsible handling during all stages of relocation.</p>
+              <p>Safety comes first in this approach.</p>
+              <p class="mb-0">As a professional Packers and Movers, we believe that our customers deserve not only good communication, responsible staff and reliable services but also the respect for their belongings and time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Box: Our Vision -->
+        <div class="vrl-why-choose-box flex-fill d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="vrl-why-choose-badge">
+                <i class="bi bi-eye-fill"></i>
+              </div>
+              <h3 class="vrl-why-choose-title mb-0">Our Vision: A New Standard for Relocation in India</h3>
+            </div>
+            <div class="vrl-why-choose-text">
+              <p>Our vision is to build <?= $company3 ?> into a brand which immediately associates with trust, care and reliability.</p>
+              <p>We do not think that becoming one of the Top Packers and Movers means just growing big. We strive to excel in the aspects which customers notice.</p>
+              <p>Careful packing. Responsible handling. Professional and responsible staff. Clean working practices. Proper communication.</p>
+              <p>And accountability.</p>
+              <p class="mb-0">We want to continue improving our services and keep the human side of relocation at the core of our business. Things can change with technologies and equipment, but the customers will always appreciate the responsible handling of their belongings.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ============ TEAM & HYGIENE COMMITMENT (COL-12 FULL WIDTH CARD BOX) ============ -->
+    <div class="row mb-4 mb-lg-5">
+      <div class="col-12">
+        <div class="vrl-about-content-box">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="vrl-about-box-badge">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h3 class="vrl-about-box-title mb-0">Good People Make Good Moving Company</h3>
+          </div>
+          
+          <div class="vrl-about-box-text">
+            <p>Behind every good relocation there is the team of people who make this job.</p>
+            <p>Our staff members are an integral part of what has been created at <?= $company3 ?> since 2006. Packing specialists, supervisors, moving professionals, drivers and support staff are all contributing to the process of keeping relocation organized.</p>
+            <p>We value people who understand that they are working inside the customer's household or business. Professional behavior is extremely important for our company. The same concerns patience. The customers may have a number of questions during the process of packing. They may worry about an expensive television, old wooden cabinet or fragile dining table. The good moving specialist will listen, explain and handle the item in a proper manner.</p>
+            <p class="fw-semibold text-dark">For our team, every carton is a special item.</p>
+            <p>This carton can contain wedding crockery, children's belongings, important equipment for the office and many other things collected during years. This is the reason why the process of moving should be provided differently.</p>
+
+            <hr class="my-4 vrl-about-divider">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="vrl-about-box-badge">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="vrl-about-box-title vrl-about-box-subtitle mb-0">Hygiene is an Important Aspect of Professional Moving</h4>
+            </div>
+
+            <p>Hygiene plays a key role in moving the house. Our team works in households and offices where there is plenty of furniture, utensils, clothes, appliances and other possessions around. This is the reason why we are sure that hygiene and clean procedures must become an integral part of Packers and Movers service.</p>
+            <p>We encourage the clean handling, responsible use of packing materials and the organized working practices during the relocation process. Staff members should maintain the necessary personal hygiene when working at customer premises. The packing area should be maintained in the most organized state possible. It might seem like a minor detail, but customers pay attention to it.</p>
+            <p class="fw-bold vrl-text-red mb-0">For us, hygiene is not an additional feature. It is a sign of respect for household or workplace and belongings entrusted to our team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ OUR SUCCESSES ARE BUILT ON EXPERIENCE (FULL WIDTH CARD BOX) ============ -->
+    <div class="row mb-4 mb-lg-5">
+      <div class="col-12">
+        <div class="vrl-why-choose-box">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="vrl-why-choose-badge">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <h3 class="vrl-why-choose-title mb-0">Our Successes Are Built on Experience</h3>
+          </div>
+          
+          <div class="vrl-why-choose-text">
+            <p>We can measure our path only in years. But this would not give the full picture.</p>
+            <p>What really matters is the experience accumulated since 2006: the understanding of different relocation cases, adaptation to the customer requirements and continuous improvement of packing, handling and transportation practices. Over 20+ years of experience has helped us to build capabilities in household shifting, corporate logistics and scratch-conscious vehicle transportation.</p>
+            <p class="mb-0">And it has also taught us one more important lesson. Never become careless with somebody else's belongings. This lesson keeps driving us to be considered among the <b>Best Packers and Movers</b> providing responsible relocation services to the customers.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -123,7 +245,7 @@
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Pillars of Excellence</span>
         <h3 class="vrl-about-title mb-2">Why Customers Trust <span class="vrl-about-highlight">Vince Roadline</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Built on uncompromised safety, fixed transparent pricing, and 24x7 customer support.</p>
+        <p class="text-muted fs-6 mx-auto vrl-sec-subtitle-max">Built on uncompromised safety, fixed transparent pricing, and 24x7 customer support.</p>
       </div>
 
       <div class="row g-4">
@@ -178,7 +300,7 @@
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Seamless Shifting</span>
         <h3 class="vrl-about-title mb-2">Our Proven 4-Step <span class="vrl-about-highlight">Relocation Process</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">A systematic workflow that guarantees maximum safety and zero hassle for your move.</p>
+        <p class="text-muted fs-6 mx-auto vrl-sec-subtitle-max">A systematic workflow that guarantees maximum safety and zero hassle for your move.</p>
       </div>
 
       <div class="row g-4">
@@ -237,7 +359,7 @@
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Our Assets</span>
         <h3 class="vrl-about-title mb-2">Pan-India <span class="vrl-about-highlight">Infrastructure &amp; Fleet Power</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Equipped with state-of-the-art vehicles, warehouses, and handling tools.</p>
+        <p class="text-muted fs-6 mx-auto vrl-sec-subtitle-max">Equipped with state-of-the-art vehicles, warehouses, and handling tools.</p>
       </div>
 
       <div class="row g-4">

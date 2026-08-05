@@ -5,16 +5,36 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
 
 $faqs_list = [
     [
-        'question' => 'How much do Packers and Movers charge?',
-        'answer' => 'The price depends on the distance, quantity of items, packing requirements, manpower, transportation vehicle and other selected services. Contact us to get a moving quotation.'
+        'question' => 'What makes VRL Packers and Movers a good option for me?',
+        'answer' => 'We have over 20+ years of experience in the moving field, careful packing, trained account managers and customer satisfaction.'
     ],
     [
-        'question' => 'Does VRL provide home and office relocation?',
-        'answer' => 'Yes. We provide both Home Relocation and Office Relocation services.'
+        'question' => 'Do you provide services related to household relocation?',
+        'answer' => 'Yes, our company assists in the whole household relocation process such as packing, loading, transportation and unloading.'
     ],
     [
-        'question' => 'Can you transport cars and bikes?',
-        'answer' => 'Yes. Car Transportation and Bike Transportation are included in our main moving services.'
+        'question' => 'Do you perform office relocation?',
+        'answer' => 'Yes, we also take care of office relocation through a planned process of packing and transportation.'
+    ],
+    [
+        'question' => 'How do you pack fragile items?',
+        'answer' => 'We take care of fragile goods or valuables, ensuring that they are packed properly utilizing suitable cushioning and protective resources according to dimensions of the items and delicacy level.'
+    ],
+    [
+        'question' => 'How do you ensure hygiene when packing services?',
+        'answer' => 'Yes, our packing workers practice cleanliness and orderliness right from placing the order to the entire relocation process.'
+    ],
+    [
+        'question' => 'Can I expect your company to move stuff interstate?',
+        'answer' => 'Yes, our packing and moving company provides local and intercity moving services for houses, businesses, and automobiles.'
+    ],
+    [
+        'question' => 'How much does it cost?',
+        'answer' => 'The tariffs depend upon the total amount of items, distance, packing, manpower, vehicles used, and additional services.'
+    ],
+    [
+        'question' => 'When is the best time to book your move?',
+        'answer' => 'You should always attempt to book your move as early as possible, especially on weekends, at the end of the month, and during peak season.'
     ]
 ];
 ?>

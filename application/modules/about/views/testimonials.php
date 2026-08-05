@@ -76,70 +76,10 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
       </div>
     </div>
 
-    <!-- ============ REVIEWS GRID (DYNAMIC DB REVIEWS + FEATURED CARDS) ============ -->
+    <!-- ============ REVIEWS GRID ============ -->
     <div class="row g-4 mb-5" id="reviewsContainer">
 
-      <!-- Dynamic Customer Reviews from Database -->
-      <?php if (!empty($db_reviews)): ?>
-        <?php foreach ($db_reviews as $rev): 
-          $stars = (int) (isset($rev['stars']) ? $rev['stars'] : 5);
-          $name = isset($rev['name']) ? htmlspecialchars($rev['name']) : 'Verified Customer';
-          $city = !empty($rev['r_title']) ? htmlspecialchars($rev['r_title']) : (!empty($rev['city']) ? htmlspecialchars($rev['city']) : 'India');
-          $type = !empty($rev['r_type']) ? htmlspecialchars($rev['r_type']) : 'Relocation Service';
-          $desc = isset($rev['r_desc']) ? nl2br(htmlspecialchars($rev['r_desc'])) : '';
-          $initials = strtoupper(substr($name, 0, 2));
-          $img_str = isset($rev['r_img']) ? trim($rev['r_img']) : '';
-        ?>
-          <div class="col-md-6 col-lg-4">
-            <div class="vrl-tst-card d-flex flex-column justify-content-between h-100 border rounded-4 p-4 bg-white shadow-sm hover-lift">
-              <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
-              <div>
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <div class="vrl-tst-stars text-warning fs-6">
-                    <?php for ($s = 1; $s <= 5; $s++): ?>
-                      <i class="bi bi-star-<?= ($s <= $stars) ? 'fill' : 'blank' ?>"></i>
-                    <?php endfor; ?>
-                  </div>
-                  <span class="vrl-tst-route-pill badge bg-light text-danger border px-3 py-1.5 rounded-pill fw-bold fs-8"><?= $city ?></span>
-                </div>
-
-                <p class="vrl-about-prose text-dark mb-3" style="font-size: 0.95rem; line-height: 1.6;">
-                  "<?= $desc ?>"
-                </p>
-
-                <!-- Attached Photos if available -->
-                <?php if (!empty($img_str)): 
-                  $imgs = explode(',', $img_str);
-                ?>
-                  <div class="d-flex gap-2 mb-3 overflow-auto">
-                    <?php foreach ($imgs as $img_path): 
-                      $img_trimmed = trim($img_path);
-                      if (empty($img_trimmed)) continue;
-                      $final_src = (strpos($img_trimmed, '/') !== false) ? base_url($img_trimmed) : base_url('assets/uploads/reviewimg/' . $img_trimmed);
-                    ?>
-                      <a href="<?= $final_src ?>" target="_blank">
-                        <img src="<?= $final_src ?>" alt="Customer Upload" class="rounded-3 border" style="width: 55px; height: 55px; object-fit: cover;">
-                      </a>
-                    <?php endforeach; ?>
-                  </div>
-                <?php endif; ?>
-              </div>
-
-              <div class="d-flex align-items-center gap-3 pt-3 border-top mt-2">
-                <div class="vrl-tst-avatar bg-danger text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px; font-size: 1rem;">
-                  <?= $initials ?>
-                </div>
-                <div>
-                  <h6 class="fw-bold text-dark mb-0 fs-7"><?= $name ?></h6>
-                  <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> <?= $type ?></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
-
-      <!-- Featured Testimonial Card 1 -->
+      <!-- Testimonial 1 -->
       <div class="col-md-6 col-lg-4">
         <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
           <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
@@ -152,25 +92,26 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </div>
-              <span class="vrl-tst-route-pill">Bangalore ➔ Delhi</span>
+              <span class="vrl-tst-route-pill">Household Shifting</span>
             </div>
 
+            <h5 class="fw-bold text-dark mb-2">“They took my concern seriously.”</h5>
             <p class="vrl-about-prose text-dark mb-4">
-              "Vince Roadline moved my entire 3BHK household from Bangalore to Delhi without a single scratch! Their 3-layer bubble wrapping for glassware and LED TV was incredible. Highly recommended!"
+              “I was worried about our TV and glass dining table more than anything else. I mentioned it once and didn't need to keep checking. Both were packed separately and reached safely. The team knew what they were doing.”
             </p>
           </div>
 
           <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar">RK</div>
+            <div class="vrl-tst-avatar">PA</div>
             <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Rajesh Kumar</h6>
-              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Verified Household Move</span>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Priya Agarwal</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Household Shifting</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Featured Testimonial Card 2 -->
+      <!-- Testimonial 2 -->
       <div class="col-md-6 col-lg-4">
         <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
           <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
@@ -183,50 +124,212 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </div>
-              <span class="vrl-tst-route-pill">Mumbai ➔ Hyderabad</span>
+              <span class="vrl-tst-route-pill">Car Transportation</span>
             </div>
 
+            <h5 class="fw-bold text-dark mb-2">“The car arrived just as I handed it over.”</h5>
             <p class="vrl-about-prose text-dark mb-4">
-              "Superb office relocation service! They packed 25 workstation setups, servers, and office furniture over the weekend. Our team resumed work on Monday morning without any downtime."
+              “This was my first car transport, so I was a little nervous. I asked plenty of questions before booking. The staff explained things clearly, and most importantly, my car arrived safely and in good condition.”
             </p>
           </div>
 
           <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar bg-dark text-white">PS</div>
+            <div class="vrl-tst-avatar bg-dark text-white">RT</div>
             <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Priya Sharma</h6>
-              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Corporate Office Shifting</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Featured Testimonial Card 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
-          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
-          <div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="vrl-tst-stars text-warning">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <span class="vrl-tst-route-pill">Pune ➔ Gurgaon</span>
-            </div>
-
-            <p class="vrl-about-prose text-dark mb-4">
-              "Transported my Hyundai Creta car via Vince Roadline hydraulic carrier. The car arrived in Gurgaon on exact schedule without a single dent. Live GPS link kept me updated throughout!"
-            </p>
-          </div>
-
-          <div class="d-flex align-items-center gap-3 pt-3 border-top">
-            <div class="vrl-tst-avatar">AM</div>
-            <div>
-              <h6 class="fw-bold text-dark mb-0 fs-7">Amit Mehta</h6>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Rishab Thakur</h6>
               <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Car Transportation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Corporate Relocation</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“Our office was ready for work again.”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “We had computers, files, workstations and quite a lot of furniture to move. The team planned the work section by section instead of packing everything randomly. That made setting up the new office much easier.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar">RR</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Rahul Reddy</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Corporate Relocation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Local Shifting</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“Third floor and no lift!”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “I knew the refrigerator and sofa would be difficult because our old building had no lift. The workers checked the staircase first and didn't try to force anything through. It took some effort, but both came down without damage.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar bg-dark text-white">SK</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Sahil Khan</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Local Shifting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Family Relocation</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“The packing was what impressed me.”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “I've moved before, so I know how hurried packing can become. This time felt different. Crockery and decorative pieces got proper attention, and the fragile cartons were kept separately. Everything important reached safely.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar">SS</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Saurab Sen Gupta</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Family Relocation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Interstate Move</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“They actually listened.”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “We had an old wooden cabinet that belonged to my grandparents. I told the supervisor that it couldn't be treated like normal furniture. He understood immediately and asked the team to give it extra protection. That small thing meant a lot.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar bg-dark text-white">AG</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Aarti Gupta</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Interstate Move</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 7 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Residential Move</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“No unnecessary confusion.”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “The thing I appreciated most was communication. I knew when the team would arrive, what they needed from us and how the shifting would happen. Moving day was busy, obviously, but we weren't left wondering what was going on.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar">ES</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Esha Saha</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Residential Move</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 8 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="vrl-tst-card d-flex flex-column justify-content-between h-100">
+          <div class="vrl-tst-quote-watermark"><i class="bi bi-quote"></i></div>
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="vrl-tst-stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="vrl-tst-route-pill">Bike Transportation</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-2">“My bike reached safely.”</h5>
+            <p class="vrl-about-prose text-dark mb-4">
+              “I needed my bike shifted to another city after a job transfer. I was mainly concerned about scratches during transport. The process was explained beforehand, and the bike reached in good condition. Pretty straightforward experience.”
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 pt-3 border-top">
+            <div class="vrl-tst-avatar bg-dark text-white">PR</div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 fs-7">Prity Rai</h6>
+              <span class="small text-muted fs-8"><i class="bi bi-patch-check-fill text-success me-1"></i> Bike Transportation</span>
             </div>
           </div>
         </div>
@@ -237,7 +340,7 @@ $clients_num = (int) preg_replace('/\D+/', '', $clients_raw);
     <!-- ============ WRITE A REVIEW CTA CARD (OPEN REVIEW MODAL FROM REVIEWS MODULE) ============ -->
     <div class="vrl-review-form-card mb-5 p-4 p-md-5 rounded-4 shadow-sm position-relative overflow-hidden bg-white border" id="write-review-box">
       <!-- Top Red & Yellow Gradient Line -->
-      <div style="position: absolute; top:0; left:0; width:100%; height:5px; background: linear-gradient(90deg, #D60412 0%, #FFB800 100%);"></div>
+      <div class="vrl-review-gradient-line"></div>
 
       <div class="row align-items-center g-3">
         <div class="col-lg-8">

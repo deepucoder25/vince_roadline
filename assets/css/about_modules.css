@@ -513,6 +513,28 @@
     line-height: 1.7;
 }
 
+/* Helper Utility Classes to Replace Inline Styles */
+.vrl-about-divider {
+    border-color: rgba(214, 4, 18, 0.15);
+}
+
+.vrl-about-box-subtitle {
+    font-size: 1.25rem;
+}
+
+.vrl-sec-subtitle-max {
+    max-width: 580px;
+}
+
+.vrl-review-gradient-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #D60412 0%, #FFB800 100%);
+}
+
 @media (max-width: 991.98px) {
     .vrl-about-hero-heading, .vrl-choose-heading {
         font-size: 1.95rem;

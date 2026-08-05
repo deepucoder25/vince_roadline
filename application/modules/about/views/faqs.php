@@ -43,12 +43,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingOne">
             <button class="accordion-button vrl-faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 1. How far in advance should I book my relocation with Vince Roadline?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> What makes VRL Packers and Movers a good option for me?
             </button>
           </h2>
           <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              We recommend booking your move at least <strong>3 to 5 days in advance</strong> for local household shifting and <strong>7 days in advance</strong> for interstate moving. However, we also accommodate urgent same-day or 24-hour emergency shifting requests depending on truck availability.
+              We have over <?= $yearsExperience ?> years of experience in the moving field, careful packing, trained account managers and customer satisfaction.
             </div>
           </div>
         </div>
@@ -57,19 +57,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingTwo">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 2. How is the shifting cost calculated? Are there any hidden charges?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> Do you provide services related to household relocation?
             </button>
           </h2>
           <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              Our quotation is <strong>100% transparent with zero hidden charges</strong>. Pricing depends on:
-              <ul class="vrl-policy-list mt-2 mb-0">
-                <li>Total inventory volume and weight of goods.</li>
-                <li>Distance between origin and destination addresses.</li>
-                <li>Packing material tier (e.g., 3-layer bubble cushion, wooden crates).</li>
-                <li>Floor elevation and availability of service lifts.</li>
-              </ul>
-              You receive a binding written contract before work starts — guaranteed no post-move price hikes!
+              Yes, our company assists in the whole household relocation process such as packing, loading, transportation and unloading.
             </div>
           </div>
         </div>
@@ -78,12 +71,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingThree">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 3. What packing materials do you use for fragile goods and electronics?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> Do you perform office relocation?
             </button>
           </h2>
           <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              We utilize premium industrial packaging materials including <strong>heavy-duty 3-layer bubble wrap, corrugated cardboard sheets, stretch film rolls, edge guards, and custom wooden crates</strong> for fragile glassware, mirrors, LED TVs, and antique artwork.
+              Yes, we also take care of office relocation through a planned process of packing and transportation.
             </div>
           </div>
         </div>
@@ -92,12 +85,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingFour">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 4. How can I track my shipment container in real-time?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> How do you pack fragile items?
             </button>
           </h2>
           <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              All Vince Roadline long-distance container trucks are fitted with <strong>24x7 GPS tracking systems</strong>. Once your goods are loaded, your dedicated Move Manager provides a live tracking link or direct phone updates so you can monitor transit progress step by step.
+              We take care of fragile goods or valuables, ensuring that they are packed properly utilizing suitable cushioning and protective resources according to dimensions of the items and delicacy level.
             </div>
           </div>
         </div>
@@ -106,12 +99,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingFive">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 5. Do you provide transit insurance for household goods and vehicles?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> How do you ensure hygiene when packing services?
             </button>
           </h2>
           <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              Yes, absolutely! We offer comprehensive <strong>Full Transit Insurance Coverage</strong> protecting your household items, furniture, car, or motorcycle against accidental damage, fire, or weather risks during transit across India.
+              Yes, our packing workers practice cleanliness and orderliness right from placing the order to the entire relocation process.
             </div>
           </div>
         </div>
@@ -120,12 +113,12 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingSix">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 6. Are your move specialists background-verified?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> Can I expect your company to move stuff interstate?
             </button>
           </h2>
           <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              Yes! We do not hire casual day laborers. Every member of the Vince Roadline packing crew is <strong>full-time, background-verified, trained, and uniformed</strong> to ensure complete safety and privacy for your home.
+              Yes, our packing and moving company provides local and intercity moving services for houses, businesses, and automobiles.
             </div>
           </div>
         </div>
@@ -134,12 +127,26 @@ $exp_num = (int) preg_replace('/\D+/', '', $exp_raw);
         <div class="accordion-item vrl-faq-item">
           <h2 class="accordion-header" id="faqHeadingSeven">
             <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
-              <i class="bi bi-patch-question-fill text-danger me-3"></i> 7. How does car and bike transportation work?
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> How much does it cost?
             </button>
           </h2>
           <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqHeadingSeven" data-bs-parent="#vrlFaqAccordion">
             <div class="accordion-body vrl-faq-body">
-              Vehicles are transported using <strong>specialized multi-car hydraulic car carriers and enclosed bike trailers</strong>. Cars are locked onto safety ramps with wheel stoppers and foam bumper guards to guarantee 100% scratch-free delivery.
+              The tariffs depend upon the total amount of items, distance, packing, manpower, vehicles used, and additional services.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="accordion-item vrl-faq-item">
+          <h2 class="accordion-header" id="faqHeadingEight">
+            <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseEight" aria-expanded="false" aria-controls="faqCollapseEight">
+              <i class="bi bi-patch-question-fill text-danger me-3"></i> When is the best time to book your move?
+            </button>
+          </h2>
+          <div id="faqCollapseEight" class="accordion-collapse collapse" aria-labelledby="faqHeadingEight" data-bs-parent="#vrlFaqAccordion">
+            <div class="accordion-body vrl-faq-body">
+              You should always attempt to book your move as early as possible, especially on weekends, at the end of the month, and during peak season.
             </div>
           </div>
         </div>
