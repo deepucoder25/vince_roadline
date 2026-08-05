@@ -5,24 +5,16 @@ $phonehtml = isset($phonehtml) ? $phonehtml : 'tel:' . preg_replace('/\D+/', '',
 
 $faqs_list = [
     [
-        'question' => 'What services do you offer?',
-        'answer' => 'We offer a wide range of services including home shifting, office shifting, car transportation, packing & unpacking, loading & unloading, goods insurance and storage solutions.'
+        'question' => 'How much do Packers and Movers charge?',
+        'answer' => 'The price depends on the distance, quantity of items, packing requirements, manpower, transportation vehicle and other selected services. Contact us to get a moving quotation.'
     ],
     [
-        'question' => 'How do I get a quote for my move?',
-        'answer' => 'You can request a quick quote by filling out our online form or by contacting our 24/7 customer support team.'
+        'question' => 'Does VRL provide home and office relocation?',
+        'answer' => 'Yes. We provide both Home Relocation and Office Relocation services.'
     ],
     [
-        'question' => 'Do you provide packing materials?',
-        'answer' => 'Yes, we use high-quality packing materials such as bubble wrap, corrugated sheets, stretch film, and sturdy boxes for maximum protection.'
-    ],
-    [
-        'question' => 'Is my shipment insured?',
-        'answer' => 'Yes, we provide comprehensive transit insurance options to ensure your belongings and vehicle are fully protected.'
-    ],
-    [
-        'question' => 'How long does it take to deliver?',
-        'answer' => 'Delivery time depends on the distance and destination route, but we guarantee safe and on-time delivery.'
+        'question' => 'Can you transport cars and bikes?',
+        'answer' => 'Yes. Car Transportation and Bike Transportation are included in our main moving services.'
     ]
 ];
 ?>

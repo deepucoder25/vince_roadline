@@ -5,7 +5,7 @@ $services = [
         'title' => 'HOME RELOCATION',
         'icon' => 'bi bi-house-door-fill',
         'icon_theme' => 'vrl-icon-bg-red',
-        'desc' => 'Safe and secure shifting of your household items with perfect packing and on-time delivery.',
+        'desc' => 'Planned relocation of household items such as furniture, appliances, kitchenware, electronics and personal items.',
         'image' => 'home.jpg',
         'link' => 'home-relocation'
     ],
@@ -13,7 +13,7 @@ $services = [
         'title' => 'OFFICE SHIFTING',
         'icon' => 'bi bi-building',
         'icon_theme' => 'vrl-icon-bg-yellow',
-        'desc' => 'Hassle-free office relocation with minimal downtime and complete care.',
+        'desc' => 'Organised relocation of workstations, computers, furniture, documents and office equipment.',
         'image' => 'office.jpg',
         'link' => 'office-relocation'
     ],
@@ -21,7 +21,7 @@ $services = [
         'title' => 'CAR TRANSPORTATION',
         'icon' => 'bi bi-car-front-fill',
         'icon_theme' => 'vrl-icon-bg-red',
-        'desc' => 'Door-to-door transportation of cars with advanced safety measures.',
+        'desc' => 'Safe and planned car shifting according to the transportation route.',
         'image' => 'car.jpg',
         'link' => 'car-transportation'
     ],
@@ -29,7 +29,7 @@ $services = [
         'title' => 'BIKE TRANSPORTATION',
         'icon' => 'bi bi-bicycle',
         'icon_theme' => 'vrl-icon-bg-yellow',
-        'desc' => 'Safe and scratch-free bike carrier transportation to any city with complete safety.',
+        'desc' => 'Moving help for motorcycles and scooters according to the serviceable transportation route.',
         'image' => 'bike.jpg',
         'link' => 'bike-transportation'
     ],
@@ -37,7 +37,7 @@ $services = [
         'title' => 'PACKING & MOVING',
         'icon' => 'bi bi-box-seam-fill',
         'icon_theme' => 'vrl-icon-bg-red',
-        'desc' => 'High-quality packing materials and expert packing for maximum protection of your goods.',
+        'desc' => 'Appropriate packing material and careful preparation of the items before transportation.',
         'image' => 'packing_unpacking.jpg',
         'link' => 'packing-and-moving'
     ],
@@ -45,7 +45,7 @@ $services = [
         'title' => 'LOADING & UNLOADING',
         'icon' => 'bi bi-truck-flatbed',
         'icon_theme' => 'vrl-icon-bg-yellow',
-        'desc' => 'Trained professionals for safe loading and unloading of your heavy belongings.',
+        'desc' => 'Professional manpower for careful handling during picking up and delivering.',
         'image' => 'loading_unloading.jpg',
         'link' => 'loading-unloading'
     ],
@@ -55,6 +55,37 @@ $services = [
 <section class="vrl-services-section py-4">
   <div class="container position-relative">
     
+    <!-- Top Branch Location Cards (Adampur & Bengaluru) -->
+    <div class="row g-3 g-lg-4 mb-4">
+      <div class="col-md-6 col-12 d-flex">
+        <div class="vrl-location-box w-100">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div class="vrl-location-badge vrl-loc-red">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <h3 class="vrl-location-title mb-0">Packers and Movers in Adampur</h3>
+          </div>
+          <p class="vrl-location-text mb-0">
+            If you are looking for Packers and Movers in Adampur, then our headquarters is at: <strong>H.No. 07, Vikaas Colony, near Loha Mandi, Vikas Nagar, Adampur, Haryana 125052</strong>. Clients can reach out to us for domestic moves, office shifts, vehicles shifting and packing services.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 d-flex">
+        <div class="vrl-location-box w-100">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div class="vrl-location-badge vrl-loc-yellow">
+              <i class="bi bi-building"></i>
+            </div>
+            <h3 class="vrl-location-title mb-0">Packers and Movers in Bengaluru</h3>
+          </div>
+          <p class="vrl-location-text mb-0">
+            We provide our Packers and Movers in Bengaluru via our Whitefield branch: <strong>No. 4, 4th Cross Road, N 7 KIADB Export Promotion, 4th Cross Industrial Area, Whitefield, Opp. to OPPO Showroom, Bengaluru, Karnataka 560066</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- Section Header -->
     <div class="vrl-sec-header text-center mb-4 mb-lg-5">
       <div class="vrl-sec-eyebrow mb-2">
@@ -64,7 +95,7 @@ $services = [
       </div>
       
       <h2 class="vrl-sec-title mb-2">
-        COMPLETE RELOCATION <span class="vrl-text-red">SOLUTIONS</span> FOR YOU
+        OUR <span class="vrl-text-red">PACKING AND MOVING</span> SERVICES
       </h2>
       
       <!-- Dashed Route Line + Truck Graphic -->
@@ -75,7 +106,7 @@ $services = [
       </div>
       
       <p class="vrl-sec-subtitle">
-        From careful packing to safe delivery, we offer end-to-end moving services tailored to meet your needs with trust and care.
+       As professional Packers and Movers, we provide:
       </p>
     </div>
 

@@ -985,6 +985,160 @@
     z-index: 1;
 }
 
+/* About VRL Content Box */
+.vrl-about-content-box {
+    background: #ffffff;
+    border: 1px solid rgba(214, 4, 18, 0.15);
+    border-left: 5px solid var(--vrl-primary-red, #d60412);
+    border-radius: 18px;
+    padding: 26px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vrl-about-content-box:hover {
+    box-shadow: 0 15px 35px rgba(214, 4, 18, 0.12);
+    transform: translateY(-2px);
+}
+
+.vrl-about-box-badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--vrl-primary-red, #d60412) 0%, #b0030e 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(214, 4, 18, 0.25);
+    flex-shrink: 0;
+}
+
+.vrl-about-box-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--vrl-dark-text, #111111);
+    letter-spacing: -0.3px;
+}
+
+.vrl-about-box-text p {
+    font-size: 15px;
+    color: var(--vrl-body-text, #444444);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.vrl-about-box-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Why Choose VRL Content Box */
+.vrl-why-choose-box {
+    background: #ffffff;
+    border: 1px solid rgba(255, 184, 0, 0.35);
+    border-left: 5px solid var(--vrl-accent-yellow, #ffb800);
+    border-radius: 18px;
+    padding: 26px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vrl-why-choose-box:hover {
+    box-shadow: 0 15px 35px rgba(255, 184, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.vrl-why-choose-badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--vrl-accent-yellow, #ffb800) 0%, #e0a200 100%);
+    color: var(--vrl-dark-text, #111111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.vrl-why-choose-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--vrl-dark-text, #111111);
+    letter-spacing: -0.3px;
+}
+
+.vrl-why-choose-text p {
+    font-size: 15px;
+    color: var(--vrl-body-text, #444444);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.vrl-why-choose-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Location Cards (Adampur & Bengaluru) */
+.vrl-location-box {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 24px 26px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vrl-location-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+    border-color: rgba(214, 4, 18, 0.25);
+}
+
+.vrl-location-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.vrl-loc-red {
+    background: linear-gradient(135deg, var(--vrl-primary-red, #d60412) 0%, #b0030e 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(214, 4, 18, 0.25);
+}
+
+.vrl-loc-yellow {
+    background: linear-gradient(135deg, var(--vrl-accent-yellow, #ffb800) 0%, #e0a200 100%);
+    color: var(--vrl-dark-text, #111111);
+    box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
+}
+
+.vrl-location-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--vrl-dark-text, #111111);
+    letter-spacing: -0.3px;
+}
+
+.vrl-location-text {
+    font-size: 14.5px;
+    color: var(--vrl-body-text, #444444);
+    line-height: 1.65;
+}
+
 @media (max-width: 991.98px) {
     .vrl-about-multi-img-wrap {
         min-height: 350px;

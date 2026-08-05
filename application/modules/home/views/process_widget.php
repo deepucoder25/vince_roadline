@@ -8,7 +8,7 @@ $process_steps = [
         'step' => '01',
         'title' => 'ENQUIRY & BOOKING',
         'icon' => 'bi bi-headset',
-        'desc' => 'Share your requirements with us and get a quick quote. Confirm your booking with ease.',
+        'desc' => 'Inform us about your pickup location, destination, moving date and moving requirements. Get a quick quotation and make the booking.',
         'theme' => 'vrl-step-navy',
         'has_arrow' => true
     ],
@@ -16,7 +16,7 @@ $process_steps = [
         'step' => '02',
         'title' => 'SURVEY & PLANNING',
         'icon' => 'bi bi-clipboard-check',
-        'desc' => 'Our team assesses your move and plans every detail for a smooth relocation.',
+        'desc' => 'Our team assesses the moving requirements and makes the plan of packing, manpower, handling and transportation accordingly.',
         'theme' => 'vrl-step-yellow',
         'has_arrow' => true
     ],
@@ -24,7 +24,7 @@ $process_steps = [
         'step' => '03',
         'title' => 'PACKING & PREPARATION',
         'icon' => 'bi bi-box-seam',
-        'desc' => 'We use premium packing materials to securely pack your items for safe transport.',
+        'desc' => 'Appropriate packing material is used to pack your items for transportation.',
         'theme' => 'vrl-step-red',
         'has_arrow' => true
     ],
@@ -32,7 +32,7 @@ $process_steps = [
         'step' => '04',
         'title' => 'TRANSPORT & MOVING',
         'icon' => 'bi bi-truck',
-        'desc' => 'Your belongings are transported safely with our well-maintained fleet and expert team.',
+        'desc' => 'The packed items are transported according to the moving arrangements which were made previously.',
         'theme' => 'vrl-step-navy',
         'has_arrow' => true
     ],
@@ -40,7 +40,7 @@ $process_steps = [
         'step' => '05',
         'title' => 'DELIVERY & UNLOADING',
         'icon' => 'bi bi-box2-heart',
-        'desc' => 'We deliver your items safely and unload them with care at your new location.',
+        'desc' => 'The items are delivered and unloaded carefully at your destination.',
         'theme' => 'vrl-step-yellow',
         'has_arrow' => true
     ],
@@ -48,7 +48,7 @@ $process_steps = [
         'step' => '06',
         'title' => 'SETUP & SETTLEMENT',
         'icon' => 'bi bi-house-check',
-        'desc' => 'We help you set up everything and ensure you settle in comfortably and stress-free.',
+        'desc' => 'If you choose the setup and settlement service during the selection of your moving services, we can assist you in placing the items after delivery.',
         'theme' => 'vrl-step-red',
         'has_arrow' => false
     ],
@@ -67,7 +67,7 @@ $process_steps = [
       </div>
       
       <h2 class="vrl-sec-title mb-2">
-        SIMPLE STEPS <span class="vrl-text-red">FOR A SMOOTH MOVE</span>
+        HOW <span class="vrl-text-red">OUR MOVING PROCESS</span> WORKS
       </h2>
       
       <!-- Dashed Route Line + Truck Graphic -->
