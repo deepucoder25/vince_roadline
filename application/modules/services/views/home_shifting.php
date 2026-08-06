@@ -19,15 +19,15 @@
     <!-- ============ SECTION 1: CLEAN SIMPLE CONTENT BOX ============ -->
     <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
       <h2 class="vrl-simple-heading mb-4">
-        Complete Household Shifting &amp; Home Relocation Services
+        Home Relocation Service for Safe Household Shifting
       </h2>
 
       <p class="vrl-about-prose mb-3">
-        Welcome to <strong><?= htmlspecialchars($company3) ?></strong>, India's most trusted household shifting and home relocation company. We offer seamless door-to-door moving services for 1BHK, 2BHK, 3BHK apartments, villas, and independent bungalows across all major cities and states in India.
+        Planning to shift your household? Our <b>Home Relocation Service</b> handles packing, furniture protection, loading, transportation and delivery under one organised plan. Local shifting may start around ₹4,000, while the actual price depends on home size, distance, packing and manpower.
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of expertise and <?= $happyClients ?> happy families relocated, our trained move specialists handle every aspect of your shift — from 3-layer bubble packaging of fragile crockery and electronic appliances to disassembly, container transport, unpacking, and room placement.
+        With 20+ years of experience, <strong><?= $company3 ?></strong> understands that household shifting isn't simply about transporting boxes. Your furniture, appliances and personal belongings need different levels of care.
       </p>
 
       <!-- 3 Feature Check Pills -->
@@ -52,6 +52,128 @@
           <i class="bi bi-calculator-fill"></i> Get Instant Quote
         </button>
       </div>
+    </div>
+
+    <!-- ============ WHAT ACTUALLY HAPPENS DURING A HOME MOVE ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h2 class="vrl-simple-heading mb-4">
+        What Actually Happens During a Home Move?
+      </h2>
+
+      <p class="vrl-about-prose mb-3">
+        A <b>professional Home Relocation Service</b> begins before the first carton is packed. The team checks your approximate inventory, floor level, lift availability, vehicle access and special items.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        The service may cover:
+      </p>
+
+      <ul class="vrl-about-prose mb-4 ps-4">
+        <li>Household goods packing</li>
+        <li>Furniture wrapping and dismantling</li>
+        <li>Fragile-item protection</li>
+        <li>Loading and transportation</li>
+        <li>Appliance handling</li>
+        <li>Unloading at destination</li>
+        <li>Basic placement and unpacking support</li>
+      </ul>
+
+      <p class="vrl-about-prose text-muted mb-0">
+        People searching for <em>Home Relocation Service Services</em> often focus on transport charges first. Packing quality deserves equal attention because many scratches and breakages actually begin during handling.
+      </p>
+    </div>
+
+    <!-- ============ YOUR CROCKERY AND SOFA SHOULDN'T BE PACKED THE SAME WAY ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Your Crockery and Sofa Shouldn't Be Packed the Same Way</h3>
+      <p class="vrl-about-prose mb-3">
+        Different belongings need different protection. Glassware requires cushioning and controlled carton space. Mattresses need protection against dust. Refrigerators should remain upright during handling. Furniture corners require extra attention because they are particularly exposed while passing through doors and staircases.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        For Top Home Relocation Service, this item-specific approach matters.
+      </p>
+
+      <p class="vrl-about-prose mb-2">
+        Our staff commonly work with:
+      </p>
+
+      <ul class="vrl-about-prose mb-0 ps-4">
+        <li>Multi-ply cartons</li>
+        <li>Bubble wrap</li>
+        <li>Foam sheets</li>
+        <li>Stretch film</li>
+        <li>Corner guards</li>
+        <li>Packing tape and identification labels</li>
+      </ul>
+    </div>
+
+    <!-- ============ HOW OUR MOVING TEAM HANDLES YOUR HOME ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3"><span>How Our Moving Team Handles Your Home</span></h3>
+      <p class="vrl-about-prose mb-3">
+        Our Home Relocation Service staff divide the work according to packing, handling and loading responsibilities. A supervisor monitors the inventory and coordinates the sequence.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Heavy furniture isn't simply pushed towards the truck first. The team considers dismantling requirements, doorway access and how each item will sit inside the vehicle. Cartons are marked according to rooms wherever practical. At the new property, that simple step saves considerable time.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        And if you're comparing Best Home Relocation Service, ask how the team handles the loading sequence. That's often more revealing than a long sales pitch.
+      </p>
+    </div>
+
+    <!-- ============ ONE AWKWARD DINING TABLE, ONE SIMPLE SOLUTION ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h4 class="vrl-simple-heading mb-3">One Awkward Dining Table, One Simple Solution</h4>
+      <p class="vrl-about-prose mb-3">
+        During a typical 2 BHK move, imagine a family with a large six-seater dining table. Everything fits inside the building lift except the tabletop.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Forcing it would risk damaging both the table and lift. The supervisor checks the fittings, separates the removable section, protects the corners and sends the components separately. The table is assembled again after delivery.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Nothing complicated. Just experience being useful at the right moment. After 20+ years of experience in moving work, situations like these explain why planning matters in a Home Relocation Service.
+      </p>
+    </div>
+
+    <!-- ============ LOCAL OR INTERCITY HOME SHIFTING? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3"><span>Local or Intercity Home Shifting?</span></h3>
+      <p class="vrl-about-prose mb-3">
+        A Local Home Relocation Service usually focuses on completing the move within the city or nearby region. Intercity relocation needs additional packing, route planning and longer-distance transportation.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        If you're searching Home Relocation Service Near Me, tell the mover your destination immediately. It changes the vehicle, packing plan, estimated delivery period and quotation.
+      </p>
+    </div>
+
+    <!-- ============ WHAT WILL YOUR HOME SHIFTING COST? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3"><span>What Will Your Home Shifting Cost?</span></h3>
+      <p class="vrl-about-prose mb-3">
+        A small local move may begin around ₹4,000. Larger 2 BHK and 3 BHK relocations can cost considerably more. Pricing depends on household volume, distance, packing materials, floor level, lift access, manpower, vehicle size and special handling.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Yes, professional Home Relocation Service requires investment, but here's why it's worth it: you aren't arranging packers, labour and transportation separately. A written quotation also makes comparing <em>Top Home Relocation Service</em> far easier.
+      </p>
+    </div>
+
+    <!-- ============ WORRIED ABOUT DAMAGE? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3"><span>Worried About Damage?</span></h3>
+      <p class="vrl-about-prose mb-3">
+        That's probably the most common concern.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        The Best Home Relocation Service reduces handling risks through appropriate packing, controlled lifting and sensible vehicle placement. Fragile goods should be identified before packing begins rather than after something goes wrong. Ask about transit protection or insurance options for intercity moves as applicable.
+      </p>
     </div>
 
     <!-- ============ SECTION 2: 3 HOME SHIFTING CATEGORY CARDS ============ -->
@@ -207,12 +329,12 @@
       </div>
     </div>
 
-    <!-- ============ SECTION 5: HOME SHIFTING FAQS ACCORDION ============ -->
+    <!-- ============ SECTION 5: HOME RELOCATION SERVICE FAQS ACCORDION ============ -->
     <div class="mb-5">
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Common Queries</span>
-        <h3 class="vrl-about-title mb-2">Household Shifting <span class="vrl-about-highlight">FAQs</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Got questions about packing materials or pricing? Here are the top answers.</p>
+        <h3 class="vrl-about-title mb-2">Home Relocation Service <span class="vrl-about-highlight">FAQs</span></h3>
+        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Home Relocation Service Questions Answered</p>
       </div>
 
       <div class="max-w-900 mx-auto">
@@ -222,12 +344,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="homeFaqOne">
               <button class="accordion-button vrl-faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseOne" aria-expanded="true" aria-controls="homeCollapseOne">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 1. How is the household shifting cost calculated?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How much does Home Relocation Service cost?
               </button>
             </h2>
             <div id="homeCollapseOne" class="accordion-collapse collapse show" aria-labelledby="homeFaqOne" data-bs-parent="#vrlHomeFaq">
               <div class="accordion-body vrl-faq-body">
-                Our quotation is <strong>100% fixed and transparent with zero hidden costs</strong>. Pricing depends on total inventory volume, packing material quality, floor height/elevator access, and transit distance.
+                Prices depend on inventory, distance, manpower and packing requirements. Small local moves may begin at approximately ₹4,000.
               </div>
             </div>
           </div>
@@ -236,12 +358,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="homeFaqTwo">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseTwo" aria-expanded="false" aria-controls="homeCollapseTwo">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 2. How do you protect fragile items like mirrors, glass tables &amp; TVs?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can you move a complete 2 BHK or 3 BHK?
               </button>
             </h2>
             <div id="homeCollapseTwo" class="accordion-collapse collapse" aria-labelledby="homeFaqTwo" data-bs-parent="#vrlHomeFaq">
               <div class="accordion-body vrl-faq-body">
-                We wrap all delicate items in <strong>heavy-duty 3-layer bubble wrap, corrugated sheets, corner guards, and custom wooden crates</strong>. Electronic appliances are packed inside padded cardboard cartons.
+                Yes. The manpower, packing material and vehicle are planned according to household volume.
               </div>
             </div>
           </div>
@@ -250,12 +372,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="homeFaqThree">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseThree" aria-expanded="false" aria-controls="homeCollapseThree">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 3. Do you assist with unpacking and furniture reassembly?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How long does local home shifting take?
               </button>
             </h2>
             <div id="homeCollapseThree" class="accordion-collapse collapse" aria-labelledby="homeFaqThree" data-bs-parent="#vrlHomeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! Our unpacking team unloads, unwraps, reassembles beds, wardrobes, and dining tables, and places furniture in designated rooms according to your layout preference.
+                Many local moves can be completed within a day, depending on inventory, distance and building access.
               </div>
             </div>
           </div>
@@ -264,12 +386,54 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="homeFaqFour">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseFour" aria-expanded="false" aria-controls="homeCollapseFour">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 4. Do you provide transit insurance for household goods?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Do you dismantle furniture?
               </button>
             </h2>
             <div id="homeCollapseFour" class="accordion-collapse collapse" aria-labelledby="homeFaqFour" data-bs-parent="#vrlHomeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes, we offer comprehensive <strong>Full Transit Insurance Coverage</strong> protecting your furniture, appliances, and personal goods against accidental damage, fire, or weather risks during transit across India.
+                Selected furniture can be dismantled where required and practical.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="homeFaqFive">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseFive" aria-expanded="false" aria-controls="homeCollapseFive">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can fragile kitchen items be shifted safely?
+              </button>
+            </h2>
+            <div id="homeCollapseFive" class="accordion-collapse collapse" aria-labelledby="homeFaqFive" data-bs-parent="#vrlHomeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Yes. Fragile items require cushioning, suitable cartons and controlled loading.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="homeFaqSix">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseSix" aria-expanded="false" aria-controls="homeCollapseSix">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How early should I book?
+              </button>
+            </h2>
+            <div id="homeCollapseSix" class="accordion-collapse collapse" aria-labelledby="homeFaqSix" data-bs-parent="#vrlHomeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Booking several days ahead is sensible, particularly for weekends and month-end dates.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="homeFaqSeven">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapseSeven" aria-expanded="false" aria-controls="homeCollapseSeven">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> What should I compare while searching Home Relocation Service Services Near Me?
+              </button>
+            </h2>
+            <div id="homeCollapseSeven" class="accordion-collapse collapse" aria-labelledby="homeFaqSeven" data-bs-parent="#vrlHomeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Compare packing standards, manpower, transportation, quotation details and handling experience, not price alone.
               </div>
             </div>
           </div>

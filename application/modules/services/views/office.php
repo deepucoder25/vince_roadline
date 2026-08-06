@@ -18,15 +18,15 @@
     <!-- ============ SECTION 1: CLEAN SIMPLE CONTENT BOX ============ -->
     <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
       <h2 class="vrl-simple-heading mb-4">
-        Corporate Office Relocation &amp; Commercial Logistics
+        Office Relocation Service With Planned Business Shifting
       </h2>
 
       <p class="vrl-about-prose mb-3">
-        Welcome to <strong><?= htmlspecialchars($company3) ?></strong>, India's leading corporate office shifting and commercial logistics specialist. We provide end-to-end relocation solutions for startups, corporate offices, IT hubs, bank branches, and commercial warehouses.
+        An office move isn't successful just because every chair reaches the new address. Your computers, files, workstations and essential equipment need to arrive in an order that helps your staff resume work quickly.
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of commercial logistics expertise, our certified project managers execute weekend and overnight relocations to guarantee <strong>Zero Business Downtime</strong>. We handle modular desk dismantling, color-coded workstation tagging, IT server rack packing, and sealed container transportation.
+        Our Office Relocation Service, backed by 20+ years of experience, is planned around asset safety, organised packing and reduced business disruption. Small office moves may start around ₹6,000, with final pricing based on inventory and requirements.
       </p>
 
       <!-- 3 Feature Check Pills -->
@@ -51,6 +51,145 @@
           <i class="bi bi-calculator-fill"></i> Get Instant Quote
         </button>
       </div>
+    </div>
+
+    <!-- ============ THE REAL COST OF AN UNPLANNED OFFICE MOVE ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">The Real Cost of an Unplanned Office Move</h3>
+      <p class="vrl-about-prose mb-3">
+        Suppose your computers arrive safely, but nobody knows which CPU belongs to which workstation. That's still a problem.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Professional Office Relocation Service planning considers identification, department-wise packing, electronics handling and the order in which assets will be required at the destination.
+      </p>
+
+      <p class="vrl-about-prose mb-2">
+        Our service can include:
+      </p>
+
+      <ul class="vrl-about-prose mb-4 ps-4">
+        <li>Office inventory assessment</li>
+        <li>Computer and monitor packing</li>
+        <li>File and document boxing</li>
+        <li>Workstation dismantling support</li>
+        <li>Office furniture handling</li>
+        <li>Loading and commercial transportation</li>
+        <li>Destination unloading</li>
+        <li>Department-wise placement support</li>
+      </ul>
+
+      <p class="vrl-about-prose text-muted mb-0">
+        Businesses comparing Top Office Relocation Service Services should ask how the mover plans the move, not simply how quickly a truck can arrive.
+      </p>
+    </div>
+
+    <!-- ============ COMPUTERS, PRINTERS AND FILES NEED A SYSTEM ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Computers, Printers and Files Need a System</h3>
+      <p class="vrl-about-prose mb-3">
+        Electronics require cushioning and controlled handling. Monitors need screen protection; CPUs shouldn't be stacked like ordinary cartons. Files create a different challenge.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Accounts records, HR documents and project files can be labelled department-wise so they're easier to locate after shifting. With 20+ years of experience Our staff understand that an organised office move is partly a logistics job and partly an identification job. That distinction matters.
+      </p>
+    </div>
+
+    <!-- ============ HOW OUR COMMERCIAL MOVING STAFF WORK ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">How Our Commercial Moving Staff Work</h3>
+      <p class="vrl-about-prose mb-3">
+        Before the Office Relocation Service begins, the supervisor reviews office size, workstations, electronics, furniture, building access and the destination layout.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Packing can then be scheduled section by section. Business-critical systems may be identified separately. Furniture requiring dismantling is handled according to the moving plan, while computers and sensitive equipment receive appropriate protection.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Loading follows the planned sequence so priority assets remain identifiable at delivery.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        For companies searching Office Relocation Service, this structured approach can reduce unnecessary confusion on reopening day.
+      </p>
+    </div>
+
+    <!-- ============ THE MONDAY MORNING DEADLINE ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">The Monday Morning Deadline</h3>
+      <p class="vrl-about-prose mb-3">
+        Consider a 25-person company shifting offices over the weekend. Management has one request: customer support must be operational Monday morning.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Instead of treating all 25 workstations equally, the supervisor marks six customer-support systems as priority equipment. Their monitors, CPUs, accessories and chairs are coded separately.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        At the destination, those assets are unloaded into the required section first. Monday morning arrives. The entire office may still need finishing touches, but the customer-support team can start.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        That's what a practical Office Relocation Service should achieve.
+      </p>
+    </div>
+
+    <!-- ============ CAN OFFICE SHIFTING REDUCE BUSINESS DOWNTIME? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Can Office Shifting Reduce Business Downtime?</h3>
+      <p class="vrl-about-prose mb-3">
+        Often, yes. Smaller moves may be scheduled outside normal working hours. Larger relocations can be divided into stages according to department priorities.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        The Best Office Relocation Service doesn't promise "zero downtime" without understanding the business first. They ask what absolutely needs to function and plan around it.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        If you're looking for Office Relocation Service, discuss your preferred moving window during the initial assessment.
+      </p>
+    </div>
+
+    <!-- ============ WHAT DETERMINES OFFICE MOVING CHARGES? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">What Determines Office Moving Charges?</h3>
+      <p class="vrl-about-prose mb-3">
+        Office relocation pricing depends on workstations, furniture volume, electronic equipment, packing requirements, manpower, floors, lifts, transport distance and dismantling work.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Yes, professional Office Relocation Service requires investment, but a poorly managed move can also cost productive working hours.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Small local office moves may begin around ₹6,000. Medium and larger commercial moves require an inventory-based quotation.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Ask Top Office Relocation Service for a written scope before confirming the job.
+      </p>
+    </div>
+
+    <!-- ============ HANDLING STANDARDS OUR STAFF FOLLOW ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Handling Standards Our Staff Follow</h3>
+      <p class="vrl-about-prose mb-3">
+        Our team uses suitable cartons, protective wrapping, foam protection, labels and moving equipment according to the assets involved.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Electronics are handled separately rather than mixed casually with heavy furniture.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        And confidential records? Keep those identified and controlled.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        <?= $company3 ?> can plan Local Office Relocation Service and intercity commercial moves according to business requirements.
+      </p>
     </div>
 
     <!-- ============ SECTION 2: 3 COMMERCIAL CATEGORY CARDS ============ -->
@@ -211,7 +350,7 @@
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Common Queries</span>
         <h3 class="vrl-about-title mb-2">Office Relocation <span class="vrl-about-highlight">FAQs</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Got questions about weekend moves or IT server safety? Here are the top answers.</p>
+        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Before You Move the Office: Common Questions</p>
       </div>
 
       <div class="max-w-900 mx-auto">
@@ -221,12 +360,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="officeFaqOne">
               <button class="accordion-button vrl-faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseOne" aria-expanded="true" aria-controls="officeCollapseOne">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 1. Can you execute office shifting on weekends to avoid business downtime?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How much does an Office Relocation Service cost?
               </button>
             </h2>
             <div id="officeCollapseOne" class="accordion-collapse collapse show" aria-labelledby="officeFaqOne" data-bs-parent="#vrlOfficeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes, absolutely! Over 80% of our corporate relocations are executed on <strong>Friday evenings, Saturdays, and Sundays</strong> so your office is 100% operational on Monday morning.
+                Small local moves may begin around ₹6,000. Actual pricing depends heavily on office inventory and distance.
               </div>
             </div>
           </div>
@@ -235,12 +374,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="officeFaqTwo">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseTwo" aria-expanded="false" aria-controls="officeCollapseTwo">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 2. How do you protect sensitive IT servers, monitors &amp; electronics?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can office shifting happen after working hours?
               </button>
             </h2>
             <div id="officeCollapseTwo" class="accordion-collapse collapse" aria-labelledby="officeFaqTwo" data-bs-parent="#vrlOfficeFaq">
               <div class="accordion-body vrl-faq-body">
-                We pack IT hardware using <strong>anti-static bubble wrap, padded flight crates, corner foam protectors, and customized wooden crating</strong>. Containers are sealed and monitored 24x7.
+                It can be planned according to building access, staff availability and the size of the move.
               </div>
             </div>
           </div>
@@ -249,12 +388,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="officeFaqThree">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseThree" aria-expanded="false" aria-controls="officeCollapseThree">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 3. Do you dismantle and re-assemble modular workstations?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How are computers protected?
               </button>
             </h2>
             <div id="officeCollapseThree" class="accordion-collapse collapse" aria-labelledby="officeFaqThree" data-bs-parent="#vrlOfficeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! Our carpenters and technical crew dismantle modular office cubicles, executive desks, conference tables, and wall-mounted whiteboards, and re-assemble them according to your new floor plan layout.
+                Monitors, CPUs and peripherals receive suitable protective packing and identification.
               </div>
             </div>
           </div>
@@ -263,12 +402,54 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="officeFaqFour">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseFour" aria-expanded="false" aria-controls="officeCollapseFour">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 4. Do you provide commercial transit insurance?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can files be packed department-wise?
               </button>
             </h2>
             <div id="officeCollapseFour" class="accordion-collapse collapse" aria-labelledby="officeFaqFour" data-bs-parent="#vrlOfficeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes, we provide comprehensive <strong>Commercial Transit &amp; Goods Insurance</strong> protecting all office furniture, IT servers, computers, and official files during transit.
+                Yes. Department-wise labelling makes sorting much easier after delivery.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="officeFaqFive">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseFive" aria-expanded="false" aria-controls="officeCollapseFive">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Do you move office furniture?
+              </button>
+            </h2>
+            <div id="officeCollapseFive" class="accordion-collapse collapse" aria-labelledby="officeFaqFive" data-bs-parent="#vrlOfficeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Yes, including suitable desks, chairs, cabinets and selected modular furniture.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="officeFaqSix">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseSix" aria-expanded="false" aria-controls="officeCollapseSix">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can you handle an intercity office move?
+              </button>
+            </h2>
+            <div id="officeCollapseSix" class="accordion-collapse collapse" aria-labelledby="officeFaqSix" data-bs-parent="#vrlOfficeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Yes, subject to route, inventory and transportation requirements.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="officeFaqSeven">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapseSeven" aria-expanded="false" aria-controls="officeCollapseSeven">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How far in advance should a business book be?
+              </button>
+            </h2>
+            <div id="officeCollapseSeven" class="accordion-collapse collapse" aria-labelledby="officeFaqSeven" data-bs-parent="#vrlOfficeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Early planning is recommended, especially if the move must happen during a specific weekend.
               </div>
             </div>
           </div>

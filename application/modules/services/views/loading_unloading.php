@@ -19,15 +19,19 @@
     <!-- ============ SECTION 1: CLEAN SIMPLE CONTENT BOX ============ -->
     <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
       <h2 class="vrl-simple-heading mb-4">
-        Safe Loading &amp; Unloading Services Across India
+        Loading and Unloading Service With Trained Moving Staff
       </h2>
 
       <p class="vrl-about-prose mb-3">
-        Welcome to <strong><?= htmlspecialchars($company3) ?></strong>, India's premier loading and unloading logistics specialist. Loading heavy furniture, fragile electronics, and commercial goods into container trucks requires skilled handling, proper weight distribution, and professional lifting equipment.
+        You've arranged the truck. The goods are packed. Now comes the part where a refrigerator, wardrobe or heavy carton can be damaged in seconds if it's lifted or stacked incorrectly.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Our Loading and Unloading Service provides trained manpower for household, office and relocation goods. With 20+ years of experience, our staff plan lifting, vehicle placement and unloading according to item weight and property access.
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of logistics excellence and <?= $happyClients ?> successful moves, our background-verified moving crews use heavy-duty lifting straps, hydraulic ramps, corner wall protectors, and wheel dollies to ensure zero scratches or structural damage.
+        Small labour jobs may start around ₹1,200 to ₹2,000, while larger requirements depend on manpower, load and floor conditions.
       </p>
 
       <!-- 3 Feature Check Pills -->
@@ -52,6 +56,149 @@
           <i class="bi bi-calculator-fill"></i> Get Instant Quote
         </button>
       </div>
+    </div>
+
+    <!-- ============ HEAVY DOESN'T ALWAYS MEAN DIFFICULT ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Heavy Doesn't Always Mean Difficult</h3>
+      <p class="vrl-about-prose mb-3">
+        Awkward is often harder than heavy. A large sofa might weigh less than a commercial cabinet but become much harder to move through a narrow staircase. A refrigerator may fit through the door but require several people to maintain a controlled angle.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        That's why Loading and Unloading Service planning begins by understanding the goods and access route.
+      </p>
+
+      <p class="vrl-about-prose mb-2">
+        Service support can include:
+      </p>
+
+      <ul class="vrl-about-prose mb-0 ps-4">
+        <li>Household goods handling</li>
+        <li>Furniture lifting</li>
+        <li>Appliance movement</li>
+        <li>Truck loading</li>
+        <li>Carton stacking</li>
+        <li>Destination unloading</li>
+        <li>Room-wise placement</li>
+        <li>Selected heavy-item handling</li>
+      </ul>
+    </div>
+
+    <!-- ============ BEFORE ANYONE STARTS LIFTING, OUR STAFF CHECK THE ROUTE ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Before Anyone Starts Lifting, Our Staff Check the Route</h3>
+      <p class="vrl-about-prose mb-3">
+        This part is easy to overlook. Our Loading and Unloading Service staff check stairs, doorway width, lift availability, parking distance and bulky goods before deciding how the work should proceed.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        With 20+ years of experience, we've learned that extra force isn't the answer to every difficult item.
+      </p>
+
+      <p class="vrl-about-prose mb-1">Sometimes the answer is from a different angle.</p>
+      <p class="vrl-about-prose mb-1">Sometimes it's another staff member or a trolley.</p>
+      <p class="vrl-about-prose mb-0">And sometimes the correct decision is to stop and reassess.</p>
+    </div>
+
+    <!-- ============ HOW GOODS ARE POSITIONED INSIDE THE VEHICLE ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">How Goods Are Positioned Inside the Vehicle</h3>
+      <p class="vrl-about-prose mb-3">
+        Loading isn't a game of filling empty spaces. Heavy and stable items require sensible placement. Fragile cartons shouldn't carry unnecessary weight above them. Furniture surfaces need protection against rubbing, and goods should be positioned with road movement in mind.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        The Top Loading and Unloading Service pays attention to vehicle weight distribution as well as lifting.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Our staff coordinate each lift rather than having several people pull in different directions. That protects goods and reduces unnecessary handling risk.
+      </p>
+    </div>
+
+    <!-- ============ TOOLS THAT HELP WITH DIFFICULT LOADS ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Tools That Help With Difficult Loads</h3>
+      <p class="vrl-about-prose mb-2">
+        Depending on the requirement, our Local and Loading Unloading Service may use:
+      </p>
+
+      <ul class="vrl-about-prose mb-4 ps-4">
+        <li>Moving trolleys</li>
+        <li>Lifting straps</li>
+        <li>Ramps</li>
+        <li>Protective blankets</li>
+        <li>Hand tools</li>
+        <li>Suitable securing equipment</li>
+      </ul>
+
+      <p class="vrl-about-prose text-muted mb-0">
+        Not every move needs special equipment (which is why accurate job details matter before quoting).
+      </p>
+    </div>
+
+    <!-- ============ THE SOFA THAT REFUSED TO LEAVE THROUGH THE DOOR ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">The Sofa That Refused to Leave Through the Door</h3>
+      <p class="vrl-about-prose mb-3">
+        A family has packed everything and hired a truck. They call for Loading and Unloading Service because their apartment is on the second floor.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Most goods come down easily. Then the three-seater sofa reaches the main doorway. It doesn't turn.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Instead of pushing harder, the supervisor stops the team. Removable parts are checked, the sofa is repositioned and the carrying angle is changed. A few careful minutes later, it's outside without scratching the doorway.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        That's what experience looks like during physical moving work: knowing when not to use force.
+      </p>
+    </div>
+
+    <!-- ============ LOADING LABOUR NEAR ME: WHAT INFORMATION SHOULD YOU GIVE? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Loading Labour Near Me: What Information Should You Give?</h3>
+      <p class="vrl-about-prose mb-3">
+        If you're searching Loading and Unloading Service Near Me, give the provider more than your address.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Mention the approximate number of cartons, furniture, appliances, floor level, lift availability, vehicle size and parking distance.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Also identify unusually heavy items. That helps Best Loading and Unloading Service send appropriate manpower instead of discovering the real workload after arriving.
+      </p>
+    </div>
+
+    <!-- ============ WHAT DETERMINES LOADING AND UNLOADING CHARGES? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">What Determines Loading and Unloading Charges?</h3>
+      <p class="vrl-about-prose mb-3">
+        Small labour-only jobs may begin around ₹1,200 to ₹2,000. Larger jobs can cost considerably more.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Pricing depends on manpower count, working time, goods volume, floor level, stairs, lift access, carrying distance and heavy-item requirements.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Yes, professional Loading and Unloading Service requires investment, but here's why it's worth it: poorly handled goods can damage furniture, appliances, walls and the people lifting them.
+      </p>
+    </div>
+
+    <!-- ============ LOADING AND UNLOADING ARE DIFFERENT JOBS ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Loading and Unloading Are Different Jobs</h3>
+      <p class="vrl-about-prose mb-1">Loading requires planning how goods will sit during transportation.</p>
+      <p class="vrl-about-prose mb-3">Unloading requires controlled removal and destination placement.</p>
+
+      <p class="vrl-about-prose mb-0">
+        At delivery, our staff identify heavy and fragile items before removing them. Goods can then be taken towards designated rooms according to the agreed service.
+      </p>
     </div>
 
     <!-- ============ SECTION 2: 3 HANDLING CATEGORY CARDS ============ -->
@@ -212,7 +359,7 @@
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Common Queries</span>
         <h3 class="vrl-about-title mb-2">Loading &amp; Unloading <span class="vrl-about-highlight">FAQs</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Got questions about crew safety or high-rise moves? Here are the top answers.</p>
+        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Practical Questions About Loading and Unloading</p>
       </div>
 
       <div class="max-w-900 mx-auto">
@@ -222,12 +369,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="loadFaqOne">
               <button class="accordion-button vrl-faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseOne" aria-expanded="true" aria-controls="loadCollapseOne">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 1. Are your loading laborers background-verified?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can I book only the loading staff?
               </button>
             </h2>
             <div id="loadCollapseOne" class="accordion-collapse collapse show" aria-labelledby="loadFaqOne" data-bs-parent="#vrlLoadFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! We do not hire casual day laborers. Every member of our loading and unloading crew is <strong>full-time, background-verified, trained, and uniformed</strong>.
+                Yes, standalone loading support can be arranged subject to availability.
               </div>
             </div>
           </div>
@@ -236,12 +383,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="loadFaqTwo">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseTwo" aria-expanded="false" aria-controls="loadCollapseTwo">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 2. How do you handle heavy items when there is no elevator?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can I book only unloading at my destination?
               </button>
             </h2>
             <div id="loadCollapseTwo" class="accordion-collapse collapse" aria-labelledby="loadFaqTwo" data-bs-parent="#vrlLoadFaq">
               <div class="accordion-body vrl-faq-body">
-                Our movers utilize <strong>heavy-duty shoulder lifting straps, staircase corner padding, and stair-climbing wheel dollies</strong> to navigate tight staircases without touching or scratching walls.
+                Yes. Explain the vehicle size, approximate load and property access while enquiring.
               </div>
             </div>
           </div>
@@ -250,12 +397,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="loadFaqThree">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseThree" aria-expanded="false" aria-controls="loadCollapseThree">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 3. Do you provide unloading and room placement at the destination?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How much does the Loading and Unloading Service cost?
               </button>
             </h2>
             <div id="loadCollapseThree" class="accordion-collapse collapse" aria-labelledby="loadFaqThree" data-bs-parent="#vrlLoadFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! Unloading includes placing furniture, heavy boxes, and electronic appliances into designated bedrooms, living rooms, and kitchens as requested by the customer.
+                Small jobs may begin around ₹1,200 to ₹2,000. Manpower, load and access conditions determine actual pricing.
               </div>
             </div>
           </div>
@@ -264,12 +411,54 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="loadFaqFour">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseFour" aria-expanded="false" aria-controls="loadCollapseFour">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 4. Are goods insured against accidental drops during loading?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How many labourers will I need?
               </button>
             </h2>
             <div id="loadCollapseFour" class="accordion-collapse collapse" aria-labelledby="loadFaqFour" data-bs-parent="#vrlLoadFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! Our <strong>Full Transit &amp; Handling Insurance</strong> covers declared household items and machinery against accidental drops or handling damage.
+                It depends on goods volume, heavy items, floor level and required completion time.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="loadFaqFive">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseFive" aria-expanded="false" aria-controls="loadCollapseFive">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can the staff handle refrigerators and wardrobes?
+              </button>
+            </h2>
+            <div id="loadCollapseFive" class="accordion-collapse collapse" aria-labelledby="loadFaqFive" data-bs-parent="#vrlLoadFaq">
+              <div class="accordion-body vrl-faq-body">
+                Yes, subject to item dimensions, access and equipment requirements.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="loadFaqSix">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseSix" aria-expanded="false" aria-controls="loadCollapseSix">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Do stairs increase the cost?
+              </button>
+            </h2>
+            <div id="loadCollapseSix" class="accordion-collapse collapse" aria-labelledby="loadFaqSix" data-bs-parent="#vrlLoadFaq">
+              <div class="accordion-body vrl-faq-body">
+                They can increase manpower and working time, particularly for bulky or heavy goods.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="loadFaqSeven">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#loadCollapseSeven" aria-expanded="false" aria-controls="loadCollapseSeven">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> What should I tell Loading and Unloading Service Near Me before booking?
+              </button>
+            </h2>
+            <div id="loadCollapseSeven" class="accordion-collapse collapse" aria-labelledby="loadFaqSeven" data-bs-parent="#vrlLoadFaq">
+              <div class="accordion-body vrl-faq-body">
+                Mention goods volume, heavy items, floors, lift availability, carrying distance and vehicle size.
               </div>
             </div>
           </div>

@@ -19,15 +19,15 @@
     <!-- ============ SECTION 1: CLEAN SIMPLE CONTENT BOX ============ -->
     <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
       <h2 class="vrl-simple-heading mb-4">
-        Professional Bike Transportation Services Across India
+        Bike Transport for Safe Bike Relocation
       </h2>
 
       <p class="vrl-about-prose mb-3">
-        Welcome to <strong><?= htmlspecialchars($company3) ?></strong>, India's leading vehicle transportation and logistics specialist. We offer safe, door-to-door bike shipping for all types of two-wheelers — including daily commuter scooters, heavy Royal Enfield cruisers, and high-performance luxury superbikes.
+        Even though the motorcycle is less in size compared to those of cars, it suffers more exposure during the process of delivering. There are moving mirrors, indicators, fuel tanks and painted panels which are at risk during unfitting and improper shipping processes.
       </p>
 
       <p class="vrl-about-prose text-muted mb-4">
-        With over <?= $yearsExperience ?> years of experience and <?= $happyClients ?> vehicles delivered, our move specialists utilize multi-layer bubble wrapping, customized wooden crate packaging, enclosed container trucks, and 24x7 live GPS tracking to ensure zero-scratch delivery.
+        Our Bike Transportation Service combines protective packing with controlled loading and transportation. With 20+ years of experience, our specialists transport scooters, motorcycles and some selected premium bikes according to the noted routes. The usual price can vary from ₹3,000 to ₹15,000, depending on the route to be covered and the dimensions of the transported motorcycle.
       </p>
 
       <!-- 3 Feature Check Pills -->
@@ -52,6 +52,144 @@
           <i class="bi bi-calculator-fill"></i> Get Instant Quote
         </button>
       </div>
+    </div>
+
+    <!-- ============ WHY CAN'T A BIKE SIMPLY BE PUT INSIDE A TRUCK? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Why Can't a Bike Simply Be Put Inside a Truck?</h3>
+      <p class="vrl-about-prose mb-3">
+        Because two-wheelers need support. A motorcycle standing normally depends on balance. Inside a moving vehicle, braking, turns and road vibration create completely different conditions.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Professional Bike Relocation Service therefore focuses on two things: protecting exposed surfaces and restricting unwanted movement.
+      </p>
+
+      <p class="vrl-about-prose mb-2">
+        The booked service may cover:
+      </p>
+
+      <ul class="vrl-about-prose mb-4 ps-4">
+        <li>Bike inspection before dispatch</li>
+        <li>Protective wrapping</li>
+        <li>Pickup coordination</li>
+        <li>Controlled loading</li>
+        <li>Motorcycle securing</li>
+        <li>Transportation</li>
+        <li>Destination unloading</li>
+      </ul>
+
+      <p class="vrl-about-prose text-muted mb-0">
+        That's what you should examine while comparing Top Bike Transportation Service.
+      </p>
+    </div>
+
+    <!-- ============ TANK, MIRRORS, INDICATORS: WHERE PACKING GETS SPECIFIC ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Tank, Mirrors, Indicators: Where Packing Gets Specific</h3>
+      <p class="vrl-about-prose mb-3">
+        Not every part carries the same risk. The fuel tank and painted panels need surface protection. Mirrors and indicators are exposed. Premium motorcycles may have accessories or custom components requiring additional attention.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Our staff can use bubble wrap, foam sheets, corrugated protection, stretch film and suitable securing straps according to the motorcycle.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        And here's the thing: more wrapping doesn't automatically mean safer transport. Good Bike Shifting Service combines packing with proper restraint.
+      </p>
+    </div>
+
+    <!-- ============ WHAT OUR BIKE HANDLING TEAM DOES BEFORE DISPATCH ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">What Our Bike Handling Team Does Before Dispatch</h3>
+      <p class="vrl-about-prose mb-3">
+        The staff review the motorcycle model, condition and transport requirements. Documentation is checked as applicable, and loose accessories are identified.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Packing then focuses on vulnerable sections. During loading, the motorcycle is positioned carefully and secured according to the transport arrangement. At destination, restraints are removed before controlled unloading.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Our 20+ years of experience helps particularly with bikes that need more attention than standard commuter models.
+      </p>
+    </div>
+
+    <!-- ============ A CUSTOM FUEL TANK CHANGED THE PACKING PLAN ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">A Custom Fuel Tank Changed the Packing Plan</h3>
+      <p class="vrl-about-prose mb-3">
+        Imagine a motorcycle owner sending a bike with custom paintwork on the fuel tank.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Standard outer wrapping alone isn't enough because adhesive or rough material touching the painted surface could create marks.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        The staff add a softer protective layer first. Stronger outer protection follows, and the bike is secured without relying on the wrapping itself to hold it upright.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        At delivery, the owner checks the tank first. Still clean.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        That's the difference thoughtful Bike Transportation Service preparation can make.
+      </p>
+    </div>
+
+    <!-- ============ BIKE CARRIER OR RAILWAY PARCEL? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Bike Carrier or Railway Parcel?</h3>
+      <p class="vrl-about-prose mb-3">
+        Customers researching Best Bike Transportation Service often compare professional carrier transport with Indian Railways parcel options.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Using the railway could be a good option concerning the route but nevertheless, it is in the need of professional preparation and organization.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Door-to-door transportation could serve well for the customers who like to receive the insurance and delivery right at their doorsteps.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        There is no universal answer to this question. The right choice mainly depends on the route, the budget, the motorcycle type and owner’s convenience and satisfaction.
+      </p>
+    </div>
+
+    <!-- ============ WHAT WILL BIKE TRANSPORTATION COST? ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">What Will Bike Transportation Cost?</h3>
+      <p class="vrl-about-prose mb-3">
+        The possible prices on bike delivery services and bike relocation may vary from ₹3,000 to ₹15,000.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        Yes, professional Bike Relocation Service requires investment, but here's why it's worth it: a long-distance ride also consumes time, fuel and tyres while exposing you and the motorcycle to weather and road fatigue.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        Request a route-based estimate when comparing Top Bike Relocation Service.
+      </p>
+    </div>
+
+    <!-- ============ PREPARING YOUR MOTORCYCLE FOR PICKUP ============ -->
+    <div class="vrl-simple-content-box p-4 p-md-5 mb-5">
+      <h3 class="vrl-simple-heading mb-3">Preparing Your Motorcycle for Pickup</h3>
+      <p class="vrl-about-prose mb-3">
+        Remove unnecessary accessories and personal belongings. Keep relevant vehicle documents ready and discuss fuel requirements with the transporter.
+      </p>
+
+      <p class="vrl-about-prose mb-3">
+        For Local Bike Transportation Service pickup, access conditions also matter.
+      </p>
+
+      <p class="vrl-about-prose mb-0">
+        <?= $company3 ?> can discuss available transport arrangements according to your destination and motorcycle type.
+      </p>
     </div>
 
     <!-- ============ SECTION 2: 3 TWO-WHEELER CLASS CATEGORIES ============ -->
@@ -207,12 +345,12 @@
       </div>
     </div>
 
-    <!-- ============ SECTION 5: BIKE TRANSPORT FAQS ACCORDION ============ -->
+    <!-- ============ SECTION 5: BIKE TRANSPORTATION FAQS ACCORDION ============ -->
     <div class="mb-5">
       <div class="text-center mb-4 pb-2">
         <span class="vrl-about-tag mb-2">Common Queries</span>
         <h3 class="vrl-about-title mb-2">Bike Transportation <span class="vrl-about-highlight">FAQs</span></h3>
-        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Got questions about documents or fuel limits? Here are the top answers.</p>
+        <p class="text-muted fs-6 mx-auto" style="max-width: 580px;">Bike Shifting Questions Riders Search Online</p>
       </div>
 
       <div class="max-w-900 mx-auto">
@@ -222,17 +360,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="bikeFaqOne">
               <button class="accordion-button vrl-faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseOne" aria-expanded="true" aria-controls="bikeCollapseOne">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 1. What documents are required for bike transportation?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How much does a Bike Transportation Service cost?
               </button>
             </h2>
             <div id="bikeCollapseOne" class="accordion-collapse collapse show" aria-labelledby="bikeFaqOne" data-bs-parent="#vrlBikeFaq">
               <div class="accordion-body vrl-faq-body">
-                To transport a motorcycle or scooter interstate, you need to provide photocopies of:
-                <ul class="vrl-policy-list mt-2 mb-0">
-                  <li>Bike Registration Certificate (RC Book / Smart Card).</li>
-                  <li>Valid Bike Insurance Policy copy.</li>
-                  <li>Owner's Government ID Proof (Aadhaar / Driving License).</li>
-                </ul>
+                Indicative charges may range around ₹3,000 to ₹15,000 according to route, bike and transport method.
               </div>
             </div>
           </div>
@@ -241,12 +374,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="bikeFaqTwo">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseTwo" aria-expanded="false" aria-controls="bikeCollapseTwo">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 2. How much fuel should be left in the bike tank?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can scooters also be transported?
               </button>
             </h2>
             <div id="bikeCollapseTwo" class="accordion-collapse collapse" aria-labelledby="bikeFaqTwo" data-bs-parent="#vrlBikeFaq">
               <div class="accordion-body vrl-faq-body">
-                For safety regulations, the fuel tank must be nearly empty, containing <strong>no more than 1 to 2 liters</strong> of petrol. Excess fuel must be drained prior to loading to prevent fire hazards during container transit.
+                Yes. Scooters can be moved subject to route and service availability.
               </div>
             </div>
           </div>
@@ -255,12 +388,12 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="bikeFaqThree">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseThree" aria-expanded="false" aria-controls="bikeCollapseThree">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 3. Do you provide wooden crate packing for superbikes and Royal Enfields?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Which parts receive extra packing?
               </button>
             </h2>
             <div id="bikeCollapseThree" class="accordion-collapse collapse" aria-labelledby="bikeFaqThree" data-bs-parent="#vrlBikeFaq">
               <div class="accordion-body vrl-faq-body">
-                Yes! For heavy motorcycles, Royal Enfields, and high-value superbikes (KTM, BMW, Ducati, Harley Davidson), we construct custom heavy-duty wooden crates lined with foam cushioning to guarantee complete 360-degree protection.
+                Painted surfaces, fuel tanks, mirrors, indicators and exposed components commonly need attention.
               </div>
             </div>
           </div>
@@ -269,17 +402,54 @@
           <div class="accordion-item vrl-faq-item">
             <h2 class="accordion-header" id="bikeFaqFour">
               <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseFour" aria-expanded="false" aria-controls="bikeCollapseFour">
-                <i class="bi bi-patch-question-fill text-danger me-3"></i> 4. How long does interstate bike delivery take?
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> Can my bike be picked up at home?
               </button>
             </h2>
             <div id="bikeCollapseFour" class="accordion-collapse collapse" aria-labelledby="bikeFaqFour" data-bs-parent="#vrlBikeFaq">
               <div class="accordion-body vrl-faq-body">
-                Delivery time depends on transit distance:
-                <ul class="vrl-policy-list mt-2 mb-0">
-                  <li><strong>Local / Same-State Shifting:</strong> 24 to 48 hours.</li>
-                  <li><strong>Major Metro Inter-State (e.g. Delhi to Bangalore):</strong> 4 to 6 days.</li>
-                </ul>
-                You receive live GPS tracking updates throughout the journey!
+                Doorstep pickup may be available according to location and transport arrangement.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="bikeFaqFive">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseFive" aria-expanded="false" aria-controls="bikeCollapseFive">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> What documents should I keep ready?
+              </button>
+            </h2>
+            <div id="bikeCollapseFive" class="accordion-collapse collapse" aria-labelledby="bikeFaqFive" data-bs-parent="#vrlBikeFaq">
+              <div class="accordion-body vrl-faq-body">
+                RC, insurance and identification may be required. Confirm the current requirements before dispatch.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="bikeFaqSix">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseSix" aria-expanded="false" aria-controls="bikeCollapseSix">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How many days will transportation take?
+              </button>
+            </h2>
+            <div id="bikeCollapseSix" class="accordion-collapse collapse" aria-labelledby="bikeFaqSix" data-bs-parent="#vrlBikeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Transit time depends mainly on route, distance and carrier schedule.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item vrl-faq-item">
+            <h2 class="accordion-header" id="bikeFaqSeven">
+              <button class="accordion-button vrl-faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bikeCollapseSeven" aria-expanded="false" aria-controls="bikeCollapseSeven">
+                <i class="bi bi-patch-question-fill text-danger me-3"></i> How do I choose a bike transportation service near me?
+              </button>
+            </h2>
+            <div id="bikeCollapseSeven" class="accordion-collapse collapse" aria-labelledby="bikeFaqSeven" data-bs-parent="#vrlBikeFaq">
+              <div class="accordion-body vrl-faq-body">
+                Ask about packing, bike restraint, transport method, insurance, delivery and total charges.
               </div>
             </div>
           </div>
