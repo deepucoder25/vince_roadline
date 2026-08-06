@@ -1,44 +1,19 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
-
-$htmlcontent = '';
-$htmlcontent1 = '';
-$htmlcontent2 = '';
-
-$htmlcontent = "
+if (strtolower($city) == "") {
+   $htmlcontent = "";
+   $htmlcontent1 = "";
+   $htmlcontent2 = "";
+} else {
+   $htmlcontent = "
 <!-- Main Intro Prose -->
 <div class='pm-about-intro-text mb-4'>
-    <p class='fs-6 text-dark mb-3 pm-about-intro-p'>
-        Welcome to <strong>{$company3}</strong> in <strong>{$city}</strong> — your trusted relocation partner for <strong>All India Door-to-Door Packing & Moving Services</strong>. 
-        Whether you are planning a local house move within <strong>{$city}, {$state}</strong> or a long-distance interstate relocation, our experienced team provides 24x7 complete shifting solutions with 100% safety commitment.
+    <p class='mb-3'>
+       Looking for Packers and Movers in $city? Pricing for a local relocation varies from case to case. In many cases, the price will depend on volume of goods, distance, floor level, lift availability, packing requirement and vehicle. Small shifting of 1 BHK house will cost between ₹3,500 to ₹7,000, and a bigger house or apartment is usually costly. Inter-state relocation cost depends on route and goods volume.
     </p>
-    <p class='fs-6 text-muted mb-0 pm-about-intro-p'>
-        As leading <strong>Packers and Movers in {$city}</strong>, we specialize in multi-layer protective wrapping, dedicated enclosed container trucks, real-time GPS tracking, and transparent pricing with zero hidden charges.
+    <p class='mb-2'>
+       We offer services related to home shifting, office shifting, packing, loading, transportation and vehicle shifting. Clients can discuss their inventory first and get quotations based on actual relocation requirements.
     </p>
-</div>
-
-<!-- Clean Feature Checklist -->
-<div class='row g-3 my-3'>
-    <div class='col-6 col-sm-6'>
-        <div class='d-flex align-items-center gap-2 text-dark fw-semibold p-3 rounded-3 bg-light'>
-            <i class='bi bi-patch-check-fill text-danger fs-5 flex-shrink-0'></i> <span>All India Door-to-Door Service</span>
-        </div>
-    </div>
-    <div class='col-6 col-sm-6'>
-        <div class='d-flex align-items-center gap-2 text-dark fw-semibold p-3 rounded-3 bg-light'>
-            <i class='bi bi-box-seam-fill text-danger fs-5 flex-shrink-0'></i> <span>Multi-Layer Packing</span>
-        </div>
-    </div>
-    <div class='col-6 col-sm-6'>
-        <div class='d-flex align-items-center gap-2 text-dark fw-semibold p-3 rounded-3 bg-light'>
-            <i class='bi bi-truck-front-fill text-danger fs-5 flex-shrink-0'></i> <span>Enclosed Container Trucks</span>
-        </div>
-    </div>
-    <div class='col-6 col-sm-6'>
-        <div class='d-flex align-items-center gap-2 text-dark fw-semibold p-3 rounded-3 bg-light'>
-            <i class='bi bi-clock-fill text-danger fs-5 flex-shrink-0'></i> <span>24x7 Customer Support</span>
-        </div>
-    </div>
+    <p>Looking for a shifting estimate? Please call $phone and provide pick-up, drop location and approximate household size.</p>
 </div>
 ";
 
@@ -46,114 +21,46 @@ $htmlcontent1 = "
 <!-- Normal Content Relocation Process Workflow -->
 <div class='pm-process-section'>
     <div class='mb-4'>
-        <span class='badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-1 fw-bold fs-7 text-uppercase mb-2 d-inline-block'><i class='bi bi-gear-wide-connected me-1'></i> Systematic Workflow</span>
-        <h3 class='pm-section-title fw-bold text-dark mb-2'>How Our Relocation Process Works in {$city}</h3>
-        <p class='text-muted fs-6 mb-0 pm-about-intro-p'>
-            At <strong>{$company3}</strong>, we follow a structured and stress-free relocation process to ensure your household goods and commercial assets reach their destination safely:
-        </p>
-    </div>
+        <h3>What Packers and Movers in $city Actually do</h3>
+        <p>Typical home relocation includes bed, wardrobes, fridge, washing machine, television, sofa, kitchen articles, clothes and other items. Each item requires different treatment.</p>
 
-    <div class='pm-normal-process-content d-flex flex-column gap-3 my-4'>
-        
-        <!-- Step 1 -->
-        <div class='pm-process-item d-flex align-items-start gap-3'>
-            <div class='pm-process-step-num'>01</div>
-            <div>
-                <h6 class='fw-bold text-dark mb-1 fs-6'>Pre-Move Survey & Transparent Quote</h6>
-                <p class='text-muted small mb-0 pm-about-intro-p'>Our relocation expert conducts a thorough assessment of your inventory (furniture, appliances, electronics), providing a clear written quotation with zero hidden taxes or extra charges.</p>
-            </div>
-        </div>
+        <p>Concerned about fragile items? It is natural. Our packing professionals examine the goods before starting the job and segregate the delicate articles. Some furniture may require dismantling, some appliances require special packaging, and some glass products may need extra cushioning.</p>
 
-        <!-- Step 2 -->
-        <div class='pm-process-item d-flex align-items-start gap-3'>
-            <div class='pm-process-step-num'>02</div>
-            <div>
-                <h6 class='fw-bold text-dark mb-1 fs-6'>Multi-Layer Protective Packaging</h6>
-                <p class='text-muted small mb-0 pm-about-intro-p'>On moving day, our background-verified staff uses premium bubble wrap, corrugated cardboard sheets, stretch films, and custom wooden crates for delicate glass and electronics.</p>
-            </div>
-        </div>
+        <p>Household shifting is only one part of the services. Other <b>Shifting Services in $city</b> include office shifting, goods moving for businesses, car and bike transportation, packing support and loading/unloading assistance.</p>
 
-        <!-- Step 3 -->
-        <div class='pm-process-item d-flex align-items-start gap-3'>
-            <div class='pm-process-step-num'>03</div>
-            <div>
-                <h6 class='fw-bold text-dark mb-1 fs-6'>Safe Loading & Enclosed Container Transport</h6>
-                <p class='text-muted small mb-0 pm-about-intro-p'>Items are loaded carefully using heavy-duty ramps and safety straps into dedicated waterproof container trucks equipped with real-time GPS tracking for safe transit in {$city}.</p>
-            </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class='pm-process-item d-flex align-items-start gap-3'>
-            <div class='pm-process-step-num'>04</div>
-            <div>
-                <h6 class='fw-bold text-dark mb-1 fs-6'>Doorstep Unloading & Furniture Placement</h6>
-                <p class='text-muted small mb-0 pm-about-intro-p'>Upon arrival, our crew handles unloading, unpacking, furniture reassembly, and arranges all heavy goods according to your preferences in your new home or office.</p>
-            </div>
-        </div>
-
+        <p>Worker behaviour plays a significant role in any shifting operation. The workers enter the client's premises and handle his personal belongings for some hours. The worker should communicate respectfully, keep the work area organized and have basic cleanliness. Clean work clothing, proper handling and communication seems minor things but in the client's premises, it becomes very important.</p>
     </div>
 </div>
 
 <!-- Spacious & Elegant Relocation Services Matrix -->
 <div class='pm-services-matrix-section mt-5 pt-4 border-top'>
     <div class='mb-4'>
-        <span class='badge bg-warning-subtle text-warning-emphasis border border-warning-subtle rounded-pill px-3 py-1 fw-bold fs-7 text-uppercase mb-2 d-inline-block'>Our Expertise</span>
-        <h3 class='pm-section-title fw-bold text-dark mb-1'>Comprehensive Relocation Services in {$city}</h3>
-        <p class='text-muted small mb-0'>Custom moving solutions tailored for households, corporate offices, and vehicle owners across {$city}:</p>
-    </div>
-    
-    <div class='row g-3 g-md-4'>
-        <!-- Service 1 -->
-        <div class='col-md-6'>
-            <div class='d-flex align-items-start gap-3 p-4 rounded-4 bg-light border-0 h-100 pm-service-item'>
-                <div class='pm-service-icon-circle flex-shrink-0'>
-                    <i class='bi bi-house-door-fill'></i>
-                </div>
-                <div class='py-1'>
-                    <h6 class='fw-bold text-dark mb-1 fs-6'>Household Shifting in {$city}</h6>
-                    <p class='small text-muted mb-0'>Complete home relocation for 1BHK, 2BHK, 3BHK & Villas with 100% safety.</p>
-                </div>
-            </div>
-        </div>
+        <h4>Which Vehicles We Use for Shifting in $city?</h4>
+        <p>Choosing the right vehicle depends on volume of the goods and road accessibility.</p>
 
-        <!-- Service 2 -->
-        <div class='col-md-6'>
-            <div class='d-flex align-items-start gap-3 p-4 rounded-4 bg-light border-0 h-100 pm-service-item'>
-                <div class='pm-service-icon-circle flex-shrink-0'>
-                    <i class='bi bi-building-gear'></i>
-                </div>
-                <div class='py-1'>
-                    <h6 class='fw-bold text-dark mb-1 fs-6'>Office & Commercial Moving</h6>
-                    <p class='small text-muted mb-0'>Systematic packing of workstations, IT assets & records with minimal downtime.</p>
-                </div>
-            </div>
-        </div>
+        <p>In case of a smaller relocation, a goods vehicle or Tata Ace-type goods vehicle may be an ideal choice. Larger households may require larger covered trucks, and big household and commercial relocations may require 14 ft, 17 ft or other appropriate goods vehicles depending on inventory.</p>
 
-        <!-- Service 3 -->
-        <div class='col-md-6'>
-            <div class='d-flex align-items-start gap-3 p-4 rounded-4 bg-light border-0 h-100 pm-service-item'>
-                <div class='pm-service-icon-circle flex-shrink-0'>
-                    <i class='bi bi-truck-front-fill'></i>
-                </div>
-                <div class='py-1'>
-                    <h6 class='fw-bold text-dark mb-1 fs-6'>Car & Bike Transportation</h6>
-                    <p class='small text-muted mb-0'>Scratch-free specialized car carriers and enclosed two-wheeler transport.</p>
-                </div>
-            </div>
-        </div>
+        <p>Not always, the smallest vehicle becomes the most cost-effective choice. Before dispatching the vehicle, our team considers the approximate volume of the goods, road accessibility of both addresses and travel distance. A big vehicle will cause issues when approaching a small residential road; in that case, a small vehicle or tempo will be a more practical choice.</p>
 
-        <!-- Service 4 -->
-        <div class='col-md-6'>
-            <div class='d-flex align-items-start gap-3 p-4 rounded-4 bg-light border-0 h-100 pm-service-item'>
-                <div class='pm-service-icon-circle flex-shrink-0'>
-                    <i class='bi bi-box-seam-fill'></i>
-                </div>
-                <div class='py-1'>
-                    <h6 class='fw-bold text-dark mb-1 fs-6'>Warehouse & Storage Solutions</h6>
-                    <p class='small text-muted mb-0'>Secure short-term and long-term climate-controlled luggage storage.</p>
-                </div>
-            </div>
-        </div>
+        <p>Long distances from $city affect transportation cost based on fuel cost, travel time and distance. The route planning is done based on destination and road connectivity rather than charging one fixed kilometre rate for each consignment.</p>
+
+        <h4>How We Resolve the Common Relocation Issues in $city</h4>
+        <p>The fact is relocation planning is rarely foolproof.</p>
+
+        <p>The lift may not be available at the last moment, society permission restricts shifting hours, parking facility of the vehicle may not be available, and three more cupboards may be added in the inventory which were not informed previously.</p>
+
+        <p>Experienced Local Relocating Services in $city resolve all these kinds of situations.</p>
+
+        <p>If the vehicle accessibility is difficult, the team considers a smaller loading vehicle. If the lift is not available, manpower and carrying time will be reconsidered. Fragile or unusual goods are identified before loading. If the inventory has changed significantly, it is better to inform the team about the new requirement before the job rather than arguing about it during work.</p>
+
+        <span class='fs-4 fw-bold text-dark mb-1'>Our Relocation Process</span>
+        <p>Our process begins with a client's query. Our team asks for the pickup address, destination, shifting date, floor, lift availability and approximate inventory of the household. For large relocation, inventory checking or survey will be helpful to make more accurate estimation.</p>
+
+        <p>On the day of the shifting, our moving professionals arrange the packing according to the type of the goods. The furniture and appliances receive the necessary protection and the smaller goods are packed in boxes. Goods are moved properly to the loading point.</p>
+
+        <p>Loading planning is done based on weight and fragility of the goods; the fragile boxes should not be kept underneath the heavy furniture (it seems obvious, but improper loading causes unnecessary damages).</p>
+
+        <p>Once the loading is completed, the vehicle takes the planned route. On reaching the destination, the team unloads the consignment and places the goods based on the service.</p>
     </div>
 </div>
 ";
@@ -203,3 +110,33 @@ $htmlcontent2 = "
     </div>
 </div>
 ";
+$htmlcontent3 = "
+        <h5>Packing Materials We Use</h5>
+        <p>Depending on the type of the goods and distance, the packing includes:</p>
+        <ul>
+        <li>Corrugated boxes for household articles</li>
+        <li>Bubble wrap for glass and fragile goods</li>
+        <li>Foam sheets and protective cushioning</li>
+        <li>Stretch film for furniture and appliances</li>
+        <li>Packing tape and corner protection</li>
+        <li>Protective covers for selected bulky items</li>
+        </ul>
+        <p>Long distance transportation requires stronger packing than <b>Local Moving in $city</b>, and material requirements will be accordingly planned.</p>
+
+        <h6>Transparent Packers and Movers Charges in $city</h6>
+        <p>Moving can be costly, but how do we ensure fairness? Quotation will be based on the actual work requirement.</p>
+
+        <p>Distance is an important factor but so are manpower, household size, packing material, stairs, lift availability, vehicle and additional handling.</p>
+
+        <p>Do not compare quotations based on the final figure. Compare what is included in it. Clients searching for <em>Best Packers and Movers $city, Top Packers and Movers $city or Packers and Movers Near Me</em> usually worry about hidden charges. Inventory check before booking the service minimizes the risk to a great extent.</p>
+
+        <h6>A Typical Moving Scenario</h6>
+        <p>Consider a common scenario of a 2BHK relocation in $city. The client says that the household has around 25 cartons, one fridge, one washing machine, one television, two beds and one sofa.</p>
+
+        <p>Actual inventory turns out to be larger because the inventory does not include kitchen articles and wardrobe contents.</p>
+
+        <p>Rather than providing an undersized vehicle, the moving team revises the requirement of the load before dispatch. Packing begins earlier, bulky furniture is prepared separately, fragile boxes are marked, and appropriate vehicles are chosen. This small inventory checking can save extra trips, improper loading and price disputes at the last moment.</p>
+
+";
+}
+?>

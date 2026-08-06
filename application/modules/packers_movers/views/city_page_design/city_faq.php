@@ -19,28 +19,24 @@
     <?php
     $faqs = [
       [
-        "q" => "How early should I book Packers and Movers in $city?",
-        "a" => "We recommend booking at least 3 to 7 days in advance to secure your preferred shifting slot, especially for month-end weekends when demand is highest in $city."
+        "q" => "How much do Packers and Movers in $city charge?",
+        "a" => "Cost depends on distance, volume of the goods, manpower, floor level, lift availability, packing and vehicle. Small local relocation will be started from ₹3,500 to ₹7,000, but actual quotation will give a clearer idea."
       ],
       [
-        "q" => "Do you provide multi-layer packing materials for fragile items?",
-        "a" => "Yes! We bring premium packing materials including bubble wrap, corrugated sheets, stretch film, heavy-duty cartons, and corner guards for electronics and glass items."
+        "q" => "Which vehicle is suitable for home shifting?",
+        "a" => "Smaller loads can fit into a Tata Ace-type goods vehicle. Larger households may require larger covered trucks like 14 ft or 17 ft vehicles. Right choice depends on volume and road accessibility."
       ],
       [
-        "q" => "Are there any hidden costs added after shifting in $city?",
-        "a" => "No. We provide a transparent written quotation upfront covering packing, loading, transport, unloading, and toll taxes with zero hidden charges."
+        "q" => "How early should I book my moving professionals?",
+        "a" => "Booking 7 to 10 days in advance is preferred if you have fixed the date. Slots near weekends and the end of the month can be booked fast."
       ],
       [
-        "q" => "Can I transport my bike or car along with household goods?",
-        "a" => "Yes. We offer combined household and vehicle relocation services in $city using specialized covered car carriers and two-wheeler safety stands."
+        "q" => "Do your staff pack fragile household items?",
+        "a" => "Yes. Fragile articles require separate packing and careful loading. You should inform them about the delicate or valuable goods during the initial inventory discussion."
       ],
       [
-        "q" => "Is transit insurance included during relocation?",
-        "a" => "Full transit insurance coverage is available to protect your goods against unexpected accidents or natural hazards during transportation."
-      ],
-      [
-        "q" => "Do you assist with dismantling and assembling furniture?",
-        "a" => "Yes! Our trained staff handles basic dismantling and reassembly of wooden beds, wardrobes, dining tables, and TV units free of hassle."
+        "q" => "How can I choose a reliable moving professional in $city?",
+        "a" => "Quotation, service inclusions, vehicle arrangement, packing method and communication before advance payment are the factors which you should check before choosing."
       ],
     ];
 

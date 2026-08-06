@@ -15,7 +15,7 @@ include 'city_content.php';
           <div class="pm-city-section-header mb-3">
             <span class="pm-city-tag mb-2 d-inline-block"><i class="bi bi-award-fill me-1"></i> TOP RATED RELOCATION</span>
             <h2 class="pm-city-section-title fw-bold">
-              <span class="pm-city-accent-text"><?= htmlspecialchars($city) ?></span> Packers and Movers
+              Our safe Home and Office Shifting by VRL Packers and Movers
             </h2>
           </div>
 
@@ -122,6 +122,7 @@ include 'city_content.php';
           <div class="pm-city-map-wrapper my-4">
             <?php include 'city_map.php'; ?>
           </div>
+          <?php echo $htmlcontent3; ?>   
 
           <!-- Swappable Testimonials Section -->
           <?php include 'city_reviews.php'; ?>
